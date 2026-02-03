@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-02-03T10:06:19.024Z",
+  "fetched_at": "2026-02-03T11:53:23.790Z",
   "entry_pages": [
     "https://www.racetothewh.com/allpolls",
     "https://www.racetothewh.com/trump",
@@ -27,6 +27,18 @@
       "resource_type": "script"
     },
     {
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-6db04d5149bff018-min.en-US.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://use.typekit.net/ik/7iH5VFAeGKZBvfDA12WkHVYIHDmjCuq6XlSDtfEeg0Jfe7jIfFHN4UJLFRbh52jhWDm8jDbt5eIaFQbDFRw3whJuFRjuwD48jU7mMkG0jAFu-WsoShFGZAsude80ZkoRdhXCHKoyjamTiY8Djhy8ZYmC-Ao1Oco8if37OcBDOcu8OfG0-hB0ZhBkdhvlie81ZWJl-agEdPoDSWmyScmDSeBRZPoRdhXCHKoDSWmyScmDSeBRZWFR-emqiAUTdcS0jhNlOeBRiA8XpWFR-emqiAUTdcS0jhNlOeBRiA8XpWFR-emqiAUTdcS0dcmXOeBDOcu8OelydciyScNzOWsTZhmkOAl3pcX0SaBujW48Sagyjh90jhNlOeUzjhBC-eNDifUkjAF8ieNX-ema-foRdhXCSaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPUaiaS0jAFu-WsoShFGZAsude80ZkoRdhXCiaiaOcBRiA8XpWFR-emqiAUTdcS0dcmXOYiaikoySkolZPUaiaS0-hB0ZhBkdhvlie81ZWJl-agEdPoDSWmyScmDSeBRZPoRdhXCiaiaO14yjhmXdasGZWiGOcFzdPUaiaS0SaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPJsj14ydcszdKu1ScNXZWFUiA9KfAikjAoh-AUCZPG4fOZbIMMjgfMfH6qJ0BMbMg6YJMJ7fbKa9gMMeMt6MKG4fO8bIMMjIPMfH6GJcEGfIMIjgkMfH6GJc7GfIMIjIPMfqMeUhtzogb.js",
+      "status": 200,
+      "content_type": "text/javascript;charset=utf-8",
+      "resource_type": "script"
+    },
+    {
       "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/website.components.imageFluid.styles.css",
       "status": 200,
       "content_type": "text/css; charset=utf-8",
@@ -51,19 +63,7 @@
       "resource_type": "script"
     },
     {
-      "url": "https://a.pub.network/racetothewh-com/cls.css",
-      "status": 200,
-      "content_type": "text/css",
-      "resource_type": "stylesheet"
-    },
-    {
-      "url": "https://use.typekit.net/ik/7iH5VFAeGKZBvfDA12WkHVYIHDmjCuq6XlSDtfEeg0Jfe7jIfFHN4UJLFRbh52jhWDm8jDbt5eIaFQbDFRw3whJuFRjuwD48jU7mMkG0jAFu-WsoShFGZAsude80ZkoRdhXCHKoyjamTiY8Djhy8ZYmC-Ao1Oco8if37OcBDOcu8OfG0-hB0ZhBkdhvlie81ZWJl-agEdPoDSWmyScmDSeBRZPoRdhXCHKoDSWmyScmDSeBRZWFR-emqiAUTdcS0jhNlOeBRiA8XpWFR-emqiAUTdcS0jhNlOeBRiA8XpWFR-emqiAUTdcS0dcmXOeBDOcu8OelydciyScNzOWsTZhmkOAl3pcX0SaBujW48Sagyjh90jhNlOeUzjhBC-eNDifUkjAF8ieNX-ema-foRdhXCSaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPUaiaS0jAFu-WsoShFGZAsude80ZkoRdhXCiaiaOcBRiA8XpWFR-emqiAUTdcS0dcmXOYiaikoySkolZPUaiaS0-hB0ZhBkdhvlie81ZWJl-agEdPoDSWmyScmDSeBRZPoRdhXCiaiaO14yjhmXdasGZWiGOcFzdPUaiaS0SaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPJsj14ydcszdKu1ScNXZWFUiA9KfAikjAoh-AUCZPG4fOZbIMMjgfMfH6qJ0BMbMg6YJMJ7fbKa9gMMeMt6MKG4fO8bIMMjIPMfH6GJcEGfIMIjgkMfH6GJc7GfIMIjIPMfqMeUhtzogb.js",
-      "status": 200,
-      "content_type": "text/javascript;charset=utf-8",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-6db04d5149bff018-min.en-US.js",
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js",
       "status": 200,
       "content_type": "text/javascript",
       "resource_type": "script"
@@ -75,31 +75,31 @@
       "resource_type": "script"
     },
     {
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://a.pub.network/racetothewh-com/cls.css",
+      "status": 200,
+      "content_type": "text/css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-ca5ce1a64a3152e7-min.en-US.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
       "url": "https://assets.squarespace.com/universal/scripts-compressed/performance-6c7058b44420b6db-min.en-US.js",
       "status": 200,
       "content_type": "text/javascript",
       "resource_type": "script"
     },
     {
-      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/website.components.imageFluid.shared.constants.js",
-      "status": 200,
-      "content_type": "application/javascript; charset=utf-8",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/image-effect-liquid.js",
-      "status": 200,
-      "content_type": "application/javascript; charset=utf-8",
-      "resource_type": "script"
-    },
-    {
       "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/image-effect-film-grain.js",
-      "status": 200,
-      "content_type": "application/javascript; charset=utf-8",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/image-effect-refracted-circles.js",
       "status": 200,
       "content_type": "application/javascript; charset=utf-8",
       "resource_type": "script"
@@ -117,13 +117,25 @@
       "resource_type": "script"
     },
     {
-      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/website.components.imageFluid.visitor.js",
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/website.components.imageFluid.shared.constants.js",
       "status": 200,
       "content_type": "application/javascript; charset=utf-8",
       "resource_type": "script"
     },
     {
-      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/image-effect-parallax.js",
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/image-effect-liquid.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/image-effect-refracted-circles.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/website.components.imageFluid.visitor.js",
       "status": 200,
       "content_type": "application/javascript; charset=utf-8",
       "resource_type": "script"
@@ -135,9 +147,9 @@
       "resource_type": "script"
     },
     {
-      "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js",
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/image-effect-parallax.js",
       "status": 200,
-      "content_type": "text/javascript",
+      "content_type": "application/javascript; charset=utf-8",
       "resource_type": "script"
     },
     {
@@ -147,25 +159,13 @@
       "resource_type": "script"
     },
     {
-      "url": "https://a.pub.network/racetothewh-com/pubfig.min.js",
-      "status": 200,
-      "content_type": "application/javascript",
-      "resource_type": "script"
-    },
-    {
       "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.033c913120829de471e83490b320685c.js",
       "status": 200,
       "content_type": "application/javascript; charset=utf-8",
       "resource_type": "script"
     },
     {
-      "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js",
-      "status": 200,
-      "content_type": "text/javascript",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-ca5ce1a64a3152e7-min.en-US.js",
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/common-c1225d2ac1ca0980-min.en-US.js",
       "status": 200,
       "content_type": "text/javascript",
       "resource_type": "script"
@@ -177,9 +177,9 @@
       "resource_type": "script"
     },
     {
-      "url": "https://assets.squarespace.com/universal/scripts-compressed/common-c1225d2ac1ca0980-min.en-US.js",
+      "url": "https://a.pub.network/racetothewh-com/pubfig.min.js",
       "status": 200,
-      "content_type": "text/javascript",
+      "content_type": "application/javascript",
       "resource_type": "script"
     },
     {
@@ -187,12 +187,6 @@
       "status": 200,
       "content_type": "text/javascript; charset=utf-8",
       "resource_type": "script"
-    },
-    {
-      "url": "https://d.pub.network/v2/sites/racetothewh-com/configs?env=PROD",
-      "status": 200,
-      "content_type": "application/json",
-      "resource_type": "other"
     },
     {
       "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/floating-cart.77a6a725f367f8c78349.js",
@@ -207,21 +201,21 @@
       "resource_type": "xhr"
     },
     {
+      "url": "https://d.pub.network/v2/sites/racetothewh-com/configs?env=PROD",
+      "status": 200,
+      "content_type": "application/json",
+      "resource_type": "other"
+    },
+    {
+      "url": "https://l.sharethis.com/pview?event=pview&hostname=www.racetothewh.com&location=%2Fallpolls&product=inline-share-buttons&url=https%3A%2F%2Fwww.racetothewh.com%2Fallpolls&source=sharethis.js&fcmp=false&fcmpv2=false&has_segmentio=false&title=Latest%20Polls%20for%20the%202026%20Election%20%E2%80%94%20Race%20to%20the%20WH&cms=unknown&publisher=5f4aa959e019ea0012009aba&embeds_csv=https%3A%2F%2Fe.infogram.com%2F_%2FSSj43Gdy3qEkUVumokL0%3Fsrc%3Dembed%26embed_type%3Dresponsive_iframe%26wmode%3Dopaque%2Chttps%3A%2F%2Fe.infogram.com%2F_%2FHZeNWKobFtZDUUB2Xuyr%3Fsrc%3Dembed%26embed_type%3Dresponsive_iframe%26wmode%3Dopaque&sop=true&version=st_sop.js&lang=en&description=Track%20the%20Latest%20Polls%20for%20the%202026%20midterm%20elections%2C%20all%20in%20one%20place.%20Clear%20and%20Easy%20to%20Use.%20Includes%20Links%20to%20Every%20Poll.%20Features%20Senate%20and%20Governor%20Polling%2C%20and%20Trump%27s%20Approval%20Rating.&ua=%22Not(A%3ABrand%22%3Bv%3D%2299%22%2C%20%22HeadlessChrome%22%3Bv%3D%22133%22%2C%20%22Chromium%22%3Bv%3D%22133%22&ua_mobile=false&ua_platform=Linux&ua_full_version_list=%22Not(A%3ABrand%22%3Bv%3D%2299.0.0.0%22%2C%20%22HeadlessChrome%22%3Bv%3D%22133.0.6943.16%22%2C%20%22Chromium%22%3Bv%3D%22133.0.6943.16%22&uuid=b6864a81-898c-4206-90c7-b1a1464914e8",
+      "status": 204,
+      "content_type": "",
+      "resource_type": "xhr"
+    },
+    {
       "url": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202601290101/show_ads_impl_fy2021.js",
       "status": 200,
       "content_type": "text/javascript; charset=utf-8",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://c.pub.network/v2/c",
-      "status": 200,
-      "content_type": "text/plain;charset=utf-8",
-      "resource_type": "fetch"
-    },
-    {
-      "url": "https://buttons-config.sharethis.com/js/5f4aa959e019ea0012009aba.js",
-      "status": 200,
-      "content_type": "text/javascript",
       "resource_type": "script"
     },
     {
@@ -237,10 +231,10 @@
       "resource_type": "script"
     },
     {
-      "url": "https://l.sharethis.com/pview?event=pview&hostname=www.racetothewh.com&location=%2Fallpolls&product=inline-share-buttons&url=https%3A%2F%2Fwww.racetothewh.com%2Fallpolls&source=sharethis.js&fcmp=false&fcmpv2=false&has_segmentio=false&title=Latest%20Polls%20for%20the%202026%20Election%20%E2%80%94%20Race%20to%20the%20WH&cms=unknown&publisher=5f4aa959e019ea0012009aba&embeds_csv=https%3A%2F%2Fe.infogram.com%2F_%2FSSj43Gdy3qEkUVumokL0%3Fsrc%3Dembed%26embed_type%3Dresponsive_iframe%26wmode%3Dopaque%2Chttps%3A%2F%2Fe.infogram.com%2F_%2FHZeNWKobFtZDUUB2Xuyr%3Fsrc%3Dembed%26embed_type%3Dresponsive_iframe%26wmode%3Dopaque&sop=true&version=st_sop.js&lang=en&description=Track%20the%20Latest%20Polls%20for%20the%202026%20midterm%20elections%2C%20all%20in%20one%20place.%20Clear%20and%20Easy%20to%20Use.%20Includes%20Links%20to%20Every%20Poll.%20Features%20Senate%20and%20Governor%20Polling%2C%20and%20Trump%27s%20Approval%20Rating.&ua=%22Not(A%3ABrand%22%3Bv%3D%2299%22%2C%20%22HeadlessChrome%22%3Bv%3D%22133%22%2C%20%22Chromium%22%3Bv%3D%22133%22&ua_mobile=false&ua_platform=Linux&ua_full_version_list=%22Not(A%3ABrand%22%3Bv%3D%2299.0.0.0%22%2C%20%22HeadlessChrome%22%3Bv%3D%22133.0.6943.16%22%2C%20%22Chromium%22%3Bv%3D%22133.0.6943.16%22&uuid=2809c21f-8623-47db-817d-708e267170af",
-      "status": 204,
-      "content_type": "",
-      "resource_type": "xhr"
+      "url": "https://c.pub.network/v2/c",
+      "status": 200,
+      "content_type": "text/plain;charset=utf-8",
+      "resource_type": "fetch"
     },
     {
       "url": "https://cdn.privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js",
@@ -249,28 +243,22 @@
       "resource_type": "script"
     },
     {
-      "url": "https://cdn.privacy-mgmt.com/unified/4.39.0/usnat-uspapi.090eccada574d39af6f8.bundle.js",
-      "status": 200,
-      "content_type": "text/javascript",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://e.infogram.com/_/HZeNWKobFtZDUUB2Xuyr?src=embed&embed_type=responsive_iframe&wmode=opaque",
-      "status": 200,
-      "content_type": "text/html; charset=utf-8",
-      "resource_type": "document"
-    },
-    {
       "url": "https://cdn.privacy-mgmt.com/mms/v2/get_site_data?hasCsp=true&href=https%3A%2F%2Fwww.racetothewh.com&account_id=1638",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "xhr"
     },
     {
-      "url": "https://e.infogram.com/api/stylesheets/7291",
+      "url": "https://cdn.privacy-mgmt.com/unified/4.39.0/usnat-uspapi.090eccada574d39af6f8.bundle.js",
       "status": 200,
-      "content_type": "text/css; charset=utf-8",
-      "resource_type": "stylesheet"
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://buttons-config.sharethis.com/js/5f4aa959e019ea0012009aba.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
     },
     {
       "url": "https://cdn.privacy-mgmt.com/wrapper/v2/meta-data?hasCsp=true&accountId=1638&env=prod&metadata=%7B%22usnat%22%3A%7B%7D%7D&propertyId=35158&scriptVersion=4.39.0&scriptType=unified",
@@ -285,10 +273,10 @@
       "resource_type": "fetch"
     },
     {
-      "url": "https://cdn.jifo.co/css/dist/cebefb1b2b9384b3.css",
+      "url": "https://www.googletagservices.com/tag/js/gpt.js",
       "status": 200,
-      "content_type": "text/css",
-      "resource_type": "stylesheet"
+      "content_type": "text/javascript; charset=utf-8",
+      "resource_type": "fetch"
     },
     {
       "url": "https://cdn.privacy-mgmt.com/wrapper/v2/messages?hasCsp=true&env=prod&body=%7B%22accountId%22%3A1638%2C%22campaignEnv%22%3A%22prod%22%2C%22campaigns%22%3A%7B%22usnat%22%3A%7B%22consentStatus%22%3A%7B%7D%2C%22hasLocalData%22%3Afalse%2C%22targetingParams%22%3A%7B%7D%7D%7D%2C%22clientMMSOrigin%22%3A%22https%3A%2F%2Fcdn.privacy-mgmt.com%22%2C%22hasCSP%22%3Atrue%2C%22includeData%22%3A%7B%22localState%22%3A%7B%22type%22%3A%22string%22%7D%2C%22actions%22%3A%7B%22type%22%3A%22RecordString%22%7D%2C%22cookies%22%3A%7B%22type%22%3A%22RecordString%22%7D%7D%2C%22propertyHref%22%3A%22https%3A%2F%2Fwww.racetothewh.com%22%7D&localState=null&metadata=%7B%22usnat%22%3A%7B%22applies%22%3Atrue%7D%7D&nonKeyedLocalState=null&ch=5030042836927&scriptVersion=4.39.0&scriptType=unified",
@@ -303,10 +291,28 @@
       "resource_type": "script"
     },
     {
-      "url": "https://cdn.jifo.co/js/dist/bundle_vendor-f95bb7bd9b764217df5f-1-webpack.js",
+      "url": "https://na.edge.optable.co/config?osdk=web-v0.45.0&sid=iatyp6OgyzHby6NnVk9UMg&t=freestar-auth&o=racetothewh-com&cookies=no&passport=",
       "status": 200,
-      "content_type": "application/javascript",
-      "resource_type": "script"
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://na.edge.optable.co/config?osdk=web-v0.45.0&sid=3Cs-ZpCY6kJxc3f7bXIdxw&t=analytics&o=analytics&ro=true&cookies=no&passport=",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://na.edge.optable.co/witness?osdk=web-v0.45.0&sid=JbrWjpWlhe4YL5_GoYrM8w&t=freestar-auth&o=racetothewh-com&cookies=no&passport=",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://na.edge.optable.co/v2/targeting?id=__passport__&ab_test_id=all&osdk=web-v0.45.0&sid=iatyp6OgyzHby6NnVk9UMg&t=freestar-auth&o=racetothewh-com&cookies=no&passport=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InY6M0RLc1VvbnplcWoydDY1SEpkZWlhNyIsIm5ldyI6dHJ1ZSwiZXhwIjoxNzcyNzExNjA1fQ.xR2YPM-Thgt3fYqK1tdthyGbWcNwrvkDUnnBSe-BPi57mih8ldZ05oMWMgV6j-hLNmdT51cgZovNreHrn3zhKw",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "fetch"
     },
     {
       "url": "https://cdn.privacy-mgmt.com/wrapper/v2/pv-data?hasCsp=true&env=prod&ch=5030042836927&scriptVersion=4.39.0&scriptType=unified",
@@ -315,10 +321,28 @@
       "resource_type": "xhr"
     },
     {
-      "url": "https://www.googletagservices.com/tag/js/gpt.js",
+      "url": "https://e.infogram.com/_/HZeNWKobFtZDUUB2Xuyr?src=embed&embed_type=responsive_iframe&wmode=opaque",
       "status": 200,
-      "content_type": "text/javascript; charset=utf-8",
-      "resource_type": "fetch"
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "document"
+    },
+    {
+      "url": "https://e.infogram.com/api/stylesheets/7291",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jifo.co/css/dist/cebefb1b2b9384b3.css",
+      "status": 200,
+      "content_type": "text/css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/bundle_vendor-f95bb7bd9b764217df5f-1-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
     },
     {
       "url": "https://cdn.jifo.co/js/dist/embed_flex_viewer-347db4e9cdf0a1ca9253-1-webpack.js",
@@ -327,34 +351,10 @@
       "resource_type": "script"
     },
     {
-      "url": "https://na.edge.optable.co/config?osdk=web-v0.45.0&sid=Pf3VQk8guRU09OsOHdVl2A&t=freestar-auth&o=racetothewh-com&cookies=no&passport=",
-      "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "resource_type": "fetch"
-    },
-    {
-      "url": "https://na.edge.optable.co/config?osdk=web-v0.45.0&sid=-MrSXOkfEOyPvvgqNWaghw&t=analytics&o=analytics&ro=true&cookies=no&passport=",
-      "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "resource_type": "fetch"
-    },
-    {
-      "url": "https://na.edge.optable.co/witness?osdk=web-v0.45.0&sid=HTEhdPDfx5Yb2xWns5whrQ&t=freestar-auth&o=racetothewh-com&cookies=no&passport=",
-      "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "resource_type": "fetch"
-    },
-    {
       "url": "https://s.infogram.com/t.js?v3",
       "status": 200,
       "content_type": "application/javascript; charset=utf-8",
       "resource_type": "script"
-    },
-    {
-      "url": "https://gfonts.jifo.co/css?family=PT+Sans:400,700,400i,700i%7CRoboto:400,700,400i,700i&subset=latin,latin-ext,cyrillic",
-      "status": 200,
-      "content_type": "text/css; charset=utf-8",
-      "resource_type": "stylesheet"
     },
     {
       "url": "https://branding.jifo.co/65a6b489-6f16-48c3-9bac-eab2b12bda67_Trueno-SemiBold.css",
@@ -363,19 +363,25 @@
       "resource_type": "stylesheet"
     },
     {
-      "url": "https://na.edge.optable.co/v2/targeting?id=__passport__&ab_test_id=all&osdk=web-v0.45.0&sid=Pf3VQk8guRU09OsOHdVl2A&t=freestar-auth&o=racetothewh-com&cookies=no&passport=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InY6MTM0ZDU3RzBlTTA3dlNWd3hyV1E4YSIsIm5ldyI6dHJ1ZSwiZXhwIjoxNzcyNzA1MTgwfQ.x7GEMcbG1UAvOmvvH_weO0uxBUqOr9Nb-zI0hhJ9Sy8QhMKp0BQMtybVBqpaYRfgnW0jt0pV3HeJEG-zcvaUyg",
-      "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "resource_type": "fetch"
-    },
-    {
       "url": "https://c.pub.network/v2/c",
       "status": 200,
       "content_type": "text/plain;charset=utf-8",
       "resource_type": "fetch"
     },
     {
-      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20260129&st=env&sjk=8199118067338362",
+      "url": "https://s.infogram.com/t2",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://gfonts.jifo.co/css?family=PT+Sans:400,700,400i,700i%7CRoboto:400,700,400i,700i&subset=latin,latin-ext,cyrillic",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20260129&st=env&sjk=4795728343570094",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "resource_type": "xhr"
@@ -393,7 +399,7 @@
       "resource_type": "document"
     },
     {
-      "url": "https://pagead2.googlesyndication.com/bg/SqhuXs8LEnja8wrBGLPQRoRhbZvIg-ttMWsNtflDo9s.js",
+      "url": "https://pagead2.googlesyndication.com/bg/tcf-lWhrmlVkpvDGK9I9MOmFD1BstX4KZI297gnNLeQ.js",
       "status": 200,
       "content_type": "text/javascript",
       "resource_type": "script"
@@ -411,19 +417,7 @@
       "resource_type": "fetch"
     },
     {
-      "url": "https://live-data.jifo.co/60409c42-5e3a-401d-9d59-e1cad2d56e11",
-      "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "resource_type": "xhr"
-    },
-    {
       "url": "https://cdn.jifo.co/js/dist/5814558c0c05689a4acf-2-webpack.js",
-      "status": 200,
-      "content_type": "application/javascript",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://cdn.jifo.co/js/dist/67976ac8641b86dec4c5-2-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
@@ -435,19 +429,13 @@
       "resource_type": "script"
     },
     {
+      "url": "https://cdn.jifo.co/js/dist/67976ac8641b86dec4c5-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
       "url": "https://cdn.jifo.co/js/dist/1d24c144a53d40a861af-2-webpack.js",
-      "status": 200,
-      "content_type": "application/javascript",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://cdn.jifo.co/js/dist/bd2f80602bd152624c75-2-webpack.js",
-      "status": 200,
-      "content_type": "application/javascript",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://cdn.jifo.co/js/dist/e6a9ccc3fdd1caca6871-2-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
@@ -459,25 +447,7 @@
       "resource_type": "script"
     },
     {
-      "url": "https://cdn.jifo.co/js/dist/a22b911472ef8cacb7c8-2-webpack.js",
-      "status": 200,
-      "content_type": "application/javascript",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://cdn.jifo.co/js/dist/cea67d74dbb00d25f3fe-2-webpack.js",
-      "status": 200,
-      "content_type": "application/javascript",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://cdn.jifo.co/js/dist/382d3d82dea72609d135-2-webpack.js",
-      "status": 200,
-      "content_type": "application/javascript",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://cdn.jifo.co/js/dist/95a0a231313ecd36f60b-2-webpack.js",
+      "url": "https://cdn.jifo.co/js/dist/bd2f80602bd152624c75-2-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
@@ -489,13 +459,7 @@
       "resource_type": "script"
     },
     {
-      "url": "https://cdn.jifo.co/js/dist/77436e9a6ca3fd0b73fd-2-webpack.js",
-      "status": 200,
-      "content_type": "application/javascript",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://cdn.jifo.co/js/dist/9efcce44f8454d695ce3-2-webpack.js",
+      "url": "https://cdn.jifo.co/js/dist/e6a9ccc3fdd1caca6871-2-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
@@ -507,13 +471,31 @@
       "resource_type": "script"
     },
     {
-      "url": "https://cdn.jifo.co/js/dist/f9e80f9219591d331fde-2-webpack.js",
+      "url": "https://cdn.jifo.co/js/dist/9efcce44f8454d695ce3-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/a22b911472ef8cacb7c8-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/95a0a231313ecd36f60b-2-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
     },
     {
       "url": "https://cdn.jifo.co/js/dist/15736b7649d37fb0212a-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/77436e9a6ca3fd0b73fd-2-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
@@ -531,16 +513,40 @@
       "resource_type": "script"
     },
     {
-      "url": "https://s.infogram.com/t2",
+      "url": "https://cdn.jifo.co/js/dist/cea67d74dbb00d25f3fe-2-webpack.js",
       "status": 200,
-      "content_type": "text/html; charset=utf-8",
-      "resource_type": "fetch"
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/382d3d82dea72609d135-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
     },
     {
       "url": "https://cdn.jifo.co/js/dist/0979e2a8e1a7738a83d8-2-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/f9e80f9219591d331fde-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://s.infogram.com/t2",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://live-data.jifo.co/60409c42-5e3a-401d-9d59-e1cad2d56e11",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "xhr"
     },
     {
       "url": "https://cdn.jifo.co/js/dist/7f00ae8a2b4f06435e9c-2-webpack.js",
@@ -552,12 +558,6 @@
       "url": "https://e.infogram.com/api/shapes/circle",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
-      "resource_type": "fetch"
-    },
-    {
-      "url": "https://s.infogram.com/t2",
-      "status": 200,
-      "content_type": "text/html; charset=utf-8",
       "resource_type": "fetch"
     },
     {
@@ -579,6 +579,12 @@
       "resource_type": "stylesheet"
     },
     {
+      "url": "https://cdn.jifo.co/js/dist/bundle_vendor-f95bb7bd9b764217df5f-1-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
       "url": "https://www.racetothewh.com/trump",
       "status": 200,
       "content_type": "text/html;charset=utf-8",
@@ -589,12 +595,6 @@
       "status": 200,
       "content_type": "text/javascript;charset=utf-8",
       "resource_type": "script"
-    },
-    {
-      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/e2e7f2c7-bb80-4198-80bd-158687869838_462/website.components.spacer.styles.css",
-      "status": 200,
-      "content_type": "text/css; charset=utf-8",
-      "resource_type": "stylesheet"
     },
     {
       "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/versioned-assets/1769792839777-DVO42990C1X7CZQ4O5QT/static.css",
@@ -609,16 +609,22 @@
       "resource_type": "stylesheet"
     },
     {
-      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/053a1d3f-5148-42ab-a3b4-183320407dee_185/website.components.code.styles.css",
+      "url": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/e2e7f2c7-bb80-4198-80bd-158687869838_462/website.components.spacer.styles.css",
       "status": 200,
       "content_type": "text/css; charset=utf-8",
       "resource_type": "stylesheet"
     },
     {
-      "url": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/053a1d3f-5148-42ab-a3b4-183320407dee_185/website.components.code.styles.css",
       "status": 200,
-      "content_type": "text/javascript",
-      "resource_type": "script"
+      "content_type": "text/css; charset=utf-8",
+      "resource_type": "stylesheet"
     },
     {
       "url": "https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",
@@ -658,6 +664,12 @@
     },
     {
       "url": "https://assets.squarespace.com/universal/scripts-compressed/performance-6c7058b44420b6db-min.en-US.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-ca5ce1a64a3152e7-min.en-US.js",
       "status": 200,
       "content_type": "text/javascript",
       "resource_type": "script"
@@ -687,12 +699,6 @@
       "resource_type": "script"
     },
     {
-      "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-ca5ce1a64a3152e7-min.en-US.js",
-      "status": 200,
-      "content_type": "text/javascript",
-      "resource_type": "script"
-    },
-    {
       "url": "https://a.pub.network/racetothewh-com/pubfig.min.js",
       "status": 200,
       "content_type": "application/javascript",
@@ -711,28 +717,16 @@
       "resource_type": "script"
     },
     {
-      "url": "https://e.infogram.com/_/gHwNrjMroRya8gWdSACP?src=embed&embed_type=responsive_iframe&wmode=opaque",
+      "url": "https://buttons-config.sharethis.com/js/5f4aa959e019ea0012009aba.js",
       "status": 200,
-      "content_type": "text/html; charset=utf-8",
-      "resource_type": "document"
+      "content_type": "text/javascript",
+      "resource_type": "script"
     },
     {
       "url": "https://d.pub.network/v2/sites/racetothewh-com/configs?env=PROD",
       "status": 200,
       "content_type": "application/json",
       "resource_type": "other"
-    },
-    {
-      "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/floating-cart.77a6a725f367f8c78349.js",
-      "status": 200,
-      "content_type": "application/javascript; charset=utf-8",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://buttons-config.sharethis.com/js/5f4aa959e019ea0012009aba.js",
-      "status": 200,
-      "content_type": "text/javascript",
-      "resource_type": "script"
     },
     {
       "url": "https://c.pub.network/v2/c",
@@ -747,10 +741,34 @@
       "resource_type": "script"
     },
     {
-      "url": "https://e.infogram.com/_/0FNbmwa4iVhZOO7zXvaT?src=embed&embed_type=responsive_iframe&wmode=opaque",
+      "url": "https://a.pub.network/racetothewh-com/prebid.js",
       "status": 200,
-      "content_type": "text/html; charset=utf-8",
-      "resource_type": "document"
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/floating-cart.77a6a725f367f8c78349.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://l.sharethis.com/pview?event=pview&hostname=www.racetothewh.com&location=%2Ftrump&product=inline-share-buttons&url=https%3A%2F%2Fwww.racetothewh.com%2Ftrump&source=sharethis.js&fcmp=false&fcmpv2=false&has_segmentio=false&title=Trump%20Approval%20Rating%20Polling%20Average%20%E2%80%94%20Race%20to%20the%20WH&cms=unknown&publisher=5f4aa959e019ea0012009aba&sop=true&version=st_sop.js&lang=en&description=Track%20Donald%20Trump%27s%20Approval%20Rating%2C%20Updated%20Every%20Day%20with%20the%20Latest%20Polls.%20Includes%20Interactive%20Graphics%20and%20a%20Trend%20Line.&ua=%22Not(A%3ABrand%22%3Bv%3D%2299%22%2C%20%22HeadlessChrome%22%3Bv%3D%22133%22%2C%20%22Chromium%22%3Bv%3D%22133%22&ua_mobile=false&ua_platform=Linux&ua_full_version_list=%22Not(A%3ABrand%22%3Bv%3D%2299.0.0.0%22%2C%20%22HeadlessChrome%22%3Bv%3D%22133.0.6943.16%22%2C%20%22Chromium%22%3Bv%3D%22133.0.6943.16%22&uuid=292a616d-57c6-4502-900b-5c29b67fb8cb",
+      "status": 204,
+      "content_type": "",
+      "resource_type": "xhr"
+    },
+    {
+      "url": "https://cdn.privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202601290101/show_ads_impl_fy2021.js",
+      "status": 200,
+      "content_type": "text/javascript; charset=utf-8",
+      "resource_type": "script"
     },
     {
       "url": "https://www.racetothewh.com/api/census/RecordHit",
@@ -759,15 +777,39 @@
       "resource_type": "xhr"
     },
     {
-      "url": "https://a.pub.network/racetothewh-com/prebid.js",
+      "url": "https://cdn.privacy-mgmt.com/mms/v2/get_site_data?hasCsp=true&href=https%3A%2F%2Fwww.racetothewh.com&account_id=1638",
       "status": 200,
       "content_type": "application/javascript",
+      "resource_type": "xhr"
+    },
+    {
+      "url": "https://cdn.privacy-mgmt.com/wrapper/v2/meta-data?hasCsp=true&accountId=1638&env=prod&metadata=%7B%22usnat%22%3A%7B%7D%7D&propertyId=35158&scriptVersion=4.39.0&scriptType=unified",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "xhr"
+    },
+    {
+      "url": "https://cdn.privacy-mgmt.com/unified/4.39.0/usnat-uspapi.090eccada574d39af6f8.bundle.js",
+      "status": 200,
+      "content_type": "text/javascript",
       "resource_type": "script"
     },
     {
-      "url": "https://l.sharethis.com/pview?event=pview&hostname=www.racetothewh.com&location=%2Ftrump&product=inline-share-buttons&url=https%3A%2F%2Fwww.racetothewh.com%2Ftrump&source=sharethis.js&fcmp=false&fcmpv2=false&has_segmentio=false&title=Trump%20Approval%20Rating%20Polling%20Average%20%E2%80%94%20Race%20to%20the%20WH&cms=unknown&publisher=5f4aa959e019ea0012009aba&embeds_csv=https%3A%2F%2Fe.infogram.com%2F_%2FgHwNrjMroRya8gWdSACP%3Fsrc%3Dembed%26embed_type%3Dresponsive_iframe%26wmode%3Dopaque%2Chttps%3A%2F%2Fe.infogram.com%2F_%2F0FNbmwa4iVhZOO7zXvaT%3Fsrc%3Dembed%26embed_type%3Dresponsive_iframe%26wmode%3Dopaque&sop=true&version=st_sop.js&lang=en&description=Track%20Donald%20Trump%27s%20Approval%20Rating%2C%20Updated%20Every%20Day%20with%20the%20Latest%20Polls.%20Includes%20Interactive%20Graphics%20and%20a%20Trend%20Line.&ua=%22Not(A%3ABrand%22%3Bv%3D%2299%22%2C%20%22HeadlessChrome%22%3Bv%3D%22133%22%2C%20%22Chromium%22%3Bv%3D%22133%22&ua_mobile=false&ua_platform=Linux&ua_full_version_list=%22Not(A%3ABrand%22%3Bv%3D%2299.0.0.0%22%2C%20%22HeadlessChrome%22%3Bv%3D%22133.0.6943.16%22%2C%20%22Chromium%22%3Bv%3D%22133.0.6943.16%22&uuid=19f7f573-dbee-47e5-99b3-779fc66c22ae",
-      "status": 204,
-      "content_type": "",
+      "url": "https://www.googletagservices.com/tag/js/gpt.js",
+      "status": 200,
+      "content_type": "text/javascript; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://e.infogram.com/_/0FNbmwa4iVhZOO7zXvaT?src=embed&embed_type=responsive_iframe&wmode=opaque",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "document"
+    },
+    {
+      "url": "https://cdn.privacy-mgmt.com/wrapper/v2/messages?hasCsp=true&env=prod&body=%7B%22accountId%22%3A1638%2C%22campaignEnv%22%3A%22prod%22%2C%22campaigns%22%3A%7B%22usnat%22%3A%7B%22consentStatus%22%3A%7B%22rejectedAny%22%3Afalse%2C%22consentedToAll%22%3Atrue%2C%22consentedToAny%22%3Afalse%2C%22hasConsentData%22%3Afalse%2C%22previousOptInAll%22%3Afalse%7D%2C%22hasLocalData%22%3Atrue%2C%22targetingParams%22%3A%7B%7D%7D%7D%2C%22clientMMSOrigin%22%3A%22https%3A%2F%2Fcdn.privacy-mgmt.com%22%2C%22hasCSP%22%3Atrue%2C%22includeData%22%3A%7B%22localState%22%3A%7B%22type%22%3A%22string%22%7D%2C%22actions%22%3A%7B%22type%22%3A%22RecordString%22%7D%2C%22cookies%22%3A%7B%22type%22%3A%22RecordString%22%7D%7D%2C%22propertyHref%22%3A%22https%3A%2F%2Fwww.racetothewh.com%22%7D&localState=%7B%22usnat%22%3A%7B%22mmsCookies%22%3A%5B%5D%2C%22propertyId%22%3A35158%2C%22messageId%22%3A0%7D%7D&metadata=%7B%22usnat%22%3A%7B%22applies%22%3Atrue%7D%7D&nonKeyedLocalState=%7B%22usnat%22%3A%7B%7D%7D&ch=5030042836927&scriptVersion=4.39.0&scriptType=unified",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
       "resource_type": "xhr"
     },
     {
@@ -783,28 +825,10 @@
       "resource_type": "stylesheet"
     },
     {
-      "url": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202601290101/show_ads_impl_fy2021.js",
-      "status": 200,
-      "content_type": "text/javascript; charset=utf-8",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://cdn.privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js",
-      "status": 200,
-      "content_type": "text/javascript",
-      "resource_type": "script"
-    },
-    {
       "url": "https://cdn.jifo.co/js/dist/bundle_vendor-f95bb7bd9b764217df5f-1-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
-    },
-    {
-      "url": "https://cdn.privacy-mgmt.com/mms/v2/get_site_data?hasCsp=true&href=https%3A%2F%2Fwww.racetothewh.com&account_id=1638",
-      "status": 200,
-      "content_type": "application/javascript",
-      "resource_type": "xhr"
     },
     {
       "url": "https://cdn.jifo.co/js/dist/embed_flex_viewer-347db4e9cdf0a1ca9253-1-webpack.js",
@@ -819,19 +843,7 @@
       "resource_type": "document"
     },
     {
-      "url": "https://www.googletagservices.com/tag/js/gpt.js",
-      "status": 200,
-      "content_type": "text/javascript; charset=utf-8",
-      "resource_type": "fetch"
-    },
-    {
-      "url": "https://cdn.privacy-mgmt.com/unified/4.39.0/usnat-uspapi.090eccada574d39af6f8.bundle.js",
-      "status": 200,
-      "content_type": "text/javascript",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://cdn.privacy-mgmt.com/wrapper/v2/meta-data?hasCsp=true&accountId=1638&env=prod&metadata=%7B%22usnat%22%3A%7B%7D%7D&propertyId=35158&scriptVersion=4.39.0&scriptType=unified",
+      "url": "https://cdn.privacy-mgmt.com/wrapper/v2/pv-data?hasCsp=true&env=prod&ch=5030042836927&scriptVersion=4.39.0&scriptType=unified",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "resource_type": "xhr"
@@ -873,22 +885,10 @@
       "resource_type": "script"
     },
     {
-      "url": "https://cdn.privacy-mgmt.com/wrapper/v2/messages?hasCsp=true&env=prod&body=%7B%22accountId%22%3A1638%2C%22campaignEnv%22%3A%22prod%22%2C%22campaigns%22%3A%7B%22usnat%22%3A%7B%22consentStatus%22%3A%7B%22rejectedAny%22%3Afalse%2C%22consentedToAll%22%3Atrue%2C%22consentedToAny%22%3Afalse%2C%22hasConsentData%22%3Afalse%2C%22previousOptInAll%22%3Afalse%7D%2C%22hasLocalData%22%3Atrue%2C%22targetingParams%22%3A%7B%7D%7D%7D%2C%22clientMMSOrigin%22%3A%22https%3A%2F%2Fcdn.privacy-mgmt.com%22%2C%22hasCSP%22%3Atrue%2C%22includeData%22%3A%7B%22localState%22%3A%7B%22type%22%3A%22string%22%7D%2C%22actions%22%3A%7B%22type%22%3A%22RecordString%22%7D%2C%22cookies%22%3A%7B%22type%22%3A%22RecordString%22%7D%7D%2C%22propertyHref%22%3A%22https%3A%2F%2Fwww.racetothewh.com%22%7D&localState=%7B%22usnat%22%3A%7B%22mmsCookies%22%3A%5B%5D%2C%22propertyId%22%3A35158%2C%22messageId%22%3A0%7D%7D&metadata=%7B%22usnat%22%3A%7B%22applies%22%3Atrue%7D%7D&nonKeyedLocalState=%7B%22usnat%22%3A%7B%7D%7D&ch=5030042836927&scriptVersion=4.39.0&scriptType=unified",
-      "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "resource_type": "xhr"
-    },
-    {
       "url": "https://cdn.jifo.co/js/dist/embed_flex_viewer-347db4e9cdf0a1ca9253-1-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
-    },
-    {
-      "url": "https://cdn.privacy-mgmt.com/wrapper/v2/pv-data?hasCsp=true&env=prod&ch=5030042836927&scriptVersion=4.39.0&scriptType=unified",
-      "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "resource_type": "xhr"
     },
     {
       "url": "https://s.infogram.com/t.js?v3",
@@ -903,10 +903,10 @@
       "resource_type": "fetch"
     },
     {
-      "url": "https://gfonts.jifo.co/css?family=PT+Sans:400,700,400i,700i%7CRoboto:400,700,400i,700i&subset=latin,latin-ext,cyrillic",
+      "url": "https://s.infogram.com/t2",
       "status": 200,
-      "content_type": "text/css; charset=utf-8",
-      "resource_type": "stylesheet"
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "fetch"
     },
     {
       "url": "https://branding.jifo.co/65a6b489-6f16-48c3-9bac-eab2b12bda67_Trueno-SemiBold.css",
@@ -915,7 +915,13 @@
       "resource_type": "stylesheet"
     },
     {
-      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20260129&st=env&sjk=2831175323553097",
+      "url": "https://gfonts.jifo.co/css?family=PT+Sans:400,700,400i,700i%7CRoboto:400,700,400i,700i&subset=latin,latin-ext,cyrillic",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20260129&st=env&sjk=2562070174645362",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "resource_type": "xhr"
@@ -927,16 +933,16 @@
       "resource_type": "script"
     },
     {
-      "url": "https://s.infogram.com/t2",
-      "status": 200,
-      "content_type": "text/html; charset=utf-8",
-      "resource_type": "fetch"
-    },
-    {
       "url": "https://ep2.adtrafficquality.google/sodar/sodar2/237/runner.html",
       "status": 200,
       "content_type": "text/html",
       "resource_type": "document"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/bg/tcf-lWhrmlVkpvDGK9I9MOmFD1BstX4KZI297gnNLeQ.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
     },
     {
       "url": "https://www.google.com/recaptcha/api2/aframe",
@@ -945,37 +951,7 @@
       "resource_type": "document"
     },
     {
-      "url": "https://pagead2.googlesyndication.com/bg/SqhuXs8LEnja8wrBGLPQRoRhbZvIg-ttMWsNtflDo9s.js",
-      "status": 200,
-      "content_type": "text/javascript",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://live-data.jifo.co/6aae6c2d-7931-4edd-a228-e3182285f19b",
-      "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "resource_type": "xhr"
-    },
-    {
-      "url": "https://live-data.jifo.co/792b6827-ee5c-41be-b01d-29f3d37585b5",
-      "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "resource_type": "xhr"
-    },
-    {
-      "url": "https://live-data.jifo.co/667d91bd-36a0-4b72-a39f-5dddac2745c7",
-      "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "resource_type": "xhr"
-    },
-    {
       "url": "https://live-data.jifo.co/aef376df-0348-40d7-ad8f-25daac121c52",
-      "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "resource_type": "xhr"
-    },
-    {
-      "url": "https://live-data.jifo.co/2ea31a8a-de3b-4397-905b-6a2fded99e59",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "resource_type": "xhr"
@@ -1011,13 +987,13 @@
       "resource_type": "script"
     },
     {
-      "url": "https://cdn.jifo.co/js/dist/e6a9ccc3fdd1caca6871-2-webpack.js",
+      "url": "https://cdn.jifo.co/js/dist/cea67d74dbb00d25f3fe-2-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
     },
     {
-      "url": "https://cdn.jifo.co/js/dist/cea67d74dbb00d25f3fe-2-webpack.js",
+      "url": "https://cdn.jifo.co/js/dist/e6a9ccc3fdd1caca6871-2-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
@@ -1029,28 +1005,16 @@
       "resource_type": "script"
     },
     {
-      "url": "https://e.infogram.com/api/shapes/circle",
+      "url": "https://cdn.jifo.co/js/dist/bd2f80602bd152624c75-2-webpack.js",
       "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "resource_type": "fetch"
+      "content_type": "application/javascript",
+      "resource_type": "script"
     },
     {
-      "url": "https://e.infogram.com/api/shapes/circle",
+      "url": "https://cdn.jifo.co/js/dist/feec799471f8cbe6ba6c-2-webpack.js",
       "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "resource_type": "fetch"
-    },
-    {
-      "url": "https://e.infogram.com/api/shapes/circle",
-      "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "resource_type": "fetch"
-    },
-    {
-      "url": "https://s.infogram.com/t2",
-      "status": 200,
-      "content_type": "text/html; charset=utf-8",
-      "resource_type": "fetch"
+      "content_type": "application/javascript",
+      "resource_type": "script"
     },
     {
       "url": "https://cdn.jifo.co/js/dist/67976ac8641b86dec4c5-2-webpack.js",
@@ -1059,13 +1023,7 @@
       "resource_type": "script"
     },
     {
-      "url": "https://cdn.jifo.co/js/dist/bd2f80602bd152624c75-2-webpack.js",
-      "status": 200,
-      "content_type": "application/javascript",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://cdn.jifo.co/js/dist/461e33bd9f7b8386724d-2-webpack.js",
+      "url": "https://cdn.jifo.co/js/dist/6775725d0fb0e47ce3b5-2-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
@@ -1083,25 +1041,25 @@
       "resource_type": "script"
     },
     {
-      "url": "https://cdn.jifo.co/js/dist/6775725d0fb0e47ce3b5-2-webpack.js",
+      "url": "https://cdn.jifo.co/js/dist/461e33bd9f7b8386724d-2-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
     },
     {
-      "url": "https://cdn.jifo.co/js/dist/feec799471f8cbe6ba6c-2-webpack.js",
-      "status": 200,
-      "content_type": "application/javascript",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://cdn.jifo.co/js/dist/5f548405a4aaaf8786a7-2-webpack.js",
+      "url": "https://cdn.jifo.co/js/dist/16929d405e78506c54c3-2-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
     },
     {
       "url": "https://cdn.jifo.co/js/dist/77436e9a6ca3fd0b73fd-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/5f548405a4aaaf8786a7-2-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
@@ -1119,16 +1077,40 @@
       "resource_type": "script"
     },
     {
-      "url": "https://cdn.jifo.co/js/dist/16929d405e78506c54c3-2-webpack.js",
+      "url": "https://cdn.jifo.co/js/dist/382d3d82dea72609d135-2-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
     },
     {
-      "url": "https://cdn.jifo.co/js/dist/382d3d82dea72609d135-2-webpack.js",
+      "url": "https://e.infogram.com/api/shapes/circle",
       "status": 200,
-      "content_type": "application/javascript",
-      "resource_type": "script"
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://e.infogram.com/api/shapes/circle",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://e.infogram.com/api/shapes/circle",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://live-data.jifo.co/6aae6c2d-7931-4edd-a228-e3182285f19b",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "xhr"
+    },
+    {
+      "url": "https://s.infogram.com/t2",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "fetch"
     },
     {
       "url": "https://cdn.jifo.co/js/dist/ffaced8ffaef61a3913d-2-webpack.js",
@@ -1138,12 +1120,6 @@
     },
     {
       "url": "https://cdn.jifo.co/js/dist/2c63b89f753ca1842a6d-2-webpack.js",
-      "status": 200,
-      "content_type": "application/javascript",
-      "resource_type": "script"
-    },
-    {
-      "url": "https://cdn.jifo.co/js/dist/6ca43272d0c09ebc95b7-2-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
@@ -1161,10 +1137,28 @@
       "resource_type": "script"
     },
     {
-      "url": "https://cdn.jifo.co/js/dist/580c9ef429c478d7d3c6-2-webpack.js",
+      "url": "https://cdn.jifo.co/js/dist/6ca43272d0c09ebc95b7-2-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
+    },
+    {
+      "url": "https://live-data.jifo.co/2ea31a8a-de3b-4397-905b-6a2fded99e59",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "xhr"
+    },
+    {
+      "url": "https://live-data.jifo.co/792b6827-ee5c-41be-b01d-29f3d37585b5",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "xhr"
+    },
+    {
+      "url": "https://s.infogram.com/t2",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "fetch"
     },
     {
       "url": "https://cdn.jifo.co/js/dist/51cebdfe7ea30c367e21-2-webpack.js",
@@ -1173,16 +1167,22 @@
       "resource_type": "script"
     },
     {
+      "url": "https://live-data.jifo.co/667d91bd-36a0-4b72-a39f-5dddac2745c7",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "xhr"
+    },
+    {
       "url": "https://cdn.jifo.co/js/dist/2f3a878763d74a4faeb8-2-webpack.js",
       "status": 200,
       "content_type": "application/javascript",
       "resource_type": "script"
     },
     {
-      "url": "https://s.infogram.com/t2",
+      "url": "https://cdn.jifo.co/js/dist/580c9ef429c478d7d3c6-2-webpack.js",
       "status": 200,
-      "content_type": "text/html; charset=utf-8",
-      "resource_type": "fetch"
+      "content_type": "application/javascript",
+      "resource_type": "script"
     },
     {
       "url": "https://s.infogram.com/t2",
@@ -1203,19 +1203,19 @@
       "resource_type": "document"
     },
     {
-      "url": "https://static1.squarespace.com/static/versioned-site-css/5ec488a75436303b566532ec/101/5c5a519771c10ba3470d8101/5ec488a75436303b5665330e/1733/site.css",
+      "url": "https://use.typekit.net/ik/7iH5VFAeGKZBvfDA12WkHVYIHDmjCuq6XlSDtfEeg0Jfe7jIfFHN4UJLFRbh52jhWDm8jDbt5eIaFQbDFRw3whJuFRjuwD48jU7mMkG0jAFu-WsoShFGZAsude80ZkoRdhXCHKoyjamTiY8Djhy8ZYmC-Ao1Oco8if37OcBDOcu8OfG0-hB0ZhBkdhvlie81ZWJl-agEdPoDSWmyScmDSeBRZPoRdhXCHKoDSWmyScmDSeBRZWFR-emqiAUTdcS0jhNlOeBRiA8XpWFR-emqiAUTdcS0jhNlOeBRiA8XpWFR-emqiAUTdcS0dcmXOeBDOcu8OelydciyScNzOWsTZhmkOAl3pcX0SaBujW48Sagyjh90jhNlOeUzjhBC-eNDifUkjAF8ieNX-ema-foRdhXCSaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPUaiaS0jAFu-WsoShFGZAsude80ZkoRdhXCiaiaOcBRiA8XpWFR-emqiAUTdcS0dcmXOYiaikoySkolZPUaiaS0-hB0ZhBkdhvlie81ZWJl-agEdPoDSWmyScmDSeBRZPoRdhXCiaiaO14yjhmXdasGZWiGOcFzdPUaiaS0SaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPJsj14ydcszdKu1ScNXZWFUiA9KfAikjAoh-AUCZPG4fOZbIMMjgfMfH6qJ0BMbMg6YJMJ7fbKa9gMMeMt6MKG4fO8bIMMjIPMfH6GJcEGfIMIjgkMfH6GJc7GfIMIjIPMfqMeUhtzogb.js",
       "status": 200,
-      "content_type": "text/css; charset=utf-8",
-      "resource_type": "stylesheet"
+      "content_type": "text/javascript;charset=utf-8",
+      "resource_type": "script"
     },
     {
-      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/053a1d3f-5148-42ab-a3b4-183320407dee_185/website.components.code.styles.css",
+      "url": "https://static1.squarespace.com/static/versioned-site-css/5ec488a75436303b566532ec/101/5c5a519771c10ba3470d8101/5ec488a75436303b5665330e/1733/site.css",
       "status": 200,
       "content_type": "text/css; charset=utf-8",
       "resource_type": "stylesheet"
     }
   ],
-  "discovered_url_count": 1837,
+  "discovered_url_count": 1858,
   "probe_results_sample": [
     {
       "url": "https://docs.google.com/spreadsheets/d/1AmAi5LGp2uCEUc79Uh9gBM89jrBfXAPoWvaHmPWRhZU/edit?gid=0#gid=0",
@@ -1540,24 +1540,6 @@
       "bytes": 35253
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/edit?gid=1846349715#gid=1846349715",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/export?format=csv",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/gviz/tq?tqx=out:json",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
       "url": "https://docs.google.com/spreadsheets/d/1nwSsVzVREQlKSZqO6MIj75K27PLioKVeMcqboygMQr8/edit?gid=499453699#gid=499453699",
       "ok": false,
       "status": 401,
@@ -1594,6 +1576,24 @@
       "content_type": "text/html; charset=utf-8"
     },
     {
+      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/edit?gid=1846349715#gid=1846349715",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
       "url": "https://docs.google.com/spreadsheets/d/1_TSBNoTN4Tha7Bkiw98B7wKnxSs0a4knKq25hK-uIhE/edit?gid=182613114#gid=182613114\\",
       "ok": false,
       "status": 401,
@@ -1613,114 +1613,6 @@
     },
     {
       "url": "https://docs.google.com/spreadsheets/d/1_TSBNoTN4Tha7Bkiw98B7wKnxSs0a4knKq25hK-uIhE/gviz/tq?tqx=out:json",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/edit?gid=1265103047#gid=1265103047",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/export?format=csv",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/gviz/tq?tqx=out:json",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/edit?gid=56015953#gid=56015953",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/export?format=csv",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/gviz/tq?tqx=out:json",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/edit?gid=1684867980#gid=1684867980",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/export?format=csv",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/gviz/tq?tqx=out:json",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/edit?gid=1845081843#gid=1845081843",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/export?format=csv",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/gviz/tq?tqx=out:json",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/edit?gid=1846349715#gid=1846349715",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/export?format=csv",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/gviz/tq?tqx=out:json",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/edit?gid=940693767#gid=940693767",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/export?format=csv",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/gviz/tq?tqx=out:json",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
@@ -1750,6 +1642,132 @@
       "content_type": "text/html; charset=utf-8"
     },
     {
+      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/edit?gid=1265103047#gid=1265103047",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/edit?gid=1846349715#gid=1846349715",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/edit?gid=1845081843#gid=1845081843",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/edit?gid=56015953#gid=56015953",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/edit?gid=940693767#gid=940693767",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/edit?gid=1684867980#gid=1684867980",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1wVZb1xKDzhFDaCatuffM0XdmtNmxAvEB2yMduumjASs/edit?gid=287136909#gid=287136909",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1wVZb1xKDzhFDaCatuffM0XdmtNmxAvEB2yMduumjASs/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1wVZb1xKDzhFDaCatuffM0XdmtNmxAvEB2yMduumjASs/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
       "url": "https://docs.google.com/spreadsheets/d/1l4CvLg8xAJ_bgVnykvOSB3lsYZy5DOWOFYsrTPF1b5s/edit?gid=638510786#gid=638510786",
       "ok": false,
       "status": 401,
@@ -1763,24 +1781,6 @@
     },
     {
       "url": "https://docs.google.com/spreadsheets/d/1l4CvLg8xAJ_bgVnykvOSB3lsYZy5DOWOFYsrTPF1b5s/gviz/tq?tqx=out:json",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1DuYW6yVQnUZfRrpgyqkWl53gWpbJuRjUByQkL6C6gfA/edit?gid=1845081843#gid=1845081843",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1DuYW6yVQnUZfRrpgyqkWl53gWpbJuRjUByQkL6C6gfA/export?format=csv",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1DuYW6yVQnUZfRrpgyqkWl53gWpbJuRjUByQkL6C6gfA/gviz/tq?tqx=out:json",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
@@ -1804,19 +1804,37 @@
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1v7nqlhFaoTNfpdatFCHwCZI47kOMch9FwVLzUYL25zE/edit?gid=1684867980#gid=1684867980",
+      "url": "https://docs.google.com/spreadsheets/d/1QjqhpsTxd7BTGPRMiolmNpsxpOfYD63tfm8GV5vI9D8/edit?gid=0#gid=0",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1v7nqlhFaoTNfpdatFCHwCZI47kOMch9FwVLzUYL25zE/export?format=csv",
+      "url": "https://docs.google.com/spreadsheets/d/1QjqhpsTxd7BTGPRMiolmNpsxpOfYD63tfm8GV5vI9D8/export?format=csv",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1v7nqlhFaoTNfpdatFCHwCZI47kOMch9FwVLzUYL25zE/gviz/tq?tqx=out:json",
+      "url": "https://docs.google.com/spreadsheets/d/1QjqhpsTxd7BTGPRMiolmNpsxpOfYD63tfm8GV5vI9D8/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1DuYW6yVQnUZfRrpgyqkWl53gWpbJuRjUByQkL6C6gfA/edit?gid=1845081843#gid=1845081843",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1DuYW6yVQnUZfRrpgyqkWl53gWpbJuRjUByQkL6C6gfA/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1DuYW6yVQnUZfRrpgyqkWl53gWpbJuRjUByQkL6C6gfA/gviz/tq?tqx=out:json",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
@@ -1858,24 +1876,6 @@
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/13kdOqYA86xv_P6WS9LjJTkOKU8pNcQARuRGA_uwo28o/edit?gid=1609647780#gid=1609647780",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/13kdOqYA86xv_P6WS9LjJTkOKU8pNcQARuRGA_uwo28o/export?format=csv",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/13kdOqYA86xv_P6WS9LjJTkOKU8pNcQARuRGA_uwo28o/gviz/tq?tqx=out:json",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
       "url": "https://docs.google.com/spreadsheets/d/1tPL54kBSSjz1EkOTAw3rZFl78ADsphvhOuPj8rxs-W0/edit?gid=499453699#gid=499453699",
       "ok": false,
       "status": 401,
@@ -1889,24 +1889,6 @@
     },
     {
       "url": "https://docs.google.com/spreadsheets/d/1tPL54kBSSjz1EkOTAw3rZFl78ADsphvhOuPj8rxs-W0/gviz/tq?tqx=out:json",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1T12X4Mkk8cEhRbEqzsvbFJrq8_NmGJ-SSFLERFAgJjo/edit?gid=1693218348#gid=1693218348",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1T12X4Mkk8cEhRbEqzsvbFJrq8_NmGJ-SSFLERFAgJjo/export?format=csv",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1T12X4Mkk8cEhRbEqzsvbFJrq8_NmGJ-SSFLERFAgJjo/gviz/tq?tqx=out:json",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
@@ -1930,55 +1912,73 @@
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1QjqhpsTxd7BTGPRMiolmNpsxpOfYD63tfm8GV5vI9D8/edit?gid=0#gid=0",
+      "url": "https://docs.google.com/spreadsheets/d/13kdOqYA86xv_P6WS9LjJTkOKU8pNcQARuRGA_uwo28o/edit?gid=1609647780#gid=1609647780",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1QjqhpsTxd7BTGPRMiolmNpsxpOfYD63tfm8GV5vI9D8/export?format=csv",
+      "url": "https://docs.google.com/spreadsheets/d/13kdOqYA86xv_P6WS9LjJTkOKU8pNcQARuRGA_uwo28o/export?format=csv",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1QjqhpsTxd7BTGPRMiolmNpsxpOfYD63tfm8GV5vI9D8/gviz/tq?tqx=out:json",
+      "url": "https://docs.google.com/spreadsheets/d/13kdOqYA86xv_P6WS9LjJTkOKU8pNcQARuRGA_uwo28o/gviz/tq?tqx=out:json",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1wVZb1xKDzhFDaCatuffM0XdmtNmxAvEB2yMduumjASs/edit?gid=287136909#gid=287136909",
+      "url": "https://docs.google.com/spreadsheets/d/1T12X4Mkk8cEhRbEqzsvbFJrq8_NmGJ-SSFLERFAgJjo/edit?gid=1693218348#gid=1693218348",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1wVZb1xKDzhFDaCatuffM0XdmtNmxAvEB2yMduumjASs/export?format=csv",
+      "url": "https://docs.google.com/spreadsheets/d/1T12X4Mkk8cEhRbEqzsvbFJrq8_NmGJ-SSFLERFAgJjo/export?format=csv",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1wVZb1xKDzhFDaCatuffM0XdmtNmxAvEB2yMduumjASs/gviz/tq?tqx=out:json",
+      "url": "https://docs.google.com/spreadsheets/d/1T12X4Mkk8cEhRbEqzsvbFJrq8_NmGJ-SSFLERFAgJjo/gviz/tq?tqx=out:json",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1AraZc6cOXoTslwDMPd82vrcgi5O0sAdOV9e8v813ldU/edit?gid=1845081843#gid=1845081843",
+      "url": "https://docs.google.com/spreadsheets/d/1v7nqlhFaoTNfpdatFCHwCZI47kOMch9FwVLzUYL25zE/edit?gid=1684867980#gid=1684867980",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1AraZc6cOXoTslwDMPd82vrcgi5O0sAdOV9e8v813ldU/export?format=csv",
+      "url": "https://docs.google.com/spreadsheets/d/1v7nqlhFaoTNfpdatFCHwCZI47kOMch9FwVLzUYL25zE/export?format=csv",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1AraZc6cOXoTslwDMPd82vrcgi5O0sAdOV9e8v813ldU/gviz/tq?tqx=out:json",
+      "url": "https://docs.google.com/spreadsheets/d/1v7nqlhFaoTNfpdatFCHwCZI47kOMch9FwVLzUYL25zE/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1D-PqyT0-nOBBsDXlMQEQqptQz5SdC9b0sbLO6HXY0p8/edit?gid=139516762#gid=139516762",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1D-PqyT0-nOBBsDXlMQEQqptQz5SdC9b0sbLO6HXY0p8/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1D-PqyT0-nOBBsDXlMQEQqptQz5SdC9b0sbLO6HXY0p8/gviz/tq?tqx=out:json",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
@@ -2002,19 +2002,55 @@
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1D-PqyT0-nOBBsDXlMQEQqptQz5SdC9b0sbLO6HXY0p8/edit?gid=139516762#gid=139516762",
+      "url": "https://docs.google.com/spreadsheets/d/1AraZc6cOXoTslwDMPd82vrcgi5O0sAdOV9e8v813ldU/edit?gid=1845081843#gid=1845081843",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1D-PqyT0-nOBBsDXlMQEQqptQz5SdC9b0sbLO6HXY0p8/export?format=csv",
+      "url": "https://docs.google.com/spreadsheets/d/1AraZc6cOXoTslwDMPd82vrcgi5O0sAdOV9e8v813ldU/export?format=csv",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1D-PqyT0-nOBBsDXlMQEQqptQz5SdC9b0sbLO6HXY0p8/gviz/tq?tqx=out:json",
+      "url": "https://docs.google.com/spreadsheets/d/1AraZc6cOXoTslwDMPd82vrcgi5O0sAdOV9e8v813ldU/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/12OXCZGOWIfF3FZ4tkdklEM-CYXMOllLqIzIuL4gwPKY/edit?gid=986126214#gid=986126214",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/12OXCZGOWIfF3FZ4tkdklEM-CYXMOllLqIzIuL4gwPKY/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/12OXCZGOWIfF3FZ4tkdklEM-CYXMOllLqIzIuL4gwPKY/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ET26etsaogz0OP9V86zyx2oYktSW9cwHoYW4boLhAAw/edit?gid=1845081843#gid=1845081843",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ET26etsaogz0OP9V86zyx2oYktSW9cwHoYW4boLhAAw/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ET26etsaogz0OP9V86zyx2oYktSW9cwHoYW4boLhAAw/gviz/tq?tqx=out:json",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
@@ -2056,37 +2092,61 @@
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/12OXCZGOWIfF3FZ4tkdklEM-CYXMOllLqIzIuL4gwPKY/edit?gid=986126214#gid=986126214",
+      "url": "https://docs.google.com/spreadsheets/d/1NjWPR6ppxA4xwmXKetny-pjxISIejJVZhwY16h66BrM/edit?gid=988948933#gid=988948933",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/12OXCZGOWIfF3FZ4tkdklEM-CYXMOllLqIzIuL4gwPKY/export?format=csv",
+      "url": "https://docs.google.com/spreadsheets/d/1sNzavM5XL7AwWTqCUFZnlYWa1WtKs5l5rMi4IxnyBi8/edit?gid=56015953#gid=56015953\\",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/12OXCZGOWIfF3FZ4tkdklEM-CYXMOllLqIzIuL4gwPKY/gviz/tq?tqx=out:json",
+      "url": "https://docs.google.com/spreadsheets/d/1NjWPR6ppxA4xwmXKetny-pjxISIejJVZhwY16h66BrM/export?format=csv",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1ET26etsaogz0OP9V86zyx2oYktSW9cwHoYW4boLhAAw/edit?gid=1845081843#gid=1845081843",
+      "url": "https://docs.google.com/spreadsheets/d/1NjWPR6ppxA4xwmXKetny-pjxISIejJVZhwY16h66BrM/gviz/tq?tqx=out:json",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1ET26etsaogz0OP9V86zyx2oYktSW9cwHoYW4boLhAAw/export?format=csv",
+      "url": "https://docs.google.com/spreadsheets/d/1sNzavM5XL7AwWTqCUFZnlYWa1WtKs5l5rMi4IxnyBi8/export?format=csv",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1ET26etsaogz0OP9V86zyx2oYktSW9cwHoYW4boLhAAw/gviz/tq?tqx=out:json",
+      "url": "https://docs.google.com/spreadsheets/d/1sNzavM5XL7AwWTqCUFZnlYWa1WtKs5l5rMi4IxnyBi8/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/172Hcb_RVDyENaEsiQvdCOIC-3SG8XOo7iIFpJsv1g0U/edit?gid=45309568#gid=45309568",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/172Hcb_RVDyENaEsiQvdCOIC-3SG8XOo7iIFpJsv1g0U/edit?gid=45309568#gid=45309568\\",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/172Hcb_RVDyENaEsiQvdCOIC-3SG8XOo7iIFpJsv1g0U/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/172Hcb_RVDyENaEsiQvdCOIC-3SG8XOo7iIFpJsv1g0U/gviz/tq?tqx=out:json",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
@@ -2458,30 +2518,6 @@
       "bytes": 35253
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/export?format=csv&gid=1846349715",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/gviz/tq?tqx=out:json&gid=1846349715",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/export?format=csv&gid=0",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/gviz/tq?tqx=out:json&gid=0",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
       "url": "https://docs.google.com/spreadsheets/d/1nwSsVzVREQlKSZqO6MIj75K27PLioKVeMcqboygMQr8/export?format=csv&gid=499453699",
       "ok": false,
       "status": 401,
@@ -2530,6 +2566,30 @@
       "content_type": "text/html; charset=utf-8"
     },
     {
+      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/export?format=csv&gid=1846349715",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/gviz/tq?tqx=out:json&gid=1846349715",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/gviz/tq?tqx=out:json&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
       "url": "https://docs.google.com/spreadsheets/d/1_TSBNoTN4Tha7Bkiw98B7wKnxSs0a4knKq25hK-uIhE/export?format=csv&gid=182613114",
       "ok": false,
       "status": 401,
@@ -2549,150 +2609,6 @@
     },
     {
       "url": "https://docs.google.com/spreadsheets/d/1_TSBNoTN4Tha7Bkiw98B7wKnxSs0a4knKq25hK-uIhE/gviz/tq?tqx=out:json&gid=0",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/export?format=csv&gid=1265103047",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/gviz/tq?tqx=out:json&gid=1265103047",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/export?format=csv&gid=0",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/gviz/tq?tqx=out:json&gid=0",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/export?format=csv&gid=56015953",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/gviz/tq?tqx=out:json&gid=56015953",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/export?format=csv&gid=0",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/gviz/tq?tqx=out:json&gid=0",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/export?format=csv&gid=1684867980",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/gviz/tq?tqx=out:json&gid=1684867980",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/export?format=csv&gid=0",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/gviz/tq?tqx=out:json&gid=0",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/export?format=csv&gid=1845081843",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/gviz/tq?tqx=out:json&gid=1845081843",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/export?format=csv&gid=0",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/gviz/tq?tqx=out:json&gid=0",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/export?format=csv&gid=1846349715",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/gviz/tq?tqx=out:json&gid=1846349715",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/export?format=csv&gid=0",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/gviz/tq?tqx=out:json&gid=0",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/export?format=csv&gid=940693767",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/gviz/tq?tqx=out:json&gid=940693767",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/export?format=csv&gid=0",
-      "ok": false,
-      "status": 401,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/gviz/tq?tqx=out:json&gid=0",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
@@ -2722,85 +2638,169 @@
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1l4CvLg8xAJ_bgVnykvOSB3lsYZy5DOWOFYsrTPF1b5s/export?format=csv&gid=638510786",
+      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/export?format=csv&gid=1265103047",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1l4CvLg8xAJ_bgVnykvOSB3lsYZy5DOWOFYsrTPF1b5s/gviz/tq?tqx=out:json&gid=638510786",
+      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/gviz/tq?tqx=out:json&gid=1265103047",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1l4CvLg8xAJ_bgVnykvOSB3lsYZy5DOWOFYsrTPF1b5s/export?format=csv&gid=0",
+      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/export?format=csv&gid=0",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1l4CvLg8xAJ_bgVnykvOSB3lsYZy5DOWOFYsrTPF1b5s/gviz/tq?tqx=out:json&gid=0",
+      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/gviz/tq?tqx=out:json&gid=0",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1DuYW6yVQnUZfRrpgyqkWl53gWpbJuRjUByQkL6C6gfA/export?format=csv&gid=1845081843",
+      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/export?format=csv&gid=1846349715",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1DuYW6yVQnUZfRrpgyqkWl53gWpbJuRjUByQkL6C6gfA/gviz/tq?tqx=out:json&gid=1845081843",
+      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/gviz/tq?tqx=out:json&gid=1846349715",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1DuYW6yVQnUZfRrpgyqkWl53gWpbJuRjUByQkL6C6gfA/export?format=csv&gid=0",
+      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/export?format=csv&gid=0",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1DuYW6yVQnUZfRrpgyqkWl53gWpbJuRjUByQkL6C6gfA/gviz/tq?tqx=out:json&gid=0",
+      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/gviz/tq?tqx=out:json&gid=0",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/18WEXIT0WjGcaFIjtWtXMJB68ZAHWU3363D3Ac1nh5Ek/export?format=csv&gid=1845081843",
+      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/export?format=csv&gid=1845081843",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/18WEXIT0WjGcaFIjtWtXMJB68ZAHWU3363D3Ac1nh5Ek/gviz/tq?tqx=out:json&gid=1845081843",
+      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/gviz/tq?tqx=out:json&gid=1845081843",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/18WEXIT0WjGcaFIjtWtXMJB68ZAHWU3363D3Ac1nh5Ek/export?format=csv&gid=0",
+      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/export?format=csv&gid=0",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/18WEXIT0WjGcaFIjtWtXMJB68ZAHWU3363D3Ac1nh5Ek/gviz/tq?tqx=out:json&gid=0",
+      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/gviz/tq?tqx=out:json&gid=0",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1v7nqlhFaoTNfpdatFCHwCZI47kOMch9FwVLzUYL25zE/export?format=csv&gid=1684867980",
+      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/export?format=csv&gid=56015953",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://docs.google.com/spreadsheets/d/1v7nqlhFaoTNfpdatFCHwCZI47kOMch9FwVLzUYL25zE/gviz/tq?tqx=out:json&gid=1684867980",
+      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/gviz/tq?tqx=out:json&gid=56015953",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/gviz/tq?tqx=out:json&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/export?format=csv&gid=940693767",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/gviz/tq?tqx=out:json&gid=940693767",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/gviz/tq?tqx=out:json&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/export?format=csv&gid=1684867980",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/gviz/tq?tqx=out:json&gid=1684867980",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/gviz/tq?tqx=out:json&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1wVZb1xKDzhFDaCatuffM0XdmtNmxAvEB2yMduumjASs/export?format=csv&gid=287136909",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1wVZb1xKDzhFDaCatuffM0XdmtNmxAvEB2yMduumjASs/gviz/tq?tqx=out:json&gid=287136909",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1wVZb1xKDzhFDaCatuffM0XdmtNmxAvEB2yMduumjASs/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1wVZb1xKDzhFDaCatuffM0XdmtNmxAvEB2yMduumjASs/gviz/tq?tqx=out:json&gid=0",
       "ok": false,
       "status": 401,
       "content_type": "text/html; charset=utf-8"
