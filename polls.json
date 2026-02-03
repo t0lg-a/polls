@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "fetched_at": "2026-02-03T05:01:49.170Z",
+    "source": "racetothewh",
+    "entry_url": "https://www.racetothewh.com/allpolls",
+    "dataset_url": "https://www.googletagmanager.com/gtag/js?id=G-FVWZ0RM4DH&l=audDataLayer",
+    "dataset_format": "csv"
+  },
+  "genericBallot": [],
+  "approval": [],
+  "races": {}
+}
