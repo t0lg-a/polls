@@ -1,22 +1,13 @@
 #!/usr/bin/env node
 /**
- * Race to the WH ingestion → polls.json
+ * RTWH "hunt the sheet/json" + normalize into polls.json
  *
- * Goal:
- * - Stop using VoteHub.
- * - Use https://www.racetothewh.com/allpolls as the entrypoint.
- * - "Hunt" the underlying data feed(s) (Google Sheets / JSON / CSV / Gviz, etc.)
- *   by capturing network requests from a real browser session and probing
- *   non-HTML responses.
- *
- * Outputs:
- * - polls.json          (consumed by poll.html)
- * - rtwh_sources.json   (debug: candidate URLs + dataset selection)
- *
- * Notes:
- * - This script prefers Playwright. The workflow should install Playwright + Chromium.
- * - Once rtwh_sources.json shows a stable sheet/json URL, you can delete Playwright
- *   and switch to pure fetch against that URL.
+ * Key changes vs your current hunter:
+ * - Excludes analytics/ad/tracking URLs (gtag/gtm/ga/doubleclick/etc.)
+ * - CSV detection requires tabular structure (consistent columns), not "has commas"
+ * - Captures candidate URLs from:
+ *    (a) requests, (b) frames, (c) DOM src/href, (d) non-HTML responses
+ * - Fails loudly if no dataset is found (workflow should fail, not silently write empty polls.json)
  */
 
 const fs = require("fs");
@@ -26,12 +17,12 @@ const OUT_POLLS = path.join(__dirname, "polls.json");
 const OUT_SOURCES = path.join(__dirname, "rtwh_sources.json");
 
 const ENTRY_URL = process.env.RTWH_ENTRY_URL || "https://www.racetothewh.com/allpolls";
-const WAIT_MS = Number(process.env.RTWH_WAIT_MS || "8000");
+const WAIT_MS = Number(process.env.RTWH_WAIT_MS || "12000");
+const MIN_ROWS = Number(process.env.RTWH_MIN_ROWS || "30");
+const MIN_SCORE = Number(process.env.RTWH_MIN_SCORE || "14"); // raise/lower if needed
 
-function nowISO() {
-  return new Date().toISOString();
-}
-
+function nowISO() { return new Date().toISOString(); }
+function uniq(arr) { return Array.from(new Set(arr)); }
 function normKey(s) {
   return String(s ?? "")
     .trim()
@@ -39,22 +30,15 @@ function normKey(s) {
     .replace(/\s+/g, " ")
     .replace(/[^\w %/.-]/g, "");
 }
-
-function uniq(arr) {
-  return Array.from(new Set(arr));
-}
-
 function safeNum(v) {
   if (v === null || v === undefined) return null;
   if (typeof v === "number" && Number.isFinite(v)) return v;
   const s = String(v).trim();
   if (!s) return null;
-  // strip %, commas
   const cleaned = s.replace(/%/g, "").replace(/,/g, "");
   const n = Number(cleaned);
   return Number.isFinite(n) ? n : null;
 }
-
 function safeInt(v) {
   if (v === null || v === undefined) return null;
   if (typeof v === "number" && Number.isFinite(v)) return Math.trunc(v);
@@ -65,27 +49,14 @@ function safeInt(v) {
   const n = Number(m[1].replace(/,/g, ""));
   return Number.isFinite(n) ? Math.trunc(n) : null;
 }
-
 function parseDateToISO(v) {
   if (v === null || v === undefined) return null;
-
-  // Gviz can give JS Date strings or numbers; Sheets can give ISO or M/D/YYYY
-  if (typeof v === "number" && Number.isFinite(v)) {
-    // heuristics: ms since epoch
-    const ms = v > 10_000_000_000 ? v : v * 1000;
-    const d = new Date(ms);
-    if (!isNaN(d.getTime())) return d.toISOString().slice(0, 10);
-    return null;
-  }
-
   const s = String(v).trim();
   if (!s) return null;
 
-  // Try native parse first
   const d0 = new Date(s);
   if (!isNaN(d0.getTime())) return d0.toISOString().slice(0, 10);
 
-  // M/D/YYYY or MM/DD/YYYY
   const mdy = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
   if (mdy) {
     const mm = Number(mdy[1]), dd = Number(mdy[2]), yy = Number(mdy[3]);
@@ -93,47 +64,88 @@ function parseDateToISO(v) {
     return !isNaN(d.getTime()) ? d.toISOString().slice(0, 10) : null;
   }
 
-  // YYYY-MM-DD
   const iso = s.match(/^(\d{4})-(\d{2})-(\d{2})$/);
   if (iso) return s;
 
   return null;
 }
+function looksLikeURL(s) { return /^https?:\/\//i.test(String(s ?? "").trim()); }
 
-function looksLikeURL(s) {
-  if (!s) return false;
-  const t = String(s).trim();
-  return /^https?:\/\//i.test(t);
+function isExcludedUrl(u) {
+  const s = String(u || "").toLowerCase();
+  if (!s.startsWith("http")) return true;
+  return (
+    s.includes("googletagmanager.com") ||
+    s.includes("google-analytics.com") ||
+    s.includes("/gtag/js") ||
+    s.includes("doubleclick.net") ||
+    s.includes("facebook.net") ||
+    s.includes("connect.facebook.net") ||
+    s.includes("hotjar") ||
+    s.includes("segment.com") ||
+    s.includes("datadoghq") ||
+    s.includes("sentry.io") ||
+    s.includes("cloudflareinsights") ||
+    s.includes("adsystem") ||
+    s.includes("adservice") ||
+    s.includes("amazon-adsystem")
+  );
 }
 
-/** --- dataset parsers --- **/
+function isCandidateUrl(u) {
+  if (isExcludedUrl(u)) return false;
+  const s = String(u || "").toLowerCase();
+
+  // strong signals
+  if (s.includes("docs.google.com/spreadsheets")) return true;
+  if (s.includes("spreadsheets.google.com")) return true;
+  if (s.includes("/gviz/tq")) return true;
+  if (s.includes("tqx=out:json")) return true;
+  if (s.includes("output=csv")) return true;
+  if (s.endsWith(".csv") || s.includes(".csv?")) return true;
+  if (s.endsWith(".json") || s.includes(".json?")) return true;
+
+  // medium signals
+  if (s.includes("airtable")) return true;
+  if (s.includes("poll") && (s.includes("data") || s.includes("api"))) return true;
+
+  return false;
+}
+
+/** ---- parsers ---- **/
 
 function parseGviz(text) {
-  // Common prefixes: "/*O_o*/\ngoogle.visualization.Query.setResponse({...});"
   const m = text.match(/setResponse\(([\s\S]+)\)\s*;?\s*$/);
   if (!m) return null;
-
   let payload;
-  try {
-    payload = JSON.parse(m[1]);
-  } catch {
-    return null;
-  }
-  if (!payload || !payload.table || !Array.isArray(payload.table.cols) || !Array.isArray(payload.table.rows)) return null;
+  try { payload = JSON.parse(m[1]); } catch { return null; }
+  if (!payload?.table?.cols || !payload?.table?.rows) return null;
 
   const cols = payload.table.cols.map((c, i) => (c && (c.label || c.id)) ? (c.label || c.id) : `col_${i}`);
-  const rows = payload.table.rows.map((r) => (r.c || []).map((cell) => {
+  const rows = payload.table.rows.map(r => (r.c || []).map(cell => {
     if (!cell) return null;
-    // prefer v; fallback to f (formatted)
     return (cell.v !== undefined) ? cell.v : (cell.f !== undefined ? cell.f : null);
   }));
   return { format: "gviz", cols, rows };
 }
 
-// Minimal CSV parser with quotes
-function parseCSV(text) {
-  const lines = text.replace(/\r\n/g, "\n").replace(/\r/g, "\n").split("\n").filter(l => l.trim().length > 0);
-  if (lines.length < 2) return null;
+function isProbablyJavascript(text) {
+  const t = text.slice(0, 4000);
+  return (
+    /(^|\n)\s*(function|var|let|const)\s+/i.test(t) ||
+    /window\.|document\.|dataLayer|gtag\(/i.test(t) ||
+    /sourceMappingURL=/i.test(t)
+  );
+}
+
+function parseCSVStrict(text) {
+  // Require at least ~5 lines with consistent column count.
+  const lines = text.replace(/\r\n/g, "\n").replace(/\r/g, "\n").split("\n");
+  const nonEmpty = lines.filter(l => l.trim().length > 0);
+  if (nonEmpty.length < 6) return null;
+
+  // Reject obvious JS even if it has commas.
+  if (isProbablyJavascript(text)) return null;
 
   function splitCSVLine(line) {
     const out = [];
@@ -155,72 +167,91 @@ function parseCSV(text) {
     return out.map(s => s.trim());
   }
 
-  const header = splitCSVLine(lines[0]);
-  const rows = lines.slice(1).map(splitCSVLine);
+  const header = splitCSVLine(nonEmpty[0]);
+  if (header.length < 5) return null;
+
+  // Check consistency on next 5 lines
+  const testRows = nonEmpty.slice(1, 6).map(splitCSVLine);
+  const ok = testRows.every(r => r.length === header.length || r.length >= header.length - 1);
+  if (!ok) return null;
+
+  const rows = nonEmpty.slice(1).map(splitCSVLine);
   return { format: "csv", cols: header, rows };
 }
 
-function parseJSON(text) {
+function parseJSONTable(text) {
+  if (isProbablyJavascript(text)) return null;
   let obj;
   try { obj = JSON.parse(text); } catch { return null; }
 
-  // Array of objects
   if (Array.isArray(obj) && obj.length && typeof obj[0] === "object" && obj[0] !== null && !Array.isArray(obj[0])) {
     const cols = uniq(obj.flatMap(o => Object.keys(o)));
     const rows = obj.map(o => cols.map(c => o[c]));
     return { format: "json_objects", cols, rows };
   }
 
-  // {cols:[...], rows:[...]} or similar
   if (obj && Array.isArray(obj.cols) && Array.isArray(obj.rows)) {
     return { format: "json_table", cols: obj.cols, rows: obj.rows };
-  }
-
-  // Unknown JSON shape; keep raw
-  return { format: "json_raw", raw: obj };
-}
-
-function tryParseDataset(body, contentType) {
-  const ct = (contentType || "").toLowerCase();
-
-  if (body.includes("google.visualization.Query.setResponse")) {
-    const g = parseGviz(body);
-    if (g) return g;
-  }
-
-  if (ct.includes("text/csv") || ct.includes("application/csv") || (body.includes(",") && body.includes("\n") && !body.trim().startsWith("<"))) {
-    const c = parseCSV(body);
-    if (c) return c;
-  }
-
-  if (ct.includes("application/json") || body.trim().startsWith("{") || body.trim().startsWith("[")) {
-    const j = parseJSON(body);
-    if (j && j.format !== "json_raw") return j;
   }
 
   return null;
 }
 
-/** --- heuristics: find the "best" dataset --- **/
+function tryParseDataset(body, contentType) {
+  const ct = (contentType || "").toLowerCase();
+  const b = String(body || "");
+
+  // gviz can come back with JS-ish content-type
+  if (b.includes("google.visualization.Query.setResponse")) {
+    const g = parseGviz(b);
+    if (g) return g;
+  }
+
+  if (ct.includes("application/json") || b.trim().startsWith("{") || b.trim().startsWith("[")) {
+    const j = parseJSONTable(b);
+    if (j) return j;
+  }
+
+  if (ct.includes("text/csv") || ct.includes("application/csv") || /output=csv/i.test(ct)) {
+    const c = parseCSVStrict(b);
+    if (c) return c;
+  }
+
+  // last resort CSV (only if it REALLY looks like CSV)
+  const c2 = parseCSVStrict(b);
+  if (c2) return c2;
+
+  return null;
+}
+
+/** ---- scoring ---- **/
+
 function scoreDataset(ds) {
-  if (!ds || !ds.cols || !ds.rows) return -1;
+  if (!ds?.cols?.length || !ds?.rows?.length) return -1;
+
   const colsN = ds.cols.map(normKey);
 
-  const want = [
-    /pollster|firm|polling/,
-    /start|field|begin/,
-    /end|finish/,
-    /sample|n\b|respond/,
-    /approve|disapprove|dem|rep|gop|ind|other/,
-    /race|state|district|seat|office|contest/
+  // Must look poll-ish
+  const mustHave = [
+    /pollster|firm|polling|organization/,
+    /start|field|begin|from|end|finish|to/,
+    /sample|respond|n\b|sample size/,
+    /approve|disapprove|dem|rep|gop|trump|biden|harris|margin|spread|race|state|district|senate|house|governor|president/
   ];
+  const hit = mustHave.reduce((acc, re) => acc + (colsN.some(c => re.test(c)) ? 1 : 0), 0);
+
+  // heavy penalty if it looks like scripts
+  const joined = colsN.join(" ");
+  if (/gtag|datalayer|analytics|tag manager/.test(joined)) return -10;
 
   let score = 0;
-  for (const w of want) {
-    if (colsN.some(c => w.test(c))) score += 2;
-  }
-  score += Math.min(ds.rows.length, 200) / 10; // prefer bigger
-  score += Math.min(ds.cols.length, 60) / 10;
+  score += hit * 6;
+  score += Math.min(ds.rows.length, 400) / 12;
+  score += Math.min(ds.cols.length, 80) / 8;
+
+  // If too small, penalize hard
+  if (ds.rows.length < MIN_ROWS) score -= 20;
+
   return score;
 }
 
@@ -228,10 +259,12 @@ function pickDataset(datasets) {
   const scored = datasets
     .map(d => ({ ...d, _score: scoreDataset(d) }))
     .sort((a, b) => b._score - a._score);
-  return scored[0] || null;
+  const best = scored[0] || null;
+  if (!best || best._score < MIN_SCORE) return null;
+  return best;
 }
 
-/** --- normalize into polls.json schema expected by poll.html --- **/
+/** ---- normalize into polls.json schema your poll.html already uses ---- **/
 
 function buildColLookup(cols) {
   const normed = cols.map(c => normKey(c));
@@ -245,16 +278,11 @@ function buildColLookup(cols) {
         if (idx !== -1) return idx;
       }
       return -1;
-    },
-    idxByExact(key) {
-      const k = normKey(key);
-      const idx = normed.indexOf(k);
-      return idx === -1 ? -1 : idx;
     }
   };
 }
 
-function normalizePollRow(row, L, metaCols, answerCols) {
+function normalizePollRow(row, metaCols, answerCols) {
   const get = (idx) => (idx >= 0 && idx < row.length) ? row[idx] : null;
 
   const pollster = get(metaCols.pollsterIdx);
@@ -275,8 +303,7 @@ function normalizePollRow(row, L, metaCols, answerCols) {
     answers.push({ choice: a.name, pct: val });
   }
 
-  // discard empty rows
-  if (!pollster && !answers.length) return null;
+  if (!pollster && answers.length === 0) return null;
 
   const out = {
     start_date: start,
@@ -289,87 +316,78 @@ function normalizePollRow(row, L, metaCols, answerCols) {
     answers
   };
 
-  // keep extra metadata for future pages
-  if (race) out.race = race;
-  if (state) out.state = state;
-  if (district) out.district = district;
+  if (race) out.race = String(race).trim();
+  if (state) out.state = String(state).trim();
+  if (district) out.district = String(district).trim();
 
   return out;
 }
 
 function extractPollBuckets(ds) {
-  if (!ds || !ds.cols || !ds.rows) {
-    return { genericBallot: [], approval: [], races: {} };
-  }
-
   const L = buildColLookup(ds.cols);
 
-  // meta columns (flex)
   const metaCols = {
-    pollsterIdx: L.findIdx([/pollster|firm|polling/, /pollster\/firm/, /organization/]),
-    sponsorIdx: L.findIdx([/sponsor|sponsors|client/, /commission/]),
-    startIdx: L.findIdx([/start|field start|begin/, /fielding start/, /from/]),
-    endIdx: L.findIdx([/end|field end|finish|to/, /fielding end/]),
-    sampleIdx: L.findIdx([/sample|n\b|respondents?/, /sample size/]),
-    populationIdx: L.findIdx([/population|pop\b|lv|rv|a\b/, /likely voters|registered voters|adults/]),
+    pollsterIdx: L.findIdx([/pollster|firm|polling|organization/]),
+    sponsorIdx: L.findIdx([/sponsor|client|commission/]),
+    startIdx: L.findIdx([/start|field start|begin|from/]),
+    endIdx: L.findIdx([/end|field end|finish|to/]),
+    sampleIdx: L.findIdx([/sample|respondents?|sample size|n\b/]),
+    populationIdx: L.findIdx([/population|lv|rv|adults?|a\b/]),
     urlIdx: L.findIdx([/url|link|source/]),
     raceIdx: L.findIdx([/race|contest|office|seat|matchup/]),
-    stateIdx: L.findIdx([/^state$/, /state\s*abbr/, /st\b/]),
+    stateIdx: L.findIdx([/^state$/, /state\s*abbr/]),
     districtIdx: L.findIdx([/district|cd\b|sd\b|hd\b/])
   };
 
-  // Identify answer columns:
-  // - anything numeric-ish that isn't a meta column
   const metaIdxSet = new Set(Object.values(metaCols).filter(i => i >= 0));
+
+  // numeric columns become "answers"
   const answerCols = [];
   for (let i = 0; i < ds.cols.length; i++) {
     if (metaIdxSet.has(i)) continue;
     const name = String(ds.cols[i] ?? "").trim();
     if (!name) continue;
 
-    // check if this column is mostly numeric
     let numericCount = 0, sampleN = 0;
-    for (let r = 0; r < Math.min(ds.rows.length, 50); r++) {
+    for (let r = 0; r < Math.min(ds.rows.length, 60); r++) {
       const v = ds.rows[r][i];
       if (v === null || v === undefined || v === "") continue;
       sampleN++;
       if (safeNum(v) !== null) numericCount++;
     }
-    if (sampleN > 0 && (numericCount / sampleN) >= 0.6) {
+    if (sampleN > 0 && (numericCount / sampleN) >= 0.7) {
       answerCols.push({ idx: i, name });
     }
   }
 
-  // Normalize all rows
   const normalized = ds.rows
-    .map(r => normalizePollRow(r, L, metaCols, answerCols))
+    .map(r => normalizePollRow(r, metaCols, answerCols))
     .filter(Boolean);
 
-  // Bucket: Generic ballot & Trump approval (poll.html uses these)
   const genericBallot = [];
   const approval = [];
-  const races = {}; // everything else
+  const races = {};
 
   function bucketKeyFor(p) {
     const race = String(p.race ?? "").toLowerCase();
-    if (/generic/.test(race) && /(ballot|dems|gop|democrat|republican)/.test(race)) return "generic";
+    if (/generic/.test(race) && /(ballot|dem|gop|democrat|republican)/.test(race)) return "generic";
     if (/approval/.test(race) && /(trump|president)/.test(race)) return "approval";
-    // Some sheets may not have race labels, but answer columns could.
+
     const choices = (p.answers || []).map(a => String(a.choice).toLowerCase());
     const hasApprove = choices.some(c => /approve/.test(c));
     const hasDisapprove = choices.some(c => /disapprove/.test(c));
     if (hasApprove && hasDisapprove) return "approval";
-    const hasDem = choices.some(c => /\bdem\b|democrat/.test(c));
-    const hasGop = choices.some(c => /\bgop\b|rep\b|republican/.test(c));
+
+    const hasDem = choices.some(c => /\bdem\b|democrat|\bd\b/.test(c));
+    const hasGop = choices.some(c => /\bgop\b|rep\b|republican|\br\b/.test(c));
     if (hasDem && hasGop) return "generic";
+
     return "other";
   }
 
-
   function standardize(p, kind) {
-    if (!p || !Array.isArray(p.answers)) return p;
     const out = { ...p };
-    out.answers = p.answers.map(a => {
+    out.answers = (p.answers || []).map(a => {
       const name = String(a.choice ?? "");
       if (kind === "generic") {
         if (/dem|democrat|\bd\b/i.test(name)) return { ...a, choice: "Dem" };
@@ -389,39 +407,31 @@ function extractPollBuckets(ds) {
     if (key === "generic") genericBallot.push(standardize(p, "generic"));
     else if (key === "approval") approval.push(standardize(p, "approval"));
     else {
-      const raceLabel = (p.race || "Unknown race").trim();
-      const rk = raceLabel || "Unknown race";
-      if (!races[rk]) races[rk] = [];
-      races[rk].push(p);
+      const label = (p.race || "Unknown race").trim() || "Unknown race";
+      if (!races[label]) races[label] = [];
+      races[label].push(p);
     }
   }
 
   return { genericBallot, approval, races };
 }
 
-/** --- main --- **/
+/** ---- main: hunt ---- **/
 
 async function main() {
   let playwright;
-  try {
-    playwright = require("playwright");
-  } catch (e) {
-    console.error("Playwright is required. Install it in your workflow: npm i -D playwright && npx playwright install --with-deps chromium");
+  try { playwright = require("playwright"); }
+  catch {
+    console.error("Playwright missing. In Actions: npm i -D playwright && npx playwright install --with-deps chromium");
     process.exit(2);
   }
 
-  const ua =
-    process.env.RTWH_UA ||
+  const ua = process.env.RTWH_UA ||
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36";
 
   const browser = await playwright.chromium.launch({
     headless: true,
-    args: [
-      "--no-sandbox",
-      "--disable-dev-shm-usage",
-      "--disable-blink-features=AutomationControlled",
-      "--disable-features=IsolateOrigins,site-per-process"
-    ]
+    args: ["--no-sandbox", "--disable-dev-shm-usage"]
   });
 
   const context = await browser.newContext({
@@ -432,11 +442,38 @@ async function main() {
 
   const page = await context.newPage();
 
-  const captured = new Map(); // url -> {type, method}
+  const seenRequests = new Map(); // url -> {type, method}
+  const responseSniff = [];       // [{url,status,ct,bytes,parsed?}]
+  const datasets = [];            // parsed datasets discovered
+
   page.on("request", (req) => {
     const u = req.url();
-    if (u.startsWith("http")) {
-      if (!captured.has(u)) captured.set(u, { type: req.resourceType(), method: req.method() });
+    if (!seenRequests.has(u)) {
+      seenRequests.set(u, { type: req.resourceType(), method: req.method() });
+    }
+  });
+
+  page.on("response", async (res) => {
+    try {
+      const u = res.url();
+      if (isExcludedUrl(u)) return;
+
+      const ct = (res.headers()["content-type"] || "").toLowerCase();
+      // only sniff non-HTML
+      if (ct.includes("text/html")) return;
+
+      // only consider candidate-ish responses
+      if (!isCandidateUrl(u) && !u.toLowerCase().includes("gviz")) return;
+
+      const body = await res.text();
+      const parsed = tryParseDataset(body, ct);
+      responseSniff.push({ url: u, status: res.status(), content_type: ct, bytes: body.length, parsed: !!parsed });
+
+      if (parsed && parsed.rows?.length >= MIN_ROWS) {
+        datasets.push({ url: u, content_type: ct, ...parsed });
+      }
+    } catch {
+      // ignore per-response failures
     }
   });
 
@@ -444,74 +481,88 @@ async function main() {
   await page.goto(ENTRY_URL, { waitUntil: "domcontentloaded", timeout: 90_000 });
   await page.waitForTimeout(WAIT_MS);
 
-  // Collect frame URLs too (many embeds load inside iframes).
-  const frameUrls = page.frames().map((f) => f.url()).filter((u) => u && u.startsWith("http"));
+  const frameUrls = page.frames().map(f => f.url()).filter(u => u && u.startsWith("http"));
 
-  // Candidate URL filters: likely data endpoints
-  const allUrls = uniq([...captured.keys(), ...frameUrls]);
-
-  const candidates = allUrls.filter((u) => {
-    const s = u.toLowerCase();
-    return (
-      s.includes("docs.google.com") ||
-      s.includes("spreadsheets.google.com") ||
-      s.includes("googleusercontent.com") ||
-      s.includes("gviz") ||
-      s.endsWith(".csv") || s.includes(".csv?") ||
-      s.endsWith(".json") || s.includes(".json?") ||
-      s.includes("airtable") ||
-      s.includes("data") ||
-      s.includes("poll")
-    );
+  const domUrls = await page.evaluate(() => {
+    const out = [];
+    const push = (v) => { if (v && typeof v === "string") out.push(v); };
+    document.querySelectorAll("iframe[src]").forEach(n => push(n.src));
+    document.querySelectorAll("script[src]").forEach(n => push(n.src));
+    document.querySelectorAll("link[href]").forEach(n => push(n.href));
+    document.querySelectorAll("a[href]").forEach(n => push(n.href));
+    return out;
   });
 
-  console.log("Captured URLs:", allUrls.length, "Candidate data URLs:", candidates.length, "Frames:", frameUrls.length);
+  const allUrls = uniq([...seenRequests.keys(), ...frameUrls, ...domUrls]).filter(u => u.startsWith("http"));
+  const candidates = allUrls.filter(isCandidateUrl);
 
-  const datasets = [];
+  // Actively probe candidates (some aren’t fetched by the page due to lazy loads)
   const probeResults = [];
-
-  for (const u of candidates.slice(0, 400)) { // cap to avoid rate limits
+  for (const u of candidates.slice(0, 500)) {
     try {
-      const res = await context.request.get(u, {
-        headers: {
-          "user-agent": ua,
-          "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
-        },
+      const r = await context.request.get(u, {
+        headers: { "user-agent": ua, "accept": "application/json,text/csv,*/*" },
         timeout: 45_000
       });
-
-      const ct = (res.headers()["content-type"] || "").toLowerCase();
-      // Skip HTML; we want the underlying tabular data.
+      const ct = (r.headers()["content-type"] || "").toLowerCase();
       if (ct.includes("text/html")) continue;
 
-      const body = await res.text();
+      const body = await r.text();
       const parsed = tryParseDataset(body, ct);
-      if (parsed && parsed.cols && parsed.rows && parsed.rows.length >= 10) {
+      probeResults.push({ url: u, ok: r.ok(), status: r.status(), content_type: ct, bytes: body.length, parsed: !!parsed });
+
+      if (parsed && parsed.rows?.length >= MIN_ROWS) {
         datasets.push({ url: u, content_type: ct, ...parsed });
       }
-      probeResults.push({ url: u, ok: res.ok(), status: res.status(), content_type: ct, bytes: body.length });
     } catch (e) {
-      probeResults.push({ url: u, ok: false, error: String(e && e.message ? e.message : e) });
+      probeResults.push({ url: u, ok: false, error: String(e?.message || e) });
     }
   }
 
-  const chosen = pickDataset(datasets);
+  // Deduplicate datasets by url
+  const byUrl = new Map();
+  for (const d of datasets) {
+    const prev = byUrl.get(d.url);
+    if (!prev || d.rows.length > prev.rows.length) byUrl.set(d.url, d);
+  }
+  const uniqueDatasets = Array.from(byUrl.values());
+
+  const chosen = pickDataset(uniqueDatasets);
 
   const sourcesOut = {
     fetched_at: nowISO(),
     entry_url: ENTRY_URL,
     wait_ms: WAIT_MS,
     frames: frameUrls,
-    candidates,
-    probe_results: probeResults,
-    datasets: datasets.map(d => ({ url: d.url, format: d.format, rows: d.rows.length, cols: d.cols.length, content_type: d.content_type, score: scoreDataset(d) })),
-    chosen: chosen ? { url: chosen.url, format: chosen.format, rows: chosen.rows.length, cols: chosen.cols.length, content_type: chosen.content_type, score: chosen._score } : null
+    candidates_count: candidates.length,
+    candidates: candidates.slice(0, 200),
+    response_sniff: responseSniff.slice(0, 200),
+    probe_results: probeResults.slice(0, 300),
+    datasets: uniqueDatasets
+      .map(d => ({
+        url: d.url,
+        format: d.format,
+        rows: d.rows.length,
+        cols: d.cols.length,
+        content_type: d.content_type,
+        score: scoreDataset(d)
+      }))
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 30),
+    chosen: chosen ? {
+      url: chosen.url,
+      format: chosen.format,
+      rows: chosen.rows.length,
+      cols: chosen.cols.length,
+      content_type: chosen.content_type,
+      score: chosen._score
+    } : null
   };
 
   fs.writeFileSync(OUT_SOURCES, JSON.stringify(sourcesOut, null, 2));
 
   if (!chosen) {
-    console.error("No non-HTML dataset found. See rtwh_sources.json for captured URLs and probe results.");
+    console.error("No plausible sheet/json dataset found. See rtwh_sources.json -> candidates/datasets/probe_results.");
     await browser.close();
     process.exit(3);
   }
@@ -532,8 +583,8 @@ async function main() {
   };
 
   fs.writeFileSync(OUT_POLLS, JSON.stringify(out, null, 2));
-  console.log(`Wrote ${path.basename(OUT_POLLS)} (genericBallot=${genericBallot.length}, approval=${approval.length}, races=${Object.keys(races).length})`);
-  console.log(`Wrote ${path.basename(OUT_SOURCES)} (chosen=${chosen.url})`);
+  console.log(`Wrote polls.json (genericBallot=${genericBallot.length}, approval=${approval.length}, races=${Object.keys(races).length})`);
+  console.log(`Wrote rtwh_sources.json (chosen=${chosen.url})`);
 
   await browser.close();
 }
