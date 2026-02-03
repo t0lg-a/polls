@@ -1,4 +1,3 @@
-// fetch-data.js  (replace your current file with this)
 #!/usr/bin/env node
 /**
  * RacetotheWH poll scraper → polls.json
