@@ -2,7 +2,7 @@ name: Daily Data Fetch (RTWH)
 
 on:
   schedule:
-    - cron: '23 11 * * *' # daily
+    - cron: "23 11 * * *"
   workflow_dispatch:
 
 permissions:
@@ -14,24 +14,36 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
-      - name: Install Playwright (Chromium)
+      - name: Install deps (Playwright)
         run: |
           if [ ! -f package.json ]; then npm init -y; fi
           npm i -D playwright
           npx playwright install --with-deps chromium
 
-      - name: Fetch RTWH poll data
-        run: node fetch-data.js
+      - name: Fetch RTWH data (allow failure so we can commit debug)
+        run: node fetch-data.js || true
 
-      - name: Save changes
+      - name: Commit debug outputs (and polls.json only if sane)
         run: |
           git config user.name "Bot"
           git config user.email "bot@users.noreply.github.com"
-          git add polls.json rtwh_sources.json
-          git commit -m "Update poll data (RTWH)" || exit 0
-          git push
+
+          # Always commit hunt artifacts if they exist
+          git add rtwh_sources.json rtwh_debug.png 2>/dev/null || true
+
+          # Only stage polls.json if it has any data
+          if node -e "const fs=require('fs');try{const j=JSON.parse(fs.readFileSync('polls.json','utf8'));const ok=(j && ((j.genericBallot?.length||0)>0 || (j.approval?.length||0)>0 || Object.keys(j.races||{}).length>0));process.exit(ok?0:1);}catch(e){process.exit(1)}"; then
+            git add polls.json
+          fi
+
+          git commit -m "RTWH update" || true
+          git push || true
+
+      - name: Validate (fail job if polls.json empty/missing)
+        run: |
+          node -e "const fs=require('fs');const j=JSON.parse(fs.readFileSync('polls.json','utf8'));const ok=(j && ((j.genericBallot?.length||0)>0 || (j.approval?.length||0)>0 || Object.keys(j.races||{}).length>0)); if(!ok){console.error('polls.json is empty'); process.exit(1)}"
