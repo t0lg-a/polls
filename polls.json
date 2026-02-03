@@ -1,12 +1,1131 @@
 {
   "meta": {
-    "fetched_at": "2026-02-03T05:01:49.170Z",
+    "fetched_at": "2026-02-03T10:06:19.024Z",
     "source": "racetothewh",
     "entry_url": "https://www.racetothewh.com/allpolls",
-    "dataset_url": "https://www.googletagmanager.com/gtag/js?id=G-FVWZ0RM4DH&l=audDataLayer",
-    "dataset_format": "csv"
+    "dataset_url": "https://docs.google.com/spreadsheets/d/1AmAi5LGp2uCEUc79Uh9gBM89jrBfXAPoWvaHmPWRhZU/gviz/tq?tqx=out:json",
+    "dataset_format": "gviz"
   },
-  "genericBallot": [],
+  "genericBallot": [
+    {
+      "pollster": null,
+      "start_date": null,
+      "end_date": null,
+      "sample_size": null,
+      "url": null,
+      "race": null,
+      "answers": [
+        {
+          "choice": "Dem",
+          "pct": 824
+        },
+        {
+          "choice": "Dem",
+          "pct": 886
+        },
+        {
+          "choice": "Dem",
+          "pct": 812
+        },
+        {
+          "choice": "Rep",
+          "pct": 457
+        },
+        {
+          "choice": "Rep",
+          "pct": 778
+        },
+        {
+          "choice": "Rep",
+          "pct": 687
+        },
+        {
+          "choice": "Rep",
+          "pct": 787
+        },
+        {
+          "choice": "Answer",
+          "pct": 2.4
+        },
+        {
+          "choice": "Respondents",
+          "pct": 1734
+        },
+        {
+          "choice": "Gender Women",
+          "pct": 887
+        },
+        {
+          "choice": "Men",
+          "pct": 319
+        },
+        {
+          "choice": "Age 18 to 34",
+          "pct": 414
+        },
+        {
+          "choice": "35 to 49",
+          "pct": 424
+        },
+        {
+          "choice": "50 to 64",
+          "pct": 472
+        },
+        {
+          "choice": "65+",
+          "pct": 415
+        },
+        {
+          "choice": "Ethnicity White",
+          "pct": 1422
+        },
+        {
+          "choice": "POC",
+          "pct": 254
+        },
+        {
+          "choice": "Education Non- college",
+          "pct": 989
+        },
+        {
+          "choice": "College",
+          "pct": 105
+        },
+        {
+          "choice": "Ethnicity x Gender White Women",
+          "pct": 759
+        },
+        {
+          "choice": "POC Women",
+          "pct": 109
+        },
+        {
+          "choice": "Education x Gender Non-College Women",
+          "pct": 479
+        },
+        {
+          "choice": "College Women",
+          "pct": 402
+        },
+        {
+          "choice": "Ethnicity x Education White Non- College",
+          "pct": 804
+        },
+        {
+          "choice": "POC Non- College",
+          "pct": 147
+        },
+        {
+          "choice": "2020 Presidential Vote Biden voter",
+          "pct": 800
+        },
+        {
+          "choice": "Trump voter",
+          "pct": 696
+        },
+        {
+          "choice": "2020 Vote History 2020 Voter",
+          "pct": 1533
+        },
+        {
+          "choice": "2020 Non- voter",
+          "pct": 181
+        },
+        {
+          "choice": "Party Identification Dems",
+          "pct": 805
+        },
+        {
+          "choice": "Pure Ind",
+          "pct": 172
+        },
+        {
+          "choice": "Undecided",
+          "pct": 104
+        },
+        {
+          "choice": "MinnPost Regions Greater MN",
+          "pct": 750
+        },
+        {
+          "choice": "Metro Area",
+          "pct": 411
+        },
+        {
+          "choice": "Mpls/ St. Paul",
+          "pct": 573
+        },
+        {
+          "choice": "Region x Partisanship Twin Cities  Dems",
+          "pct": 390
+        },
+        {
+          "choice": "Metro Area Dems",
+          "pct": 188
+        },
+        {
+          "choice": "Greater MN Dems",
+          "pct": 226
+        },
+        {
+          "choice": "2024 Decision Always Known",
+          "pct": 863
+        },
+        {
+          "choice": "Decided Before July",
+          "pct": 181
+        },
+        {
+          "choice": "Decided in July",
+          "pct": 456
+        },
+        {
+          "choice": "Decided in last month or sooner",
+          "pct": 183
+        },
+        {
+          "choice": "2024 Decision - Decided vs Movers Always Knew",
+          "pct": 863
+        },
+        {
+          "choice": "Uncertain then Decided",
+          "pct": 820
+        },
+        {
+          "choice": "Urbanicity rural",
+          "pct": 667
+        },
+        {
+          "choice": "suburban",
+          "pct": 325
+        },
+        {
+          "choice": "urban",
+          "pct": 742
+        },
+        {
+          "choice": "MN Regions - Change Minn/St Paul",
+          "pct": 1038
+        },
+        {
+          "choice": "MN North",
+          "pct": 411
+        },
+        {
+          "choice": "MN South",
+          "pct": 286
+        }
+      ]
+    },
+    {
+      "pollster": null,
+      "start_date": null,
+      "end_date": null,
+      "sample_size": null,
+      "url": null,
+      "race": null,
+      "answers": [
+        {
+          "choice": "Dem",
+          "pct": 27
+        },
+        {
+          "choice": "Dem",
+          "pct": 26
+        },
+        {
+          "choice": "Dem",
+          "pct": 27
+        },
+        {
+          "choice": "Rep",
+          "pct": 13
+        },
+        {
+          "choice": "Rep",
+          "pct": 11
+        },
+        {
+          "choice": "Rep",
+          "pct": 12
+        },
+        {
+          "choice": "Rep",
+          "pct": 12
+        },
+        {
+          "choice": "Dates Fielded: October 16 - 22, 2024 Questions",
+          "pct": 2024
+        },
+        {
+          "choice": "Respondents",
+          "pct": 19
+        },
+        {
+          "choice": "Gender Women",
+          "pct": 19
+        },
+        {
+          "choice": "Men",
+          "pct": 21
+        },
+        {
+          "choice": "Age 18 to 34",
+          "pct": 14
+        },
+        {
+          "choice": "35 to 49",
+          "pct": 14
+        },
+        {
+          "choice": "50 to 64",
+          "pct": 18
+        },
+        {
+          "choice": "65+",
+          "pct": 29
+        },
+        {
+          "choice": "Ethnicity White",
+          "pct": 19
+        },
+        {
+          "choice": "POC",
+          "pct": 16
+        },
+        {
+          "choice": "Education Non- college",
+          "pct": 17
+        },
+        {
+          "choice": "College",
+          "pct": 21
+        },
+        {
+          "choice": "Ethnicity x Gender White Women",
+          "pct": 19
+        },
+        {
+          "choice": "POC Women",
+          "pct": 19
+        },
+        {
+          "choice": "Education x Gender Non-College Women",
+          "pct": 16
+        },
+        {
+          "choice": "College Women",
+          "pct": 21
+        },
+        {
+          "choice": "Ethnicity x Education White Non- College",
+          "pct": 18
+        },
+        {
+          "choice": "POC Non- College",
+          "pct": 13
+        },
+        {
+          "choice": "2020 Presidential Vote Biden voter",
+          "pct": 25
+        },
+        {
+          "choice": "Trump voter",
+          "pct": 10
+        },
+        {
+          "choice": "2020 Vote History 2020 Voter",
+          "pct": 18
+        },
+        {
+          "choice": "2020 Non- voter",
+          "pct": 22
+        },
+        {
+          "choice": "Party Identification Dems",
+          "pct": 26
+        },
+        {
+          "choice": "Pure Ind",
+          "pct": 11
+        },
+        {
+          "choice": "Undecided",
+          "pct": 0
+        },
+        {
+          "choice": "MinnPost Regions Greater MN",
+          "pct": 17
+        },
+        {
+          "choice": "Metro Area",
+          "pct": 18
+        },
+        {
+          "choice": "Mpls/ St. Paul",
+          "pct": 22
+        },
+        {
+          "choice": "Region x Partisanship Twin Cities  Dems",
+          "pct": 26
+        },
+        {
+          "choice": "Metro Area Dems",
+          "pct": 27
+        },
+        {
+          "choice": "Greater MN Dems",
+          "pct": 26
+        },
+        {
+          "choice": "2024 Decision Always Known",
+          "pct": 21
+        },
+        {
+          "choice": "Decided Before July",
+          "pct": 15
+        },
+        {
+          "choice": "Decided in July",
+          "pct": 18
+        },
+        {
+          "choice": "Decided in last month or sooner",
+          "pct": 17
+        },
+        {
+          "choice": "2024 Decision - Decided vs Movers Always Knew",
+          "pct": 21
+        },
+        {
+          "choice": "Uncertain then Decided",
+          "pct": 17
+        },
+        {
+          "choice": "Urbanicity rural",
+          "pct": 16
+        },
+        {
+          "choice": "suburban",
+          "pct": 21
+        },
+        {
+          "choice": "urban",
+          "pct": 20
+        },
+        {
+          "choice": "MN Regions - Change Minn/St Paul",
+          "pct": 20
+        },
+        {
+          "choice": "MN North",
+          "pct": 17
+        },
+        {
+          "choice": "MN South",
+          "pct": 18
+        }
+      ]
+    },
+    {
+      "pollster": null,
+      "start_date": null,
+      "end_date": null,
+      "sample_size": null,
+      "url": null,
+      "race": null,
+      "answers": [
+        {
+          "choice": "Dem",
+          "pct": 71
+        },
+        {
+          "choice": "Dem",
+          "pct": 71
+        },
+        {
+          "choice": "Dem",
+          "pct": 71
+        },
+        {
+          "choice": "Rep",
+          "pct": 84
+        },
+        {
+          "choice": "Rep",
+          "pct": 85
+        },
+        {
+          "choice": "Rep",
+          "pct": 85
+        },
+        {
+          "choice": "Rep",
+          "pct": 84
+        },
+        {
+          "choice": "Respondents",
+          "pct": 76
+        },
+        {
+          "choice": "Gender Women",
+          "pct": 76
+        },
+        {
+          "choice": "Men",
+          "pct": 75
+        },
+        {
+          "choice": "Age 18 to 34",
+          "pct": 78
+        },
+        {
+          "choice": "35 to 49",
+          "pct": 82
+        },
+        {
+          "choice": "50 to 64",
+          "pct": 77
+        },
+        {
+          "choice": "65+",
+          "pct": 68
+        },
+        {
+          "choice": "Ethnicity White",
+          "pct": 77
+        },
+        {
+          "choice": "POC",
+          "pct": 74
+        },
+        {
+          "choice": "Education Non- college",
+          "pct": 76
+        },
+        {
+          "choice": "College",
+          "pct": 75
+        },
+        {
+          "choice": "Ethnicity x Gender White Women",
+          "pct": 77
+        },
+        {
+          "choice": "POC Women",
+          "pct": 74
+        },
+        {
+          "choice": "Education x Gender Non-College Women",
+          "pct": 76
+        },
+        {
+          "choice": "College Women",
+          "pct": 77
+        },
+        {
+          "choice": "Ethnicity x Education White Non- College",
+          "pct": 77
+        },
+        {
+          "choice": "POC Non- College",
+          "pct": 73
+        },
+        {
+          "choice": "2020 Presidential Vote Biden voter",
+          "pct": 72
+        },
+        {
+          "choice": "Trump voter",
+          "pct": 85
+        },
+        {
+          "choice": "2020 Vote History 2020 Voter",
+          "pct": 78
+        },
+        {
+          "choice": "2020 Non- voter",
+          "pct": 63
+        },
+        {
+          "choice": "Party Identification Dems",
+          "pct": 70
+        },
+        {
+          "choice": "Pure Ind",
+          "pct": 69
+        },
+        {
+          "choice": "Undecided",
+          "pct": 71
+        },
+        {
+          "choice": "MinnPost Regions Greater MN",
+          "pct": 78
+        },
+        {
+          "choice": "Metro Area",
+          "pct": 78
+        },
+        {
+          "choice": "Mpls/ St. Paul",
+          "pct": 72
+        },
+        {
+          "choice": "Region x Partisanship Twin Cities  Dems",
+          "pct": 70
+        },
+        {
+          "choice": "Metro Area Dems",
+          "pct": 70
+        },
+        {
+          "choice": "Greater MN Dems",
+          "pct": 71
+        },
+        {
+          "choice": "2024 Decision Always Known",
+          "pct": 76
+        },
+        {
+          "choice": "Decided Before July",
+          "pct": 82
+        },
+        {
+          "choice": "Decided in July",
+          "pct": 77
+        },
+        {
+          "choice": "Decided in last month or sooner",
+          "pct": 71
+        },
+        {
+          "choice": "2024 Decision - Decided vs Movers Always Knew",
+          "pct": 76
+        },
+        {
+          "choice": "Uncertain then Decided",
+          "pct": 77
+        },
+        {
+          "choice": "Urbanicity rural",
+          "pct": 80
+        },
+        {
+          "choice": "suburban",
+          "pct": 75
+        },
+        {
+          "choice": "urban",
+          "pct": 73
+        },
+        {
+          "choice": "MN Regions - Change Minn/St Paul",
+          "pct": 74
+        },
+        {
+          "choice": "MN North",
+          "pct": 78
+        },
+        {
+          "choice": "MN South",
+          "pct": 79
+        }
+      ]
+    },
+    {
+      "pollster": null,
+      "start_date": null,
+      "end_date": null,
+      "sample_size": null,
+      "url": null,
+      "race": null,
+      "answers": [
+        {
+          "choice": "Dem",
+          "pct": 79
+        },
+        {
+          "choice": "Dem",
+          "pct": 77
+        },
+        {
+          "choice": "Dem",
+          "pct": 78
+        },
+        {
+          "choice": "Rep",
+          "pct": 88
+        },
+        {
+          "choice": "Rep",
+          "pct": 86
+        },
+        {
+          "choice": "Rep",
+          "pct": 87
+        },
+        {
+          "choice": "Rep",
+          "pct": 85
+        },
+        {
+          "choice": "Dates Fielded: October 16 - 22, 2024 Questions",
+          "pct": 2024
+        },
+        {
+          "choice": "Answer",
+          "pct": 10
+        },
+        {
+          "choice": "Respondents",
+          "pct": 79
+        },
+        {
+          "choice": "Gender Women",
+          "pct": 81
+        },
+        {
+          "choice": "Men",
+          "pct": 74
+        },
+        {
+          "choice": "Age 18 to 34",
+          "pct": 64
+        },
+        {
+          "choice": "35 to 49",
+          "pct": 76
+        },
+        {
+          "choice": "50 to 64",
+          "pct": 86
+        },
+        {
+          "choice": "65+",
+          "pct": 89
+        },
+        {
+          "choice": "Ethnicity White",
+          "pct": 81
+        },
+        {
+          "choice": "POC",
+          "pct": 67
+        },
+        {
+          "choice": "Education Non- college",
+          "pct": 79
+        },
+        {
+          "choice": "College",
+          "pct": 71
+        },
+        {
+          "choice": "Ethnicity x Gender White Women",
+          "pct": 83
+        },
+        {
+          "choice": "POC Women",
+          "pct": 70
+        },
+        {
+          "choice": "Education x Gender Non-College Women",
+          "pct": 80
+        },
+        {
+          "choice": "College Women",
+          "pct": 82
+        },
+        {
+          "choice": "Ethnicity x Education White Non- College",
+          "pct": 83
+        },
+        {
+          "choice": "POC Non- College",
+          "pct": 64
+        },
+        {
+          "choice": "2020 Presidential Vote Biden voter",
+          "pct": 78
+        },
+        {
+          "choice": "Trump voter",
+          "pct": 87
+        },
+        {
+          "choice": "2020 Vote History 2020 Voter",
+          "pct": 82
+        },
+        {
+          "choice": "2020 Non- voter",
+          "pct": 54
+        },
+        {
+          "choice": "Party Identification Dems",
+          "pct": 78
+        },
+        {
+          "choice": "Pure Ind",
+          "pct": 54
+        },
+        {
+          "choice": "Undecided",
+          "pct": 44
+        },
+        {
+          "choice": "MinnPost Regions Greater MN",
+          "pct": 85
+        },
+        {
+          "choice": "Metro Area",
+          "pct": 76
+        },
+        {
+          "choice": "Mpls/ St. Paul",
+          "pct": 72
+        },
+        {
+          "choice": "Region x Partisanship Twin Cities  Dems",
+          "pct": 76
+        },
+        {
+          "choice": "Metro Area Dems",
+          "pct": 73
+        },
+        {
+          "choice": "Greater MN Dems",
+          "pct": 83
+        },
+        {
+          "choice": "2024 Decision Always Known",
+          "pct": 87
+        },
+        {
+          "choice": "Decided Before July",
+          "pct": 80
+        },
+        {
+          "choice": "Decided in July",
+          "pct": 75
+        },
+        {
+          "choice": "Decided in last month or sooner",
+          "pct": 60
+        },
+        {
+          "choice": "2024 Decision - Decided vs Movers Always Knew",
+          "pct": 87
+        },
+        {
+          "choice": "Uncertain then Decided",
+          "pct": 73
+        },
+        {
+          "choice": "Urbanicity rural",
+          "pct": 87
+        },
+        {
+          "choice": "suburban",
+          "pct": 77
+        },
+        {
+          "choice": "urban",
+          "pct": 72
+        },
+        {
+          "choice": "MN Regions - Change Minn/St Paul",
+          "pct": 74
+        },
+        {
+          "choice": "MN North",
+          "pct": 85
+        },
+        {
+          "choice": "MN South",
+          "pct": 85
+        }
+      ]
+    },
+    {
+      "pollster": null,
+      "start_date": null,
+      "end_date": null,
+      "sample_size": null,
+      "url": null,
+      "race": null,
+      "answers": [
+        {
+          "choice": "Dem",
+          "pct": 0
+        },
+        {
+          "choice": "Dem",
+          "pct": 2
+        },
+        {
+          "choice": "Dem",
+          "pct": 3
+        },
+        {
+          "choice": "Rep",
+          "pct": 2
+        },
+        {
+          "choice": "Rep",
+          "pct": 0
+        },
+        {
+          "choice": "Rep",
+          "pct": 3
+        },
+        {
+          "choice": "Rep",
+          "pct": 3
+        },
+        {
+          "choice": "Respondents",
+          "pct": 5
+        },
+        {
+          "choice": "Gender Women",
+          "pct": 4
+        },
+        {
+          "choice": "Men",
+          "pct": 7
+        },
+        {
+          "choice": "G",
+          "pct": 0
+        },
+        {
+          "choice": "Age 18 to 34",
+          "pct": 4
+        },
+        {
+          "choice": "35 to 49",
+          "pct": 7
+        },
+        {
+          "choice": "50 to 64",
+          "pct": 4
+        },
+        {
+          "choice": "65+",
+          "pct": 3
+        },
+        {
+          "choice": "L",
+          "pct": 0
+        },
+        {
+          "choice": "Ethnicity White",
+          "pct": 4
+        },
+        {
+          "choice": "POC",
+          "pct": 6
+        },
+        {
+          "choice": "O",
+          "pct": 0
+        },
+        {
+          "choice": "Education Non- college",
+          "pct": 4
+        },
+        {
+          "choice": "College",
+          "pct": 6
+        },
+        {
+          "choice": "R",
+          "pct": 0
+        },
+        {
+          "choice": "Ethnicity x Gender White Women",
+          "pct": 4
+        },
+        {
+          "choice": "POC Women",
+          "pct": 6
+        },
+        {
+          "choice": "W",
+          "pct": 0
+        },
+        {
+          "choice": "Education x Gender Non-College Women",
+          "pct": 3
+        },
+        {
+          "choice": "College Women",
+          "pct": 5
+        },
+        {
+          "choice": "AB",
+          "pct": 0
+        },
+        {
+          "choice": "Ethnicity x Education White Non- College",
+          "pct": 3
+        },
+        {
+          "choice": "POC Non- College",
+          "pct": 6
+        },
+        {
+          "choice": "AG",
+          "pct": 0
+        },
+        {
+          "choice": "2020 Presidential Vote Biden voter",
+          "pct": 3
+        },
+        {
+          "choice": "Trump voter",
+          "pct": 2
+        },
+        {
+          "choice": "AJ",
+          "pct": 0
+        },
+        {
+          "choice": "2020 Vote History 2020 Voter",
+          "pct": 4
+        },
+        {
+          "choice": "2020 Non- voter",
+          "pct": 9
+        },
+        {
+          "choice": "AM",
+          "pct": 0
+        },
+        {
+          "choice": "Party Identification Dems",
+          "pct": 3
+        },
+        {
+          "choice": "Pure Ind",
+          "pct": 24
+        },
+        {
+          "choice": "AQ",
+          "pct": 0
+        },
+        {
+          "choice": "AT",
+          "pct": 0
+        },
+        {
+          "choice": "Undecided",
+          "pct": 21
+        },
+        {
+          "choice": "AX",
+          "pct": 0
+        },
+        {
+          "choice": "BB",
+          "pct": 0
+        },
+        {
+          "choice": "MinnPost Regions Greater MN",
+          "pct": 3
+        },
+        {
+          "choice": "Metro Area",
+          "pct": 4
+        },
+        {
+          "choice": "Mpls/ St. Paul",
+          "pct": 7
+        },
+        {
+          "choice": "BF",
+          "pct": 0
+        },
+        {
+          "choice": "Region x Partisanship Twin Cities  Dems",
+          "pct": 3
+        },
+        {
+          "choice": "Metro Area Dems",
+          "pct": 3
+        },
+        {
+          "choice": "Greater MN Dems",
+          "pct": 2
+        },
+        {
+          "choice": "BM",
+          "pct": 0
+        },
+        {
+          "choice": "2024 Decision Always Known",
+          "pct": 2
+        },
+        {
+          "choice": "Decided Before July",
+          "pct": 3
+        },
+        {
+          "choice": "Decided in July",
+          "pct": 7
+        },
+        {
+          "choice": "Decided in last month or sooner",
+          "pct": 17
+        },
+        {
+          "choice": "BR",
+          "pct": 0
+        },
+        {
+          "choice": "2024 Decision - Decided vs Movers Always Knew",
+          "pct": 2
+        },
+        {
+          "choice": "Uncertain then Decided",
+          "pct": 8
+        },
+        {
+          "choice": "BU",
+          "pct": 0
+        },
+        {
+          "choice": "Urbanicity rural",
+          "pct": 3
+        },
+        {
+          "choice": "suburban",
+          "pct": 3
+        },
+        {
+          "choice": "urban",
+          "pct": 7
+        },
+        {
+          "choice": "BY",
+          "pct": 0
+        },
+        {
+          "choice": "MN Regions - Change Minn/St Paul",
+          "pct": 6
+        },
+        {
+          "choice": "MN North",
+          "pct": 4
+        },
+        {
+          "choice": "MN South",
+          "pct": 1
+        }
+      ]
+    }
+  ],
   "approval": [],
   "races": {}
 }

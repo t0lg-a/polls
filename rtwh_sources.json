@@ -1,330 +1,3225 @@
 {
-  "fetched_at": "2026-02-03T06:58:36.700Z",
-  "entry_url": "https://www.racetothewh.com/allpolls",
-  "wait_ms": 15000,
-  "frames": [
+  "fetched_at": "2026-02-03T10:06:19.024Z",
+  "entry_pages": [
     "https://www.racetothewh.com/allpolls",
-    "https://e.infogram.com/_/HZeNWKobFtZDUUB2Xuyr?src=embed&embed_type=responsive_iframe&wmode=opaque",
-    "https://www.google.com/recaptcha/api2/aframe",
-    "https://ads.pubmatic.com/AdServer/js/topics/topics_frame.html?bidder=pubmatic",
-    "https://pa.openx.net/topics_frame.html?bidder=openx",
-    "https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=1YNN&gpp=DBABRg%7EBVoAACA&gpp_sid=9&predirect=https%3A%2F%2Fs2s.t13.io%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1YNN%26gpp%3DDBABRg%7EBVoAACA%26gpp_sid%3D9%26f%3Db%26uid%3D",
-    "https://u.openx.net/w/1.0/cm?cc=1&id=891039ac-a916-42bb-a651-4be9e3b201da&ph=a3aece0c-9e80-4316-8deb-faf804779bd1&gdpr=0&gdpr_consent=&gpp=DBABRg~BVoAACA&gpp_sid=9&r=https%3A%2F%2Fs2s.t13.io%2Fsetuid%3Fbidder%3Dopenx%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1YNN%26gpp%3DDBABRg~BVoAACA%26gpp_sid%3D9%26f%3Db%26uid%3D",
-    "https://js-sec.indexww.com/um/ixmatch.html",
-    "https://ads.pubmatic.com/AdServer/js/user_sync.html?kdntuid=1&p=156696&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9",
-    "https://u.openx.net/w/1.0/pd?us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9&ph=2d1251ae-7f3a-47cf-bd2a-2f288854a0ba",
-    "https://eus.rubiconproject.com/usync.html?us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9",
-    "https://freestar-d.openx.net/w/1.0/pd?us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9",
-    "https://hbx.media.net/checksync.php?vsSync=1&cs=8&cv=31&https=1&cid=8CUJ8GUQF&prvid=2034%2C2031%2C2030%2C590%2C551%2C233%2C157%2C2028%2C2027%2C2026%2C236%2C357%2C237%2C117%2C636%2C55%2C99%2C56%2C59%2C2045%2C3010%2C122%2C201%2C2039%2C246%2C4%2C521%2C126%2C203%2C445%2C643%2C9%2C2055%2C2099%2C173%2C251%2C692%2C178%2C3017%2C697%2C214%2C3016%2C2124%2C413%2C337%2C338%2C459%2C339%2C77%2C2022%2C141%2C262%2C581%2C461%2C222%2C542%2C345%2C226%2C468%2C2134%2C10000%2C624%2C701%2C80%2C229%2C307%2C82&itype=PREBID&purpose1=1&gdprconsent=1&gdpr=0&coppa=0&usp_status=1&usp_consent=1&uspstring=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9&dn=racetothewh.com",
-    "https://js-sec.indexww.com/um/ixmatch.html",
-    "https://cdn.undertone.com/js/usersync.html?ccpa=1YNN",
-    "https://ads.yieldmo.com/pbcas?us_privacy=1YNN&gdpr=0&gdpr_consent=&type=iframe",
-    "https://ads.pubmatic.com/AdServer/js/user_sync.html?kdntuid=1&p=156696&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9",
-    "https://eus.rubiconproject.com/usync.html?us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9",
-    "https://acdn.adnxs.com/dmp/async_usersync.html",
-    "https://ce.lijit.com/beacon/prebid-server/?gdpr=0&gdpr_consent=&us_privacy=1YNN&gpp=DBABRg%7EBVoAACA&gpp_sid=9&url=https%3A%2F%2Fs2s.t13.io%2Fsetuid%3Fbidder%3Dsovrn%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1YNN%26gpp%3DDBABRg%7EBVoAACA%26gpp_sid%3D9%26f%3Db%26uid%3D%24UID&dnr=1",
-    "https://eus.rubiconproject.com/usync.html?p=12776",
-    "https://ads.pubmatic.com/AdServer/js/user_sync.html?p=137711&s=137812&predirect=https%3A%2F%2Fce.lijit.com%2Fmerge%3Fpid%3D58%263pid%3D&gdpr=0&gdpr_consent=&gpp=DBABRg~BVoAACA&gpp_sid=9",
-    "https://contextual.media.net/cksync.html?cs=8&vsid=4131034970776159000V10&type=rkt&refUrl=&vid=4131034970776159000V10&axid_e=&ovsid=1797288156451405084",
-    "https://eus.rubiconproject.com/usync.html?p=medianet",
-    "https://hbx.media.net/cksync.html?cs=8&vsid=4131034970776159000V10&type=ppt&refUrl=&vid=01018971964131034970776159000V10&axid_e=&ovsid=Jr5SoCGWiQ6e&ev=1&pid=560210",
-    "https://c1.adform.net/serving/cookie/match?party=14&cid=5836DE92-BE9A-4D75-B3FC-CDA9023C9768&gdpr=0&gdpr_consent=",
-    "https://user-sync.fwmrm.net/ad/u?mode=user-register&dspid=64&dspuid=5836DE92-BE9A-4D75-B3FC-CDA9023C9768&gdpr=0&gdpr_consent=&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9&_fw_is_lat=&_fw_atts=&_fw_coppa=",
-    "https://tracookiepixel.xyz/log?c_uid=None&cust_id=None&bdsp_uid=AAA2mU7TAzkAAAINTnBYdg&key=af004bf9e3af8f9275b3bf8945e895b6446bf14bb0f1b0b93afc00ed40ac348c&gdpr=0",
-    "https://image4.pubmatic.com/AdServer/SPug?partnerID=156078&xid=y-ysZphUVE2uU2mI6R5Fpj.AUF9iwNT58-~A&gdpr=0&gpp=DBABRg~BVoAACA&gpp_sid=9&us_privacy=1YNN",
-    "https://s2s.t13.io/setuid?bidder=pubmatic&gdpr=0&gdpr_consent=&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9&f=b&uid=5836DE92-BE9A-4D75-B3FC-CDA9023C9768",
-    "https://hbx.media.net/checksync.php?cid=8CUEHS6F9&cs=87&type=mpbc&cv=37&vsSync=1&uspstring=1YNN&gdpr=0&gdprstring=&gpp=DBABRg%7EBVoAACA&gpp_sid=9&redirect=https%3A%2F%2Fs2s.t13.io%2Fsetuid%3Fbidder%3Dmedianet%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1YNN%26gpp%3DDBABRg%7EBVoAACA%26gpp_sid%3D9%26f%3Db%26uid%3D%3Cvsid%3E",
-    "https://usync.ingage.tech/?gdpr=0&gdpr_consent=&us_privacy=1YNN&redirect=https%3A%2F%2Fs2s.t13.io%2Fsetuid%3Fbidder%3Dinsticator%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1YNN%26gpp%3DDBABRg%7EBVoAACA%26gpp_sid%3D9%26f%3Db%26uid%3D%24UID",
-    "https://s2s.t13.io/setuid?bidder=insticator&gdpr=0&gdpr_consent=&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9&f=b&uid=6a51b312-e9ec-4ce2-96b6-99b39c8159c0",
-    "https://eus.rubiconproject.com/usync.html?endpoint=us-east&p=insticator&gdpr=0&gdpr_consent=&us_privacy=1YNN&redirect=https%3A%2F%2Fs2s.t13.io%2Fsetuid%3Fbidder%3Dinsticator%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1YNN%26gpp%3DDBABRg%7EBVoAACA%26gpp_sid%3D9%26f%3Db%26uid%3D%24UID",
-    "https://ads.pubmatic.com/AdServer/js/user_sync.html?p=95054&userIdMacro=PM_UID&gdpr=0&gdpr_consent=&predirect=https%3A%2F%2Fcs.ingage.tech%2Fv1%2Fsync%2Fpubmatic%2F6a51b312-e9ec-4ce2-96b6-99b39c8159c0%3Fuid%3DPM_UID",
-    "https://crb.kargo.com/api/v1/dsync/ID5?gdpr=0&gdpr_consent=&us_privacy=&gpp=&gpp_sid=&r=https%3A%2F%2Fid5-sync.com%2Fc%2F369%2F1785%2F0%2F10.gif%3Fpuid%3D%24UID%26gdpr%3D0%26gdpr_consent%3D",
-    "https://u.openx.net/w/1.0/cm?id=b355ce4f-581b-4a1c-8c84-81fe81e4bc39&gdpr=0&gdpr_consent=&us_privacy=1YNN&redirect=https%3A%2F%2Fs2s.t13.io%2Fsetuid%3Fbidder%3Dinsticator%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1YNN%26gpp%3DDBABRg%7EBVoAACA%26gpp_sid%3D9%26f%3Db%26uid%3D%24UID&r=https://cs.ingage.tech/v1/sync/openx/6a51b312-e9ec-4ce2-96b6-99b39c8159c0?uid=$UID",
-    "https://cs-ob.yellowblue.io/sync-pixel?google_error=5",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM0MzEmdGw9MTI5NjAw&piggybackCookie=XG5ByPW_Xlp2wJjYX-4KeBShL3E&gdpr=0&gdpr_consent=",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZqcz0xJmNvZGU9MzI1MCZ0bD0xMjk2MDA=&piggybackCookie=1c0d3589-ee22-4ad1-a922-471e069f11db&gdpr=0&gdpr_consent=&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTQ2MSZ0bD0xMDA4MA==&piggybackCookie=AQANtPTpVauocgJPV96rAQEBAQEBAQCdI0qHJAEBAJ0jSock&expiration=1770188300&nuid=5836DE92-BE9A-4D75-B3FC-CDA9023C9768&gpp_sid=9&gpp=DBABRg~BVoAACA&is_secure=true&us_privacy=1YNN&gdpr_consent=&gdpr=0",
-    "https://sync-tm.everesttech.net/ct/upi/pid/b9pj45k4?redir=https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZqcz0xJmNvZGU9MjE5MSZ0bD0yNTkyMDA=&piggybackCookie=${TM_USER_ID}&gdpr=0&gdpr_consent=&_test=aYGcjAABAC4cYAAw",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZqcz0xJmNvZGU9Mjk0NSZ0bD0xMjk2MDA=&piggybackCookie=2de8be21-5c5d-472a-9c00-14665e62d653&gdpr=&gdpr_consent=&gdpr_pd=&us_privacy=",
-    "https://beacon.lynx.cognitivlabs.com/pbmtc.gif?puid=5836DE92-BE9A-4D75-B3FC-CDA9023C9768",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTc4JnRsPTE1NzY4MDA=&piggybackCookie=2273382927638848966&gdpr=0&gdpr_consent=&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9",
-    "https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM3MjkmdGw9MjAxNjA=&piggybackCookie=69819C88A4FCF2C8D6EA3429_&gdpr=&gdpr_consent=&us_privacy=",
-    "https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZqcz0xJmNvZGU9ODImdGw9MTU3NjgwMCZkcF9pZD0yMg==&piggybackCookie=3104687941701255124&gdpr=0&gdpr_consent=&us_privacy=1YNN",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMwNTQmdGw9NDMyMDA%3D&piggybackCookie=vhtJ3NqutDFP5D2r-uHbsBo0On4LwMYW6fGmXJtsmTE&pi=pubmatic&gdpr=0&gdpr_consent=&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9",
-    "https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTE5NjkmdGw9MTI5NjAw&piggybackCookie=1949c3de-aa3a-4542-a864-c457f881d37a-69819c89-5553&gdpr=0&gdpr_consent=",
-    "https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM2MTgmdGw9MjAxNjA=&piggybackCookie=0389796c-4215-4cdc-9fdf-8c8b5f48bc4e",
-    "https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM0ODkmdGw9NDMyMDA=&piggybackCookie=OPU0a17d7c89b404cea99088da93a2d1b7d&gpdr=0&gdpr_consent=",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMzNDMmdGw9MTI5NjAw&piggybackCookie=3d304654-74c0-42f5-ab9e-514a840dd0e6&gdpr=0&us_privacy=1YNN",
-    "https://image2.pubmatic.com/AdServer/Pug?us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9&gdpr=0&vcode=bz0yJnR5cGU9MSZjb2RlPTExMTMmdGw9NDMyMDA=&piggybackCookie=mui9lJWyvcSB4r3Dn-ColM60vcaB4rHEmeh_4UQ6",
-    "https://pmp.mxptint.net/sn.ashx?ak=1",
-    "https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTI3MzkmdGw9MTI5NjAw&piggybackCookie=1797288156451405084",
-    "https://c1.adform.net/serving/cookie/match?party=14&redirect=https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTI4NzUmdGw9NDMyMDA=&piggybackCookie=[PLACE%20YOUR%20PIGGYBACK%20COOKIES%20HERE]&gdpr=0&gdpr_consent=&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMzMjYmdGw9MTI5NjAw",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMzMDEmdGw9MTI5NjAw&piggybackCookie=b9ad48fb-00cd-11f1-a8b7-2890b78cbe8b",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM0MzImdGw9MTI5NjAw&piggybackCookie=5c1c6f04-685a-4f3d-83a0-67ff13cb4bc8&gpp_sid=9&gpp=DBABRg~BVoAACA&us_privacy=1YNN&gdpr_consent=null&gdpr=0",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM2MiZ0bD0xMjk2MDA==&piggybackCookie=uid:a7416981-9c8d-4000-8bbb-7acbbcb33de8&gdpr=0&gdpr_consent=",
-    "https://ipac.ctnsnet.com/int/cm?exc=14&redir=https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM0MTEmdGw9MjAxNjA=&piggybackCookie=[user_id]&gdpr=0&gdpr_consent=",
-    "https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTQwMjkmdGw9MTI5NjAw&gdpr={{.GDPR}}&gdpr_consent={{.GDPRConsent}}&us_privacy={{.USPrivacy}}&gpp={{.GPP}}&gpp_sid={{.GPPSID}}",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMzOTkmdGw9NDMyMDA%3D&piggybackCookie=7602529771159353712&gdpr=0&gdpr_consent=",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM0MTgmdGw9NzIwMA==&piggybackCookie=000011D8FDAF86B3",
-    "https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTQwNTkmdGw9MTI5NjAw&piggybackCookie=A840586042733310939&us_privacy=1YNN",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM0MzEmdGw9MTI5NjAw&piggybackCookie=XG5ByPW_Xlp2wJjYX-4KeBShL3E&gdpr=0&gdpr_consent=",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZqcz0xJmNvZGU9MzI1MCZ0bD0xMjk2MDA=&piggybackCookie=1c0d3589-ee22-4ad1-a922-471e069f11db&gdpr=0&gdpr_consent=&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTQ2MSZ0bD0xMDA4MA==&piggybackCookie=AQAAe77Zbr5nkAJv5WTeAQEBAQEBAQCdI0qHNQEBAJ0jSoc1&expiration=1770188300&nuid=5836DE92-BE9A-4D75-B3FC-CDA9023C9768&gpp_sid=9&gpp=DBABRg~BVoAACA&is_secure=true&us_privacy=1YNN&gdpr_consent=&gdpr=0",
-    "https://sync-tm.everesttech.net/ct/upi/pid/b9pj45k4?redir=https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZqcz0xJmNvZGU9MjE5MSZ0bD0yNTkyMDA=&piggybackCookie=${TM_USER_ID}&gdpr=0&gdpr_consent=&_test=aYGcjAAA_tErlwAG",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZqcz0xJmNvZGU9Mjk0NSZ0bD0xMjk2MDA=&piggybackCookie=2de8be21-5c5d-472a-9c00-14665e62d653&gdpr=0&gdpr_consent=&gdpr_pd=&us_privacy=",
-    "https://beacon.lynx.cognitivlabs.com/pbmtc.gif?puid=5836DE92-BE9A-4D75-B3FC-CDA9023C9768",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTc4JnRsPTE1NzY4MDA=&piggybackCookie=2273382927638848966&gdpr=0&gdpr_consent=&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9",
-    "https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM3MjkmdGw9MjAxNjA=&piggybackCookie=69819C88A4FCF2C8D6EA3429_&gdpr=&gdpr_consent=&us_privacy=",
-    "https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZqcz0xJmNvZGU9ODImdGw9MTU3NjgwMCZkcF9pZD0yMg==&piggybackCookie=3104687941701255124&gdpr=0&gdpr_consent=&us_privacy=1YNN",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMwNTQmdGw9NDMyMDA%3D&piggybackCookie=vhtJ3NqutDFP5D2r-uHbsBo0On4LwMYW6fGmXJtsmTE&pi=pubmatic&gdpr=0&gdpr_consent=&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9",
-    "https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTE5NjkmdGw9MTI5NjAw&piggybackCookie=1949c3de-aa3a-4542-a864-c457f881d37a-69819c89-5553&gdpr=0&gdpr_consent=",
-    "https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM2MTgmdGw9MjAxNjA=&piggybackCookie=5f7b25d8-0aed-47f0-a001-66f848bb47a9",
-    "https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM0ODkmdGw9NDMyMDA=&piggybackCookie=OPUf6eeac8ac0b743a6b01aabbced0a40dc&gpdr=0&gdpr_consent=",
-    "https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMzNDMmdGw9MTI5NjAw&piggybackCookie=3d304654-74c0-42f5-ab9e-514a840dd0e6&gdpr=0&us_privacy=1YNN",
-    "https://image2.pubmatic.com/AdServer/Pug?gdpr=0&gpp=DBABRg~BVoAACA&gpp_sid=9&us_privacy=1YNN&vcode=bz0yJnR5cGU9MSZjb2RlPTExMTMmdGw9NDMyMDA=&piggybackCookie=mui9lJWyvcSB4r3Dn-ColM60vcaB4rHEmeh_4UQ6"
+    "https://www.racetothewh.com/trump",
+    "https://www.racetothewh.com/polls/genericballot",
+    "https://www.racetothewh.com/senate/26polls",
+    "https://www.racetothewh.com/governor/26polls",
+    "https://www.racetothewh.com/house/26polls",
+    "https://www.racetothewh.com/president/2028/polls",
+    "https://www.racetothewh.com/president/2028/dem",
+    "https://www.racetothewh.com/president/2028/gop"
   ],
-  "derived_candidates": [],
-  "candidates_count": 8,
-  "candidates": [
-    "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=16924&site_id=609439&zone_id=3940371&size_id=2&alt_size_ids=1%2C19%2C43%2C44%2C55%2C117%2C221&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9&rp_schain=1.0,1!freestar.com,1754,1,,,&eid_yahoo.com=j2kq0djo3F_VBfmP0Ur31t6Hm5myF0op1tNPr5agAKwgxnLi2Iwm0cO_KkPPZzCEykcyIrr7iNwwHHLkExxxrw%5E3%5E%5E%5E%5E%5E&eid_criteo.com=CetN2l9UYWhuUU1zN3g2WTB2SkVtJTJCd2pFWm0wclZ2Z1IxWTdDN1VVdHVHOXh6cVBRUUpXN0QlMkJ1TU9yQUFCWm5EaFglMkIlMkZ6VUNkbTclMkZuVkpRSEV1TlJ0aEV3QkElM0QlM0Q%5E1%5E%5E%5E%5E%5E&eid_neustar.biz=E1%3ATka5w14LbPFHdOgCGt4rkW7mRfC-3lcnUIxsv0GZWwb5_nkAXZbAZ9h7GiKHFjO2W-sVmoKsyJ7agmV1VgcjB5Pb4yAAL-Exaw2EbTU8C8W4EuI56Y2acAwjFVDIXrDd%5E1%5E%5E%5E%5E%5EfabrickId&eid_audigent.com=0001yum0ea7ic86g9feahce9j879ajjeebfcebeb77abackkc2jl%5E1%5E%5E%5E%5E%5E&eid_pubcid.org=354392b2-7374-45bc-9330-21e96e240519%5E1%5E%5E%5E%5E%5E&eid_adserver.org=174396a3-2009-4641-aa67-120548d451e2%5E1%5E%5Eadserver.org%5Eadserver.org%5E4%5ETDID&rf=https%3A%2F%2Fwww.racetothewh.com%2Fallpolls&tg_v.id=d25e5586-6c64-43b7-9b3d-5e4d5d22c9ee&tg_i.domain=racetothewh.com&tg_i.page=https%3A%2F%2Fwww.racetothewh.com%2Fallpolls&tg_i.name=racetothewh-com&tg_i.cat=IAB11&tg_i.sectioncat=IAB11&tg_i.pagecat=IAB11&tg_i.mobile=0&tg_i.fs_optimized=false&tg_i.fs_site=6301&tg_i.documentLang=en-US&tg_i.fs_ad_product=stickyFooter&tg_i.dfp_ad_unit_code=%2F15184186%2Fracetothewh_sticky_footer&tk_flint=pbjs_lite_v10.22.0&x_source.tid=uc7fe1a77-7280-4960-9ee9-9ae2d7c42ca3&l_pb_bid_id=4aac969b-ea17-4d7c-bead-d7a61f71b955&p_screen_res=1400x900&rp_secure=1&x_imp.ext.tid=u86ae2dd0-2a67-41da-b4b3-b1429fcd204c&p_site.mobile=0&p_gpid=%2F15184186%2Fracetothewh_sticky_footer&m_ch_ua=%22Not%3AA-Brand%22%7Cv%3D%2299%22%2C%22HeadlessChrome%22%7Cv%3D%22145%22%2C%22Chromium%22%7Cv%3D%22145%22&m_ch_mobile=%3F0&m_ch_platform=Linux&slots=1&rand=0.9790183502087688",
-    "https://id.hadron.ad.gt/v1/hadron.json?_it=freestar&partner_id=474&sync=0&domain=www.racetothewh.com&url=https://www.racetothewh.com/allpolls&v=06",
-    "https://id5-sync.com/g/v2/882.json",
-    "https://token.rubiconproject.com/khaos.json?us_privacy=1YNN",
-    "https://token.rubiconproject.com/khaos.json?khaos=ML68YSLN-D-FEGF",
-    "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=16924&site_id=609439&zone_id=3940371&size_id=2&alt_size_ids=1%2C19%2C43%2C44%2C55%2C117%2C221&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9&rp_schain=1.0,1!freestar.com,1754,1,,,&eid_yahoo.com=j2kq0djo3F_VBfmP0Ur31t6Hm5myF0op1tNPr5agAKwgxnLi2Iwm0cO_KkPPZzCEykcyIrr7iNwwHHLkExxxrw%5E3%5E%5E%5E%5E%5E&eid_criteo.com=CetN2l9UYWhuUU1zN3g2WTB2SkVtJTJCd2pFWm0wclZ2Z1IxWTdDN1VVdHVHOXh6cVBRUUpXN0QlMkJ1TU9yQUFCWm5EaFglMkIlMkZ6VUNkbTclMkZuVkpRSEV1TlJ0aEV3QkElM0QlM0Q%5E1%5E%5E%5E%5E%5E&eid_neustar.biz=E1%3ATka5w14LbPFHdOgCGt4rkW7mRfC-3lcnUIxsv0GZWwb5_nkAXZbAZ9h7GiKHFjO2W-sVmoKsyJ7agmV1VgcjB5Pb4yAAL-Exaw2EbTU8C8W4EuI56Y2acAwjFVDIXrDd%5E1%5E%5E%5E%5E%5E&eid_audigent.com=0001yum0ea7ic86g9feahce9j879ajjeebfcebeb77abackkc2jl%5E1%5E%5E%5E%5E%5E&eid_id5-sync.com=ID5*YIkubrT_Be03EKiSXhXTBvXZNaVq4wLd9EBboHkat7v__2mBnIlaAAEBCmmBnIgAgvPmMC5X5y2A1pdaRcoTJQ%5E1%5E%5E%5E%5E%5E&eid_pubcid.org=354392b2-7374-45bc-9330-21e96e240519%5E1%5E%5E%5E%5E%5E&eid_adserver.org=174396a3-2009-4641-aa67-120548d451e2%5E1%5E%5Eadserver.org%5Eadserver.org%5E4%5ETDID&rf=https%3A%2F%2Fwww.racetothewh.com%2Fallpolls&tg_v.id=d25e5586-6c64-43b7-9b3d-5e4d5d22c9ee&tg_i.domain=racetothewh.com&tg_i.page=https%3A%2F%2Fwww.racetothewh.com%2Fallpolls&tg_i.name=racetothewh-com&tg_i.cat=IAB11&tg_i.sectioncat=IAB11&tg_i.pagecat=IAB11&tg_i.mobile=0&tg_i.fs_optimized=false&tg_i.fs_site=6301&tg_i.documentLang=en-US&tg_i.fs_ad_product=stickyFooter&tg_i.gameraPlacementId=My0xLTE&tg_i.gameraId=gamera_17%2Cgamera_16%2Cgamera_11%2Cgamera_14%2Cgamera_24%2Cgamera_25&tg_i.dfp_ad_unit_code=%2F15184186%2Fracetothewh_sticky_footer&tk_flint=pbjs_lite_v10.22.0&x_source.tid=ude9dcf24-72ab-4a23-8f5e-9ab6d0042b2d&l_pb_bid_id=4b0d8df5-08f2-4e7f-a07e-5603155bead6&p_screen_res=1400x900&rp_secure=1&x_imp.ext.tid=u37ce6c7d-fbd7-4c2f-bda9-c208db780001&p_site.mobile=0&p_gpid=%2F15184186%2Fracetothewh_sticky_footer&m_ch_ua=%22Not%3AA-Brand%22%7Cv%3D%2299%22%2C%22HeadlessChrome%22%7Cv%3D%22145%22%2C%22Chromium%22%7Cv%3D%22145%22&m_ch_mobile=%3F0&m_ch_platform=Linux&slots=1&rand=0.6489184925561792",
-    "https://token.rubiconproject.com/khaos.json?gdpr=0&us_privacy=1YNN&khaos=ML68YSLN-D-FEGF",
-    "https://token.rubiconproject.com/khaos.json?gdpr=0&khaos=ML68YSLN-D-FEGF"
-  ],
-  "sniff": [
+  "wait_ms": 14000,
+  "captured_responses": 900,
+  "network_sniff_sample": [
     {
-      "url": "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=16924&site_id=609439&zone_id=3940371&size_id=2&alt_size_ids=1%2C19%2C43%2C44%2C55%2C117%2C221&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9&rp_schain=1.0,1!freestar.com,1754,1,,,&eid_yahoo.com=j2kq0djo3F_VBfmP0Ur31t6Hm5myF0op1tNPr5agAKwgxnLi2Iwm0cO_KkPPZzCEykcyIrr7iNwwHHLkExxxrw%5E3%5E%5E%5E%5E%5E&eid_criteo.com=CetN2l9UYWhuUU1zN3g2WTB2SkVtJTJCd2pFWm0wclZ2Z1IxWTdDN1VVdHVHOXh6cVBRUUpXN0QlMkJ1TU9yQUFCWm5EaFglMkIlMkZ6VUNkbTclMkZuVkpRSEV1TlJ0aEV3QkElM0QlM0Q%5E1%5E%5E%5E%5E%5E&eid_neustar.biz=E1%3ATka5w14LbPFHdOgCGt4rkW7mRfC-3lcnUIxsv0GZWwb5_nkAXZbAZ9h7GiKHFjO2W-sVmoKsyJ7agmV1VgcjB5Pb4yAAL-Exaw2EbTU8C8W4EuI56Y2acAwjFVDIXrDd%5E1%5E%5E%5E%5E%5EfabrickId&eid_audigent.com=0001yum0ea7ic86g9feahce9j879ajjeebfcebeb77abackkc2jl%5E1%5E%5E%5E%5E%5E&eid_pubcid.org=354392b2-7374-45bc-9330-21e96e240519%5E1%5E%5E%5E%5E%5E&eid_adserver.org=174396a3-2009-4641-aa67-120548d451e2%5E1%5E%5Eadserver.org%5Eadserver.org%5E4%5ETDID&rf=https%3A%2F%2Fwww.racetothewh.com%2Fallpolls&tg_v.id=d25e5586-6c64-43b7-9b3d-5e4d5d22c9ee&tg_i.domain=racetothewh.com&tg_i.page=https%3A%2F%2Fwww.racetothewh.com%2Fallpolls&tg_i.name=racetothewh-com&tg_i.cat=IAB11&tg_i.sectioncat=IAB11&tg_i.pagecat=IAB11&tg_i.mobile=0&tg_i.fs_optimized=false&tg_i.fs_site=6301&tg_i.documentLang=en-US&tg_i.fs_ad_product=stickyFooter&tg_i.dfp_ad_unit_code=%2F15184186%2Fracetothewh_sticky_footer&tk_flint=pbjs_lite_v10.22.0&x_source.tid=uc7fe1a77-7280-4960-9ee9-9ae2d7c42ca3&l_pb_bid_id=4aac969b-ea17-4d7c-bead-d7a61f71b955&p_screen_res=1400x900&rp_secure=1&x_imp.ext.tid=u86ae2dd0-2a67-41da-b4b3-b1429fcd204c&p_site.mobile=0&p_gpid=%2F15184186%2Fracetothewh_sticky_footer&m_ch_ua=%22Not%3AA-Brand%22%7Cv%3D%2299%22%2C%22HeadlessChrome%22%7Cv%3D%22145%22%2C%22Chromium%22%7Cv%3D%22145%22&m_ch_mobile=%3F0&m_ch_platform=Linux&slots=1&rand=0.9790183502087688",
+      "url": "https://www.racetothewh.com/allpolls",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "resource_type": "document"
+    },
+    {
+      "url": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/website.components.imageFluid.styles.css",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/versioned-assets/1769792839777-DVO42990C1X7CZQ4O5QT/static.css",
+      "status": 200,
+      "content_type": "text/css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://static1.squarespace.com/static/versioned-site-css/5ec488a75436303b566532ec/101/5c5a519771c10ba3470d8101/5ec488a75436303b5665330e/1733/site.css",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",
+      "status": 200,
+      "content_type": "text/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://a.pub.network/racetothewh-com/cls.css",
+      "status": 200,
+      "content_type": "text/css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://use.typekit.net/ik/7iH5VFAeGKZBvfDA12WkHVYIHDmjCuq6XlSDtfEeg0Jfe7jIfFHN4UJLFRbh52jhWDm8jDbt5eIaFQbDFRw3whJuFRjuwD48jU7mMkG0jAFu-WsoShFGZAsude80ZkoRdhXCHKoyjamTiY8Djhy8ZYmC-Ao1Oco8if37OcBDOcu8OfG0-hB0ZhBkdhvlie81ZWJl-agEdPoDSWmyScmDSeBRZPoRdhXCHKoDSWmyScmDSeBRZWFR-emqiAUTdcS0jhNlOeBRiA8XpWFR-emqiAUTdcS0jhNlOeBRiA8XpWFR-emqiAUTdcS0dcmXOeBDOcu8OelydciyScNzOWsTZhmkOAl3pcX0SaBujW48Sagyjh90jhNlOeUzjhBC-eNDifUkjAF8ieNX-ema-foRdhXCSaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPUaiaS0jAFu-WsoShFGZAsude80ZkoRdhXCiaiaOcBRiA8XpWFR-emqiAUTdcS0dcmXOYiaikoySkolZPUaiaS0-hB0ZhBkdhvlie81ZWJl-agEdPoDSWmyScmDSeBRZPoRdhXCiaiaO14yjhmXdasGZWiGOcFzdPUaiaS0SaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPJsj14ydcszdKu1ScNXZWFUiA9KfAikjAoh-AUCZPG4fOZbIMMjgfMfH6qJ0BMbMg6YJMJ7fbKa9gMMeMt6MKG4fO8bIMMjIPMfH6GJcEGfIMIjgkMfH6GJc7GfIMIjIPMfqMeUhtzogb.js",
+      "status": 200,
+      "content_type": "text/javascript;charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-6db04d5149bff018-min.en-US.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-22ed584d99d9b83d-min.en-US.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/performance-6c7058b44420b6db-min.en-US.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/website.components.imageFluid.shared.constants.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/image-effect-liquid.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/image-effect-film-grain.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/image-effect-refracted-circles.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/8830.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/image-effect-refracted-lines.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/website.components.imageFluid.visitor.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/image-effect-parallax.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/9882.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/71c70d8c-2254-440a-a174-042d47cb83c3_139/748.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://a.pub.network/racetothewh-com/pubfig.min.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.033c913120829de471e83490b320685c.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-ca5ce1a64a3152e7-min.en-US.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://platform-api.sharethis.com/js/sharethis.js",
+      "status": 200,
+      "content_type": "text/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/common-c1225d2ac1ca0980-min.en-US.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+      "status": 200,
+      "content_type": "text/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://d.pub.network/v2/sites/racetothewh-com/configs?env=PROD",
       "status": 200,
       "content_type": "application/json",
-      "bytes": 600,
-      "parsed": false
+      "resource_type": "other"
     },
     {
-      "url": "https://id.hadron.ad.gt/v1/hadron.json?_it=freestar&partner_id=474&sync=0&domain=www.racetothewh.com&url=https://www.racetothewh.com/allpolls&v=06",
+      "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/floating-cart.77a6a725f367f8c78349.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://www.racetothewh.com/api/census/RecordHit",
+      "status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "resource_type": "xhr"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202601290101/show_ads_impl_fy2021.js",
+      "status": 200,
+      "content_type": "text/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://c.pub.network/v2/c",
+      "status": 200,
+      "content_type": "text/plain;charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://buttons-config.sharethis.com/js/5f4aa959e019ea0012009aba.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://a.pub.network/racetothewh-com/prebid.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://a.pub.network/racetothewh-com/pubfig.engine.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://l.sharethis.com/pview?event=pview&hostname=www.racetothewh.com&location=%2Fallpolls&product=inline-share-buttons&url=https%3A%2F%2Fwww.racetothewh.com%2Fallpolls&source=sharethis.js&fcmp=false&fcmpv2=false&has_segmentio=false&title=Latest%20Polls%20for%20the%202026%20Election%20%E2%80%94%20Race%20to%20the%20WH&cms=unknown&publisher=5f4aa959e019ea0012009aba&embeds_csv=https%3A%2F%2Fe.infogram.com%2F_%2FSSj43Gdy3qEkUVumokL0%3Fsrc%3Dembed%26embed_type%3Dresponsive_iframe%26wmode%3Dopaque%2Chttps%3A%2F%2Fe.infogram.com%2F_%2FHZeNWKobFtZDUUB2Xuyr%3Fsrc%3Dembed%26embed_type%3Dresponsive_iframe%26wmode%3Dopaque&sop=true&version=st_sop.js&lang=en&description=Track%20the%20Latest%20Polls%20for%20the%202026%20midterm%20elections%2C%20all%20in%20one%20place.%20Clear%20and%20Easy%20to%20Use.%20Includes%20Links%20to%20Every%20Poll.%20Features%20Senate%20and%20Governor%20Polling%2C%20and%20Trump%27s%20Approval%20Rating.&ua=%22Not(A%3ABrand%22%3Bv%3D%2299%22%2C%20%22HeadlessChrome%22%3Bv%3D%22133%22%2C%20%22Chromium%22%3Bv%3D%22133%22&ua_mobile=false&ua_platform=Linux&ua_full_version_list=%22Not(A%3ABrand%22%3Bv%3D%2299.0.0.0%22%2C%20%22HeadlessChrome%22%3Bv%3D%22133.0.6943.16%22%2C%20%22Chromium%22%3Bv%3D%22133.0.6943.16%22&uuid=2809c21f-8623-47db-817d-708e267170af",
+      "status": 204,
+      "content_type": "",
+      "resource_type": "xhr"
+    },
+    {
+      "url": "https://cdn.privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.privacy-mgmt.com/unified/4.39.0/usnat-uspapi.090eccada574d39af6f8.bundle.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://e.infogram.com/_/HZeNWKobFtZDUUB2Xuyr?src=embed&embed_type=responsive_iframe&wmode=opaque",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "document"
+    },
+    {
+      "url": "https://cdn.privacy-mgmt.com/mms/v2/get_site_data?hasCsp=true&href=https%3A%2F%2Fwww.racetothewh.com&account_id=1638",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "xhr"
+    },
+    {
+      "url": "https://e.infogram.com/api/stylesheets/7291",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://cdn.privacy-mgmt.com/wrapper/v2/meta-data?hasCsp=true&accountId=1638&env=prod&metadata=%7B%22usnat%22%3A%7B%7D%7D&propertyId=35158&scriptVersion=4.39.0&scriptType=unified",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "xhr"
+    },
+    {
+      "url": "https://optimise.net/?k=0&d=racetothewh.com&t=desktop&c=US&r=20",
       "status": 200,
       "content_type": "application/json",
-      "bytes": 133,
-      "parsed": false
+      "resource_type": "fetch"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?us_privacy=1YNN",
+      "url": "https://cdn.jifo.co/css/dist/cebefb1b2b9384b3.css",
+      "status": 200,
+      "content_type": "text/css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://cdn.privacy-mgmt.com/wrapper/v2/messages?hasCsp=true&env=prod&body=%7B%22accountId%22%3A1638%2C%22campaignEnv%22%3A%22prod%22%2C%22campaigns%22%3A%7B%22usnat%22%3A%7B%22consentStatus%22%3A%7B%7D%2C%22hasLocalData%22%3Afalse%2C%22targetingParams%22%3A%7B%7D%7D%7D%2C%22clientMMSOrigin%22%3A%22https%3A%2F%2Fcdn.privacy-mgmt.com%22%2C%22hasCSP%22%3Atrue%2C%22includeData%22%3A%7B%22localState%22%3A%7B%22type%22%3A%22string%22%7D%2C%22actions%22%3A%7B%22type%22%3A%22RecordString%22%7D%2C%22cookies%22%3A%7B%22type%22%3A%22RecordString%22%7D%7D%2C%22propertyHref%22%3A%22https%3A%2F%2Fwww.racetothewh.com%22%7D&localState=null&metadata=%7B%22usnat%22%3A%7B%22applies%22%3Atrue%7D%7D&nonKeyedLocalState=null&ch=5030042836927&scriptVersion=4.39.0&scriptType=unified",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "resource_type": "xhr"
     },
     {
-      "url": "https://id5-sync.com/g/v2/882.json",
+      "url": "https://freestar.solutions.cdn.optable.co/public-assets/freestar-sdk.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/bundle_vendor-f95bb7bd9b764217df5f-1-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.privacy-mgmt.com/wrapper/v2/pv-data?hasCsp=true&env=prod&ch=5030042836927&scriptVersion=4.39.0&scriptType=unified",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "xhr"
+    },
+    {
+      "url": "https://www.googletagservices.com/tag/js/gpt.js",
+      "status": 200,
+      "content_type": "text/javascript; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/embed_flex_viewer-347db4e9cdf0a1ca9253-1-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://na.edge.optable.co/config?osdk=web-v0.45.0&sid=Pf3VQk8guRU09OsOHdVl2A&t=freestar-auth&o=racetothewh-com&cookies=no&passport=",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://na.edge.optable.co/config?osdk=web-v0.45.0&sid=-MrSXOkfEOyPvvgqNWaghw&t=analytics&o=analytics&ro=true&cookies=no&passport=",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://na.edge.optable.co/witness?osdk=web-v0.45.0&sid=HTEhdPDfx5Yb2xWns5whrQ&t=freestar-auth&o=racetothewh-com&cookies=no&passport=",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://s.infogram.com/t.js?v3",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://gfonts.jifo.co/css?family=PT+Sans:400,700,400i,700i%7CRoboto:400,700,400i,700i&subset=latin,latin-ext,cyrillic",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://branding.jifo.co/65a6b489-6f16-48c3-9bac-eab2b12bda67_Trueno-SemiBold.css",
+      "status": 200,
+      "content_type": "text/css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://na.edge.optable.co/v2/targeting?id=__passport__&ab_test_id=all&osdk=web-v0.45.0&sid=Pf3VQk8guRU09OsOHdVl2A&t=freestar-auth&o=racetothewh-com&cookies=no&passport=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InY6MTM0ZDU3RzBlTTA3dlNWd3hyV1E4YSIsIm5ldyI6dHJ1ZSwiZXhwIjoxNzcyNzA1MTgwfQ.x7GEMcbG1UAvOmvvH_weO0uxBUqOr9Nb-zI0hhJ9Sy8QhMKp0BQMtybVBqpaYRfgnW0jt0pV3HeJEG-zcvaUyg",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://c.pub.network/v2/c",
+      "status": 200,
+      "content_type": "text/plain;charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20260129&st=env&sjk=8199118067338362",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "xhr"
+    },
+    {
+      "url": "https://ep2.adtrafficquality.google/sodar/sodar2.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://ep2.adtrafficquality.google/sodar/sodar2/237/runner.html",
+      "status": 200,
+      "content_type": "text/html",
+      "resource_type": "document"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/bg/SqhuXs8LEnja8wrBGLPQRoRhbZvIg-ttMWsNtflDo9s.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://www.google.com/recaptcha/api2/aframe",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "document"
+    },
+    {
+      "url": "https://s.infogram.com/t2",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://live-data.jifo.co/60409c42-5e3a-401d-9d59-e1cad2d56e11",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "xhr"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/5814558c0c05689a4acf-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/67976ac8641b86dec4c5-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/8f8738549b6590d562a9-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/1d24c144a53d40a861af-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/bd2f80602bd152624c75-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/e6a9ccc3fdd1caca6871-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/461e33bd9f7b8386724d-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/a22b911472ef8cacb7c8-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/cea67d74dbb00d25f3fe-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/382d3d82dea72609d135-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/95a0a231313ecd36f60b-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/feec799471f8cbe6ba6c-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/77436e9a6ca3fd0b73fd-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/9efcce44f8454d695ce3-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/6775725d0fb0e47ce3b5-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/f9e80f9219591d331fde-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/15736b7649d37fb0212a-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/5f548405a4aaaf8786a7-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/16929d405e78506c54c3-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://s.infogram.com/t2",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/0979e2a8e1a7738a83d8-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/7f00ae8a2b4f06435e9c-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://e.infogram.com/api/shapes/circle",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://s.infogram.com/t2",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://e.infogram.com/_/SSj43Gdy3qEkUVumokL0?src=embed&embed_type=responsive_iframe&wmode=opaque",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "document"
+    },
+    {
+      "url": "https://e.infogram.com/api/stylesheets/7291",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jifo.co/css/dist/cebefb1b2b9384b3.css",
+      "status": 200,
+      "content_type": "text/css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://www.racetothewh.com/trump",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "resource_type": "document"
+    },
+    {
+      "url": "https://use.typekit.net/ik/7iH5VFAeGKZBvfDA12WkHVYIHDmjCuq6XlSDtfEeg0Jfe7jIfFHN4UJLFRbh52jhWDm8jDbt5eIaFQbDFRw3whJuFRjuwD48jU7mMkG0jAFu-WsoShFGZAsude80ZkoRdhXCHKoyjamTiY8Djhy8ZYmC-Ao1Oco8if37OcBDOcu8OfG0-hB0ZhBkdhvlie81ZWJl-agEdPoDSWmyScmDSeBRZPoRdhXCHKoDSWmyScmDSeBRZWFR-emqiAUTdcS0jhNlOeBRiA8XpWFR-emqiAUTdcS0jhNlOeBRiA8XpWFR-emqiAUTdcS0dcmXOeBDOcu8OelydciyScNzOWsTZhmkOAl3pcX0SaBujW48Sagyjh90jhNlOeUzjhBC-eNDifUkjAF8ieNX-ema-foRdhXCSaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPUaiaS0jAFu-WsoShFGZAsude80ZkoRdhXCiaiaOcBRiA8XpWFR-emqiAUTdcS0dcmXOYiaikoySkolZPUaiaS0-hB0ZhBkdhvlie81ZWJl-agEdPoDSWmyScmDSeBRZPoRdhXCiaiaO14yjhmXdasGZWiGOcFzdPUaiaS0SaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPJsj14ydcszdKu1ScNXZWFUiA9KfAikjAoh-AUCZPG4fOZbIMMjgfMfH6qJ0BMbMg6YJMJ7fbKa9gMMeMt6MKG4fO8bIMMjIPMfH6GJcEGfIMIjgkMfH6GJc7GfIMIjIPMfqMeUhtzogb.js",
+      "status": 200,
+      "content_type": "text/javascript;charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/e2e7f2c7-bb80-4198-80bd-158687869838_462/website.components.spacer.styles.css",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/versioned-assets/1769792839777-DVO42990C1X7CZQ4O5QT/static.css",
+      "status": 200,
+      "content_type": "text/css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://static1.squarespace.com/static/versioned-site-css/5ec488a75436303b566532ec/101/5c5a519771c10ba3470d8101/5ec488a75436303b5665330e/1733/site.css",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/053a1d3f-5148-42ab-a3b4-183320407dee_185/website.components.code.styles.css",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",
+      "status": 200,
+      "content_type": "text/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://a.pub.network/racetothewh-com/cls.css",
+      "status": 200,
+      "content_type": "text/css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-6db04d5149bff018-min.en-US.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-22ed584d99d9b83d-min.en-US.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/performance-6c7058b44420b6db-min.en-US.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/053a1d3f-5148-42ab-a3b4-183320407dee_185/website.components.code.visitor.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/e2e7f2c7-bb80-4198-80bd-158687869838_462/website.components.spacer.visitor.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.033c913120829de471e83490b320685c.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://platform-api.sharethis.com/js/sharethis.js",
+      "status": 200,
+      "content_type": "text/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-ca5ce1a64a3152e7-min.en-US.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://a.pub.network/racetothewh-com/pubfig.min.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+      "status": 200,
+      "content_type": "text/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://assets.squarespace.com/universal/scripts-compressed/common-c1225d2ac1ca0980-min.en-US.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://e.infogram.com/_/gHwNrjMroRya8gWdSACP?src=embed&embed_type=responsive_iframe&wmode=opaque",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "document"
+    },
+    {
+      "url": "https://d.pub.network/v2/sites/racetothewh-com/configs?env=PROD",
       "status": 200,
       "content_type": "application/json",
-      "bytes": 1024,
-      "parsed": false
+      "resource_type": "other"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?khaos=ML68YSLN-D-FEGF",
+      "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/floating-cart.77a6a725f367f8c78349.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://buttons-config.sharethis.com/js/5f4aa959e019ea0012009aba.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://c.pub.network/v2/c",
+      "status": 200,
+      "content_type": "text/plain;charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://a.pub.network/racetothewh-com/pubfig.engine.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://e.infogram.com/_/0FNbmwa4iVhZOO7zXvaT?src=embed&embed_type=responsive_iframe&wmode=opaque",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "document"
+    },
+    {
+      "url": "https://www.racetothewh.com/api/census/RecordHit",
+      "status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "resource_type": "xhr"
+    },
+    {
+      "url": "https://a.pub.network/racetothewh-com/prebid.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://l.sharethis.com/pview?event=pview&hostname=www.racetothewh.com&location=%2Ftrump&product=inline-share-buttons&url=https%3A%2F%2Fwww.racetothewh.com%2Ftrump&source=sharethis.js&fcmp=false&fcmpv2=false&has_segmentio=false&title=Trump%20Approval%20Rating%20Polling%20Average%20%E2%80%94%20Race%20to%20the%20WH&cms=unknown&publisher=5f4aa959e019ea0012009aba&embeds_csv=https%3A%2F%2Fe.infogram.com%2F_%2FgHwNrjMroRya8gWdSACP%3Fsrc%3Dembed%26embed_type%3Dresponsive_iframe%26wmode%3Dopaque%2Chttps%3A%2F%2Fe.infogram.com%2F_%2F0FNbmwa4iVhZOO7zXvaT%3Fsrc%3Dembed%26embed_type%3Dresponsive_iframe%26wmode%3Dopaque&sop=true&version=st_sop.js&lang=en&description=Track%20Donald%20Trump%27s%20Approval%20Rating%2C%20Updated%20Every%20Day%20with%20the%20Latest%20Polls.%20Includes%20Interactive%20Graphics%20and%20a%20Trend%20Line.&ua=%22Not(A%3ABrand%22%3Bv%3D%2299%22%2C%20%22HeadlessChrome%22%3Bv%3D%22133%22%2C%20%22Chromium%22%3Bv%3D%22133%22&ua_mobile=false&ua_platform=Linux&ua_full_version_list=%22Not(A%3ABrand%22%3Bv%3D%2299.0.0.0%22%2C%20%22HeadlessChrome%22%3Bv%3D%22133.0.6943.16%22%2C%20%22Chromium%22%3Bv%3D%22133.0.6943.16%22&uuid=19f7f573-dbee-47e5-99b3-779fc66c22ae",
+      "status": 204,
+      "content_type": "",
+      "resource_type": "xhr"
+    },
+    {
+      "url": "https://cdn.jifo.co/css/dist/cebefb1b2b9384b3.css",
+      "status": 200,
+      "content_type": "text/css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://e.infogram.com/api/stylesheets/7291",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202601290101/show_ads_impl_fy2021.js",
+      "status": 200,
+      "content_type": "text/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/bundle_vendor-f95bb7bd9b764217df5f-1-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.privacy-mgmt.com/mms/v2/get_site_data?hasCsp=true&href=https%3A%2F%2Fwww.racetothewh.com&account_id=1638",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "xhr"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/embed_flex_viewer-347db4e9cdf0a1ca9253-1-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://e.infogram.com/_/gHwNrjMroRya8gWdSACP?src=embed&embed_type=responsive_iframe&wmode=opaque",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "document"
+    },
+    {
+      "url": "https://www.googletagservices.com/tag/js/gpt.js",
+      "status": 200,
+      "content_type": "text/javascript; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://cdn.privacy-mgmt.com/unified/4.39.0/usnat-uspapi.090eccada574d39af6f8.bundle.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.privacy-mgmt.com/wrapper/v2/meta-data?hasCsp=true&accountId=1638&env=prod&metadata=%7B%22usnat%22%3A%7B%7D%7D&propertyId=35158&scriptVersion=4.39.0&scriptType=unified",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "resource_type": "xhr"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?khaos=ML68YSLN-D-FEGF",
+      "url": "https://s.infogram.com/t.js?v3",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/css/dist/cebefb1b2b9384b3.css",
+      "status": 200,
+      "content_type": "text/css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://gfonts.jifo.co/css?family=Roboto:400,700,400i,700i&subset=latin,latin-ext,cyrillic",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://branding.jifo.co/65a6b489-6f16-48c3-9bac-eab2b12bda67_Trueno-SemiBold.css",
+      "status": 200,
+      "content_type": "text/css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://e.infogram.com/api/stylesheets/7291",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/bundle_vendor-f95bb7bd9b764217df5f-1-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.privacy-mgmt.com/wrapper/v2/messages?hasCsp=true&env=prod&body=%7B%22accountId%22%3A1638%2C%22campaignEnv%22%3A%22prod%22%2C%22campaigns%22%3A%7B%22usnat%22%3A%7B%22consentStatus%22%3A%7B%22rejectedAny%22%3Afalse%2C%22consentedToAll%22%3Atrue%2C%22consentedToAny%22%3Afalse%2C%22hasConsentData%22%3Afalse%2C%22previousOptInAll%22%3Afalse%7D%2C%22hasLocalData%22%3Atrue%2C%22targetingParams%22%3A%7B%7D%7D%7D%2C%22clientMMSOrigin%22%3A%22https%3A%2F%2Fcdn.privacy-mgmt.com%22%2C%22hasCSP%22%3Atrue%2C%22includeData%22%3A%7B%22localState%22%3A%7B%22type%22%3A%22string%22%7D%2C%22actions%22%3A%7B%22type%22%3A%22RecordString%22%7D%2C%22cookies%22%3A%7B%22type%22%3A%22RecordString%22%7D%7D%2C%22propertyHref%22%3A%22https%3A%2F%2Fwww.racetothewh.com%22%7D&localState=%7B%22usnat%22%3A%7B%22mmsCookies%22%3A%5B%5D%2C%22propertyId%22%3A35158%2C%22messageId%22%3A0%7D%7D&metadata=%7B%22usnat%22%3A%7B%22applies%22%3Atrue%7D%7D&nonKeyedLocalState=%7B%22usnat%22%3A%7B%7D%7D&ch=5030042836927&scriptVersion=4.39.0&scriptType=unified",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "resource_type": "xhr"
     },
     {
-      "url": "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=16924&site_id=609439&zone_id=3940371&size_id=2&alt_size_ids=1%2C19%2C43%2C44%2C55%2C117%2C221&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9&rp_schain=1.0,1!freestar.com,1754,1,,,&eid_yahoo.com=j2kq0djo3F_VBfmP0Ur31t6Hm5myF0op1tNPr5agAKwgxnLi2Iwm0cO_KkPPZzCEykcyIrr7iNwwHHLkExxxrw%5E3%5E%5E%5E%5E%5E&eid_criteo.com=CetN2l9UYWhuUU1zN3g2WTB2SkVtJTJCd2pFWm0wclZ2Z1IxWTdDN1VVdHVHOXh6cVBRUUpXN0QlMkJ1TU9yQUFCWm5EaFglMkIlMkZ6VUNkbTclMkZuVkpRSEV1TlJ0aEV3QkElM0QlM0Q%5E1%5E%5E%5E%5E%5E&eid_neustar.biz=E1%3ATka5w14LbPFHdOgCGt4rkW7mRfC-3lcnUIxsv0GZWwb5_nkAXZbAZ9h7GiKHFjO2W-sVmoKsyJ7agmV1VgcjB5Pb4yAAL-Exaw2EbTU8C8W4EuI56Y2acAwjFVDIXrDd%5E1%5E%5E%5E%5E%5E&eid_audigent.com=0001yum0ea7ic86g9feahce9j879ajjeebfcebeb77abackkc2jl%5E1%5E%5E%5E%5E%5E&eid_id5-sync.com=ID5*YIkubrT_Be03EKiSXhXTBvXZNaVq4wLd9EBboHkat7v__2mBnIlaAAEBCmmBnIgAgvPmMC5X5y2A1pdaRcoTJQ%5E1%5E%5E%5E%5E%5E&eid_pubcid.org=354392b2-7374-45bc-9330-21e96e240519%5E1%5E%5E%5E%5E%5E&eid_adserver.org=174396a3-2009-4641-aa67-120548d451e2%5E1%5E%5Eadserver.org%5Eadserver.org%5E4%5ETDID&rf=https%3A%2F%2Fwww.racetothewh.com%2Fallpolls&tg_v.id=d25e5586-6c64-43b7-9b3d-5e4d5d22c9ee&tg_i.domain=racetothewh.com&tg_i.page=https%3A%2F%2Fwww.racetothewh.com%2Fallpolls&tg_i.name=racetothewh-com&tg_i.cat=IAB11&tg_i.sectioncat=IAB11&tg_i.pagecat=IAB11&tg_i.mobile=0&tg_i.fs_optimized=false&tg_i.fs_site=6301&tg_i.documentLang=en-US&tg_i.fs_ad_product=stickyFooter&tg_i.gameraPlacementId=My0xLTE&tg_i.gameraId=gamera_17%2Cgamera_16%2Cgamera_11%2Cgamera_14%2Cgamera_24%2Cgamera_25&tg_i.dfp_ad_unit_code=%2F15184186%2Fracetothewh_sticky_footer&tk_flint=pbjs_lite_v10.22.0&x_source.tid=ude9dcf24-72ab-4a23-8f5e-9ab6d0042b2d&l_pb_bid_id=4b0d8df5-08f2-4e7f-a07e-5603155bead6&p_screen_res=1400x900&rp_secure=1&x_imp.ext.tid=u37ce6c7d-fbd7-4c2f-bda9-c208db780001&p_site.mobile=0&p_gpid=%2F15184186%2Fracetothewh_sticky_footer&m_ch_ua=%22Not%3AA-Brand%22%7Cv%3D%2299%22%2C%22HeadlessChrome%22%7Cv%3D%22145%22%2C%22Chromium%22%7Cv%3D%22145%22&m_ch_mobile=%3F0&m_ch_platform=Linux&slots=1&rand=0.6489184925561792",
+      "url": "https://cdn.jifo.co/js/dist/embed_flex_viewer-347db4e9cdf0a1ca9253-1-webpack.js",
       "status": 200,
-      "content_type": "application/json",
-      "bytes": 703,
-      "parsed": false
+      "content_type": "application/javascript",
+      "resource_type": "script"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?gdpr=0&us_privacy=1YNN&khaos=ML68YSLN-D-FEGF",
+      "url": "https://cdn.privacy-mgmt.com/wrapper/v2/pv-data?hasCsp=true&env=prod&ch=5030042836927&scriptVersion=4.39.0&scriptType=unified",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "resource_type": "xhr"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?khaos=ML68YSLN-D-FEGF",
+      "url": "https://s.infogram.com/t.js?v3",
       "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "content_type": "application/javascript; charset=utf-8",
+      "resource_type": "script"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?khaos=ML68YSLN-D-FEGF",
+      "url": "https://s.infogram.com/t2",
       "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "fetch"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?khaos=ML68YSLN-D-FEGF",
+      "url": "https://gfonts.jifo.co/css?family=PT+Sans:400,700,400i,700i%7CRoboto:400,700,400i,700i&subset=latin,latin-ext,cyrillic",
       "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "content_type": "text/css; charset=utf-8",
+      "resource_type": "stylesheet"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?khaos=ML68YSLN-D-FEGF",
+      "url": "https://branding.jifo.co/65a6b489-6f16-48c3-9bac-eab2b12bda67_Trueno-SemiBold.css",
       "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "content_type": "text/css",
+      "resource_type": "stylesheet"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?khaos=ML68YSLN-D-FEGF",
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20260129&st=env&sjk=2831175323553097",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "resource_type": "xhr"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?khaos=ML68YSLN-D-FEGF",
+      "url": "https://ep2.adtrafficquality.google/sodar/sodar2.js",
       "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "content_type": "text/javascript",
+      "resource_type": "script"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?khaos=ML68YSLN-D-FEGF",
+      "url": "https://s.infogram.com/t2",
       "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "fetch"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?khaos=ML68YSLN-D-FEGF",
+      "url": "https://ep2.adtrafficquality.google/sodar/sodar2/237/runner.html",
       "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "content_type": "text/html",
+      "resource_type": "document"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?khaos=ML68YSLN-D-FEGF",
+      "url": "https://www.google.com/recaptcha/api2/aframe",
       "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "document"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?khaos=ML68YSLN-D-FEGF",
+      "url": "https://pagead2.googlesyndication.com/bg/SqhuXs8LEnja8wrBGLPQRoRhbZvIg-ttMWsNtflDo9s.js",
       "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "content_type": "text/javascript",
+      "resource_type": "script"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?khaos=ML68YSLN-D-FEGF",
+      "url": "https://live-data.jifo.co/6aae6c2d-7931-4edd-a228-e3182285f19b",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "resource_type": "xhr"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?gdpr=0&khaos=ML68YSLN-D-FEGF",
+      "url": "https://live-data.jifo.co/792b6827-ee5c-41be-b01d-29f3d37585b5",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "resource_type": "xhr"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?gdpr=0&khaos=ML68YSLN-D-FEGF",
+      "url": "https://live-data.jifo.co/667d91bd-36a0-4b72-a39f-5dddac2745c7",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "resource_type": "xhr"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?khaos=ML68YSLN-D-FEGF",
+      "url": "https://live-data.jifo.co/aef376df-0348-40d7-ad8f-25daac121c52",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "resource_type": "xhr"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?khaos=ML68YSLN-D-FEGF",
+      "url": "https://live-data.jifo.co/2ea31a8a-de3b-4397-905b-6a2fded99e59",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "resource_type": "xhr"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/7f00ae8a2b4f06435e9c-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/5814558c0c05689a4acf-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/8f8738549b6590d562a9-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/1d24c144a53d40a861af-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/a22b911472ef8cacb7c8-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/e6a9ccc3fdd1caca6871-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/cea67d74dbb00d25f3fe-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/0979e2a8e1a7738a83d8-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://e.infogram.com/api/shapes/circle",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://e.infogram.com/api/shapes/circle",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://e.infogram.com/api/shapes/circle",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://s.infogram.com/t2",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/67976ac8641b86dec4c5-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/bd2f80602bd152624c75-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/461e33bd9f7b8386724d-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/9efcce44f8454d695ce3-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/95a0a231313ecd36f60b-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/6775725d0fb0e47ce3b5-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/feec799471f8cbe6ba6c-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/5f548405a4aaaf8786a7-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/77436e9a6ca3fd0b73fd-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/f9e80f9219591d331fde-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/15736b7649d37fb0212a-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/16929d405e78506c54c3-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/382d3d82dea72609d135-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/ffaced8ffaef61a3913d-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/2c63b89f753ca1842a6d-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/6ca43272d0c09ebc95b7-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/20d813a1ad52a84a45e3-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/c06d6c55e62e216f8262-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/580c9ef429c478d7d3c6-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/51cebdfe7ea30c367e21-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://cdn.jifo.co/js/dist/2f3a878763d74a4faeb8-2-webpack.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "resource_type": "script"
+    },
+    {
+      "url": "https://s.infogram.com/t2",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://s.infogram.com/t2",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://s.infogram.com/t2",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "resource_type": "fetch"
+    },
+    {
+      "url": "https://www.racetothewh.com/polls/genericballot",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "resource_type": "document"
+    },
+    {
+      "url": "https://static1.squarespace.com/static/versioned-site-css/5ec488a75436303b566532ec/101/5c5a519771c10ba3470d8101/5ec488a75436303b5665330e/1733/site.css",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/053a1d3f-5148-42ab-a3b4-183320407dee_185/website.components.code.styles.css",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "resource_type": "stylesheet"
     }
   ],
-  "probe_results": [
+  "discovered_url_count": 1837,
+  "probe_results_sample": [
     {
-      "url": "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=16924&site_id=609439&zone_id=3940371&size_id=2&alt_size_ids=1%2C19%2C43%2C44%2C55%2C117%2C221&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9&rp_schain=1.0,1!freestar.com,1754,1,,,&eid_yahoo.com=j2kq0djo3F_VBfmP0Ur31t6Hm5myF0op1tNPr5agAKwgxnLi2Iwm0cO_KkPPZzCEykcyIrr7iNwwHHLkExxxrw%5E3%5E%5E%5E%5E%5E&eid_criteo.com=CetN2l9UYWhuUU1zN3g2WTB2SkVtJTJCd2pFWm0wclZ2Z1IxWTdDN1VVdHVHOXh6cVBRUUpXN0QlMkJ1TU9yQUFCWm5EaFglMkIlMkZ6VUNkbTclMkZuVkpRSEV1TlJ0aEV3QkElM0QlM0Q%5E1%5E%5E%5E%5E%5E&eid_neustar.biz=E1%3ATka5w14LbPFHdOgCGt4rkW7mRfC-3lcnUIxsv0GZWwb5_nkAXZbAZ9h7GiKHFjO2W-sVmoKsyJ7agmV1VgcjB5Pb4yAAL-Exaw2EbTU8C8W4EuI56Y2acAwjFVDIXrDd%5E1%5E%5E%5E%5E%5EfabrickId&eid_audigent.com=0001yum0ea7ic86g9feahce9j879ajjeebfcebeb77abackkc2jl%5E1%5E%5E%5E%5E%5E&eid_pubcid.org=354392b2-7374-45bc-9330-21e96e240519%5E1%5E%5E%5E%5E%5E&eid_adserver.org=174396a3-2009-4641-aa67-120548d451e2%5E1%5E%5Eadserver.org%5Eadserver.org%5E4%5ETDID&rf=https%3A%2F%2Fwww.racetothewh.com%2Fallpolls&tg_v.id=d25e5586-6c64-43b7-9b3d-5e4d5d22c9ee&tg_i.domain=racetothewh.com&tg_i.page=https%3A%2F%2Fwww.racetothewh.com%2Fallpolls&tg_i.name=racetothewh-com&tg_i.cat=IAB11&tg_i.sectioncat=IAB11&tg_i.pagecat=IAB11&tg_i.mobile=0&tg_i.fs_optimized=false&tg_i.fs_site=6301&tg_i.documentLang=en-US&tg_i.fs_ad_product=stickyFooter&tg_i.dfp_ad_unit_code=%2F15184186%2Fracetothewh_sticky_footer&tk_flint=pbjs_lite_v10.22.0&x_source.tid=uc7fe1a77-7280-4960-9ee9-9ae2d7c42ca3&l_pb_bid_id=4aac969b-ea17-4d7c-bead-d7a61f71b955&p_screen_res=1400x900&rp_secure=1&x_imp.ext.tid=u86ae2dd0-2a67-41da-b4b3-b1429fcd204c&p_site.mobile=0&p_gpid=%2F15184186%2Fracetothewh_sticky_footer&m_ch_ua=%22Not%3AA-Brand%22%7Cv%3D%2299%22%2C%22HeadlessChrome%22%7Cv%3D%22145%22%2C%22Chromium%22%7Cv%3D%22145%22&m_ch_mobile=%3F0&m_ch_platform=Linux&slots=1&rand=0.9790183502087688",
+      "url": "https://docs.google.com/spreadsheets/d/1AmAi5LGp2uCEUc79Uh9gBM89jrBfXAPoWvaHmPWRhZU/edit?gid=0#gid=0",
       "ok": true,
       "status": 200,
-      "content_type": "application/json",
-      "bytes": 600,
-      "parsed": false
+      "content_type": "text/html; charset=utf-8",
+      "note": "html ignored"
     },
     {
-      "url": "https://id.hadron.ad.gt/v1/hadron.json?_it=freestar&partner_id=474&sync=0&domain=www.racetothewh.com&url=https://www.racetothewh.com/allpolls&v=06",
+      "url": "https://docs.google.com/spreadsheets/d/1hkyu4f7qVoaAfW-TLaSkgIi9uHzjd0mb/edit?gid=1494178992#gid=1494178992",
       "ok": true,
       "status": 200,
-      "content_type": "application/json",
-      "bytes": 133,
-      "parsed": false
+      "content_type": "text/html; charset=utf-8",
+      "note": "html ignored"
     },
     {
-      "url": "https://id5-sync.com/g/v2/882.json",
+      "url": "https://docs.google.com/spreadsheets/d/1fm8fzVT9NX9ppO6q1JLj3GGI1jjasZPF/edit?gid=212970318#gid=212970318",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "note": "html ignored"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ElXeKYwMg9z9kJFPfN6dJftq2DyeycVGqj-VFiUV7Wo/edit?gid=0#gid=0",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "note": "html ignored"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/11Pmwdv5G5pCF8yTyrQo6e2oIdwHB97rD/edit?gid=1924132718#gid=1924132718",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "note": "html ignored"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/11Pmwdv5G5pCF8yTyrQo6e2oIdwHB97rD/edit?rtpof=true&sd=true",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "note": "html ignored"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Bj9_tUbMG1yCnME1rc7ggQF7qt8mmxetIfD7bQL167w/edit?gid=1183487657#gid=1183487657",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "note": "html ignored"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/18YPFYiD3uv_ehRX03Jp2MtsJXQOkvjrg/edit?gid=1255775821#gid=1255775821",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "note": "html ignored"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ci0xpqxyX4XKKdVjeijssSxKARFxkBYmQeLjES1pcac/edit?gid=1780005197#gid=1780005197",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "note": "html ignored"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1vGeTKW3MRDR5dXHM2IjM8ORz7HOyP5Le/edit?gid=1131271960#gid=1131271960",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "note": "html ignored"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1EKabXuEVK-kB6ke75u_PFdOJeR-jtJnX/edit?gid=1560238424#gid=1560238424",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "note": "html ignored"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1CsHWWKUzNy7uZRZzUKhNpC5vU7aa7qFH/edit?gid=303389226#gid=303389226",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "note": "html ignored"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1KdGpVQ0P7AVCDB5vsfoukqF6tS2ghVAo/edit?rtpof=true&sd=true",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "note": "html ignored"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1FVfn-1oaLtOObkwACgt_Imsvf7jgVEdo/edit?gid=1864996370#gid=1864996370",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "note": "html ignored"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1oA8tuH8qNgNdAnh-nJ8X6RrS2Mtx39T3/edit?gid=1796520530#gid=1796520530",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "note": "html ignored"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1avNPN-pqfUoYgdSHu8Icaa12kUyj7On8/edit?gid=2120637766#gid=2120637766",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "note": "html ignored"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1AmAi5LGp2uCEUc79Uh9gBM89jrBfXAPoWvaHmPWRhZU/export?format=csv",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 76409
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1AmAi5LGp2uCEUc79Uh9gBM89jrBfXAPoWvaHmPWRhZU/gviz/tq?tqx=out:json",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 642152
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1hkyu4f7qVoaAfW-TLaSkgIi9uHzjd0mb/export?format=csv",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 7257
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1hkyu4f7qVoaAfW-TLaSkgIi9uHzjd0mb/gviz/tq?tqx=out:json",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 39634
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1fm8fzVT9NX9ppO6q1JLj3GGI1jjasZPF/export?format=csv",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 2337
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1fm8fzVT9NX9ppO6q1JLj3GGI1jjasZPF/gviz/tq?tqx=out:json",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 8406
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ElXeKYwMg9z9kJFPfN6dJftq2DyeycVGqj-VFiUV7Wo/export?format=csv",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 1578
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ElXeKYwMg9z9kJFPfN6dJftq2DyeycVGqj-VFiUV7Wo/gviz/tq?tqx=out:json",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 5251
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/11Pmwdv5G5pCF8yTyrQo6e2oIdwHB97rD/export?format=csv",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 10319
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/11Pmwdv5G5pCF8yTyrQo6e2oIdwHB97rD/gviz/tq?tqx=out:json",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 56437
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Bj9_tUbMG1yCnME1rc7ggQF7qt8mmxetIfD7bQL167w/export?format=csv",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 3244
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Bj9_tUbMG1yCnME1rc7ggQF7qt8mmxetIfD7bQL167w/gviz/tq?tqx=out:json",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 11110
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/18YPFYiD3uv_ehRX03Jp2MtsJXQOkvjrg/export?format=csv",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 6967
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/18YPFYiD3uv_ehRX03Jp2MtsJXQOkvjrg/gviz/tq?tqx=out:json",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 35363
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ci0xpqxyX4XKKdVjeijssSxKARFxkBYmQeLjES1pcac/export?format=csv",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 13395
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ci0xpqxyX4XKKdVjeijssSxKARFxkBYmQeLjES1pcac/gviz/tq?tqx=out:json",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 79047
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1vGeTKW3MRDR5dXHM2IjM8ORz7HOyP5Le/export?format=csv",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 7217
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1vGeTKW3MRDR5dXHM2IjM8ORz7HOyP5Le/gviz/tq?tqx=out:json",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 31833
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1EKabXuEVK-kB6ke75u_PFdOJeR-jtJnX/export?format=csv",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 29631
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1EKabXuEVK-kB6ke75u_PFdOJeR-jtJnX/gviz/tq?tqx=out:json",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 84346
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1CsHWWKUzNy7uZRZzUKhNpC5vU7aa7qFH/export?format=csv",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 4454
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1CsHWWKUzNy7uZRZzUKhNpC5vU7aa7qFH/gviz/tq?tqx=out:json",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 26175
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1KdGpVQ0P7AVCDB5vsfoukqF6tS2ghVAo/export?format=csv",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 28794
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1KdGpVQ0P7AVCDB5vsfoukqF6tS2ghVAo/gviz/tq?tqx=out:json",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 83152
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1FVfn-1oaLtOObkwACgt_Imsvf7jgVEdo/export?format=csv",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 6877
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1FVfn-1oaLtOObkwACgt_Imsvf7jgVEdo/gviz/tq?tqx=out:json",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 35184
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1oA8tuH8qNgNdAnh-nJ8X6RrS2Mtx39T3/export?format=csv",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 5121
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1oA8tuH8qNgNdAnh-nJ8X6RrS2Mtx39T3/gviz/tq?tqx=out:json",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 27355
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1avNPN-pqfUoYgdSHu8Icaa12kUyj7On8/export?format=csv",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 7015
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1avNPN-pqfUoYgdSHu8Icaa12kUyj7On8/gviz/tq?tqx=out:json",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 35253
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/edit?gid=1846349715#gid=1846349715",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1nwSsVzVREQlKSZqO6MIj75K27PLioKVeMcqboygMQr8/edit?gid=499453699#gid=499453699",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1nwSsVzVREQlKSZqO6MIj75K27PLioKVeMcqboygMQr8/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1nwSsVzVREQlKSZqO6MIj75K27PLioKVeMcqboygMQr8/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Sy47Zop3JmvgTLaE0y7r1_t7EVuvAV-cMOl1uUqO9Bc/edit?gid=139516762#gid=139516762",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Sy47Zop3JmvgTLaE0y7r1_t7EVuvAV-cMOl1uUqO9Bc/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Sy47Zop3JmvgTLaE0y7r1_t7EVuvAV-cMOl1uUqO9Bc/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1_TSBNoTN4Tha7Bkiw98B7wKnxSs0a4knKq25hK-uIhE/edit?gid=182613114#gid=182613114\\",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1_TSBNoTN4Tha7Bkiw98B7wKnxSs0a4knKq25hK-uIhE/edit?gid=182613114#gid=182613114",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1_TSBNoTN4Tha7Bkiw98B7wKnxSs0a4knKq25hK-uIhE/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1_TSBNoTN4Tha7Bkiw98B7wKnxSs0a4knKq25hK-uIhE/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/edit?gid=1265103047#gid=1265103047",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/edit?gid=56015953#gid=56015953",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/edit?gid=1684867980#gid=1684867980",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/edit?gid=1845081843#gid=1845081843",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/edit?gid=1846349715#gid=1846349715",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/edit?gid=940693767#gid=940693767",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1rDSn4SsKFbpbiSvaXolInJOrX_pic0RNvKewqhADbWU/edit?gid=45309568#gid=45309568",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1rDSn4SsKFbpbiSvaXolInJOrX_pic0RNvKewqhADbWU/edit?gid=45309568#gid=45309568\\",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1rDSn4SsKFbpbiSvaXolInJOrX_pic0RNvKewqhADbWU/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1rDSn4SsKFbpbiSvaXolInJOrX_pic0RNvKewqhADbWU/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1l4CvLg8xAJ_bgVnykvOSB3lsYZy5DOWOFYsrTPF1b5s/edit?gid=638510786#gid=638510786",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1l4CvLg8xAJ_bgVnykvOSB3lsYZy5DOWOFYsrTPF1b5s/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1l4CvLg8xAJ_bgVnykvOSB3lsYZy5DOWOFYsrTPF1b5s/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1DuYW6yVQnUZfRrpgyqkWl53gWpbJuRjUByQkL6C6gfA/edit?gid=1845081843#gid=1845081843",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1DuYW6yVQnUZfRrpgyqkWl53gWpbJuRjUByQkL6C6gfA/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1DuYW6yVQnUZfRrpgyqkWl53gWpbJuRjUByQkL6C6gfA/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/18WEXIT0WjGcaFIjtWtXMJB68ZAHWU3363D3Ac1nh5Ek/edit?gid=1845081843#gid=1845081843",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/18WEXIT0WjGcaFIjtWtXMJB68ZAHWU3363D3Ac1nh5Ek/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/18WEXIT0WjGcaFIjtWtXMJB68ZAHWU3363D3Ac1nh5Ek/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1v7nqlhFaoTNfpdatFCHwCZI47kOMch9FwVLzUYL25zE/edit?gid=1684867980#gid=1684867980",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1v7nqlhFaoTNfpdatFCHwCZI47kOMch9FwVLzUYL25zE/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1v7nqlhFaoTNfpdatFCHwCZI47kOMch9FwVLzUYL25zE/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Q19Glh-3kMTESwv8CwTQDZsgmuRg0lkMzaDP9mHH-6s/edit?gid=504958335#gid=504958335",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Q19Glh-3kMTESwv8CwTQDZsgmuRg0lkMzaDP9mHH-6s/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Q19Glh-3kMTESwv8CwTQDZsgmuRg0lkMzaDP9mHH-6s/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/19agcmAnwGczMCwPle0jSKCJ-kEOt9WVQmRE375s-hg0/edit?gid=610060720#gid=610060720",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/19agcmAnwGczMCwPle0jSKCJ-kEOt9WVQmRE375s-hg0/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/19agcmAnwGczMCwPle0jSKCJ-kEOt9WVQmRE375s-hg0/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/13kdOqYA86xv_P6WS9LjJTkOKU8pNcQARuRGA_uwo28o/edit?gid=1609647780#gid=1609647780",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/13kdOqYA86xv_P6WS9LjJTkOKU8pNcQARuRGA_uwo28o/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/13kdOqYA86xv_P6WS9LjJTkOKU8pNcQARuRGA_uwo28o/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1tPL54kBSSjz1EkOTAw3rZFl78ADsphvhOuPj8rxs-W0/edit?gid=499453699#gid=499453699",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1tPL54kBSSjz1EkOTAw3rZFl78ADsphvhOuPj8rxs-W0/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1tPL54kBSSjz1EkOTAw3rZFl78ADsphvhOuPj8rxs-W0/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1T12X4Mkk8cEhRbEqzsvbFJrq8_NmGJ-SSFLERFAgJjo/edit?gid=1693218348#gid=1693218348",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1T12X4Mkk8cEhRbEqzsvbFJrq8_NmGJ-SSFLERFAgJjo/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1T12X4Mkk8cEhRbEqzsvbFJrq8_NmGJ-SSFLERFAgJjo/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ALi2dEin92pdVQTNMAQATNp9uba7d73T9iLAlLbH1Y4/edit?gid=1232302311#gid=1232302311",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ALi2dEin92pdVQTNMAQATNp9uba7d73T9iLAlLbH1Y4/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ALi2dEin92pdVQTNMAQATNp9uba7d73T9iLAlLbH1Y4/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1QjqhpsTxd7BTGPRMiolmNpsxpOfYD63tfm8GV5vI9D8/edit?gid=0#gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1QjqhpsTxd7BTGPRMiolmNpsxpOfYD63tfm8GV5vI9D8/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1QjqhpsTxd7BTGPRMiolmNpsxpOfYD63tfm8GV5vI9D8/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1wVZb1xKDzhFDaCatuffM0XdmtNmxAvEB2yMduumjASs/edit?gid=287136909#gid=287136909",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1wVZb1xKDzhFDaCatuffM0XdmtNmxAvEB2yMduumjASs/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1wVZb1xKDzhFDaCatuffM0XdmtNmxAvEB2yMduumjASs/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1AraZc6cOXoTslwDMPd82vrcgi5O0sAdOV9e8v813ldU/edit?gid=1845081843#gid=1845081843",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1AraZc6cOXoTslwDMPd82vrcgi5O0sAdOV9e8v813ldU/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1AraZc6cOXoTslwDMPd82vrcgi5O0sAdOV9e8v813ldU/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1neUestuAVCXl6UDsylgf6UZXO_EkPAmNWdXj2N_XlMM/edit?gid=2004782932#gid=2004782932",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1neUestuAVCXl6UDsylgf6UZXO_EkPAmNWdXj2N_XlMM/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1neUestuAVCXl6UDsylgf6UZXO_EkPAmNWdXj2N_XlMM/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1D-PqyT0-nOBBsDXlMQEQqptQz5SdC9b0sbLO6HXY0p8/edit?gid=139516762#gid=139516762",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1D-PqyT0-nOBBsDXlMQEQqptQz5SdC9b0sbLO6HXY0p8/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1D-PqyT0-nOBBsDXlMQEQqptQz5SdC9b0sbLO6HXY0p8/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Hgn9mFH08so320yYjnSyqbkcJhla8ycCvxAznLnDgHo/edit?gid=147694519#gid=147694519",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Hgn9mFH08so320yYjnSyqbkcJhla8ycCvxAznLnDgHo/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Hgn9mFH08so320yYjnSyqbkcJhla8ycCvxAznLnDgHo/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1dxxEajT10BqAKGfffRTRpgnNVv4zsNWp3CexPngpUrs/edit?gid=1684867980#gid=1684867980",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1dxxEajT10BqAKGfffRTRpgnNVv4zsNWp3CexPngpUrs/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1dxxEajT10BqAKGfffRTRpgnNVv4zsNWp3CexPngpUrs/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/12OXCZGOWIfF3FZ4tkdklEM-CYXMOllLqIzIuL4gwPKY/edit?gid=986126214#gid=986126214",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/12OXCZGOWIfF3FZ4tkdklEM-CYXMOllLqIzIuL4gwPKY/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/12OXCZGOWIfF3FZ4tkdklEM-CYXMOllLqIzIuL4gwPKY/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ET26etsaogz0OP9V86zyx2oYktSW9cwHoYW4boLhAAw/edit?gid=1845081843#gid=1845081843",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ET26etsaogz0OP9V86zyx2oYktSW9cwHoYW4boLhAAw/export?format=csv",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ET26etsaogz0OP9V86zyx2oYktSW9cwHoYW4boLhAAw/gviz/tq?tqx=out:json",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1AmAi5LGp2uCEUc79Uh9gBM89jrBfXAPoWvaHmPWRhZU/export?format=csv&gid=0",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 76409
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1AmAi5LGp2uCEUc79Uh9gBM89jrBfXAPoWvaHmPWRhZU/gviz/tq?tqx=out:json&gid=0",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 642152
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1hkyu4f7qVoaAfW-TLaSkgIi9uHzjd0mb/export?format=csv&gid=1494178992",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 7257
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1hkyu4f7qVoaAfW-TLaSkgIi9uHzjd0mb/gviz/tq?tqx=out:json&gid=1494178992",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 39634
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1fm8fzVT9NX9ppO6q1JLj3GGI1jjasZPF/export?format=csv&gid=212970318",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 2337
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1fm8fzVT9NX9ppO6q1JLj3GGI1jjasZPF/gviz/tq?tqx=out:json&gid=212970318",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 8406
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ElXeKYwMg9z9kJFPfN6dJftq2DyeycVGqj-VFiUV7Wo/export?format=csv&gid=0",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 1578
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ElXeKYwMg9z9kJFPfN6dJftq2DyeycVGqj-VFiUV7Wo/gviz/tq?tqx=out:json&gid=0",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 5251
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/11Pmwdv5G5pCF8yTyrQo6e2oIdwHB97rD/export?format=csv&gid=1924132718",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 10319
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/11Pmwdv5G5pCF8yTyrQo6e2oIdwHB97rD/gviz/tq?tqx=out:json&gid=1924132718",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 56437
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/11Pmwdv5G5pCF8yTyrQo6e2oIdwHB97rD/export?format=csv&gid=0",
       "ok": false,
       "status": 400,
-      "content_type": "",
-      "bytes": 539,
-      "parsed": false
+      "content_type": "text/html; charset=utf-8"
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?us_privacy=1YNN",
+      "url": "https://docs.google.com/spreadsheets/d/11Pmwdv5G5pCF8yTyrQo6e2oIdwHB97rD/gviz/tq?tqx=out:json&gid=0",
       "ok": true,
       "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 56437
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?khaos=ML68YSLN-D-FEGF",
+      "url": "https://docs.google.com/spreadsheets/d/1Bj9_tUbMG1yCnME1rc7ggQF7qt8mmxetIfD7bQL167w/export?format=csv&gid=1183487657",
       "ok": true,
       "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "content_type": "text/csv",
+      "bytes": 3883
     },
     {
-      "url": "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=16924&site_id=609439&zone_id=3940371&size_id=2&alt_size_ids=1%2C19%2C43%2C44%2C55%2C117%2C221&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9&rp_schain=1.0,1!freestar.com,1754,1,,,&eid_yahoo.com=j2kq0djo3F_VBfmP0Ur31t6Hm5myF0op1tNPr5agAKwgxnLi2Iwm0cO_KkPPZzCEykcyIrr7iNwwHHLkExxxrw%5E3%5E%5E%5E%5E%5E&eid_criteo.com=CetN2l9UYWhuUU1zN3g2WTB2SkVtJTJCd2pFWm0wclZ2Z1IxWTdDN1VVdHVHOXh6cVBRUUpXN0QlMkJ1TU9yQUFCWm5EaFglMkIlMkZ6VUNkbTclMkZuVkpRSEV1TlJ0aEV3QkElM0QlM0Q%5E1%5E%5E%5E%5E%5E&eid_neustar.biz=E1%3ATka5w14LbPFHdOgCGt4rkW7mRfC-3lcnUIxsv0GZWwb5_nkAXZbAZ9h7GiKHFjO2W-sVmoKsyJ7agmV1VgcjB5Pb4yAAL-Exaw2EbTU8C8W4EuI56Y2acAwjFVDIXrDd%5E1%5E%5E%5E%5E%5E&eid_audigent.com=0001yum0ea7ic86g9feahce9j879ajjeebfcebeb77abackkc2jl%5E1%5E%5E%5E%5E%5E&eid_id5-sync.com=ID5*YIkubrT_Be03EKiSXhXTBvXZNaVq4wLd9EBboHkat7v__2mBnIlaAAEBCmmBnIgAgvPmMC5X5y2A1pdaRcoTJQ%5E1%5E%5E%5E%5E%5E&eid_pubcid.org=354392b2-7374-45bc-9330-21e96e240519%5E1%5E%5E%5E%5E%5E&eid_adserver.org=174396a3-2009-4641-aa67-120548d451e2%5E1%5E%5Eadserver.org%5Eadserver.org%5E4%5ETDID&rf=https%3A%2F%2Fwww.racetothewh.com%2Fallpolls&tg_v.id=d25e5586-6c64-43b7-9b3d-5e4d5d22c9ee&tg_i.domain=racetothewh.com&tg_i.page=https%3A%2F%2Fwww.racetothewh.com%2Fallpolls&tg_i.name=racetothewh-com&tg_i.cat=IAB11&tg_i.sectioncat=IAB11&tg_i.pagecat=IAB11&tg_i.mobile=0&tg_i.fs_optimized=false&tg_i.fs_site=6301&tg_i.documentLang=en-US&tg_i.fs_ad_product=stickyFooter&tg_i.gameraPlacementId=My0xLTE&tg_i.gameraId=gamera_17%2Cgamera_16%2Cgamera_11%2Cgamera_14%2Cgamera_24%2Cgamera_25&tg_i.dfp_ad_unit_code=%2F15184186%2Fracetothewh_sticky_footer&tk_flint=pbjs_lite_v10.22.0&x_source.tid=ude9dcf24-72ab-4a23-8f5e-9ab6d0042b2d&l_pb_bid_id=4b0d8df5-08f2-4e7f-a07e-5603155bead6&p_screen_res=1400x900&rp_secure=1&x_imp.ext.tid=u37ce6c7d-fbd7-4c2f-bda9-c208db780001&p_site.mobile=0&p_gpid=%2F15184186%2Fracetothewh_sticky_footer&m_ch_ua=%22Not%3AA-Brand%22%7Cv%3D%2299%22%2C%22HeadlessChrome%22%7Cv%3D%22145%22%2C%22Chromium%22%7Cv%3D%22145%22&m_ch_mobile=%3F0&m_ch_platform=Linux&slots=1&rand=0.6489184925561792",
+      "url": "https://docs.google.com/spreadsheets/d/1Bj9_tUbMG1yCnME1rc7ggQF7qt8mmxetIfD7bQL167w/gviz/tq?tqx=out:json&gid=1183487657",
       "ok": true,
       "status": 200,
-      "content_type": "application/json",
-      "bytes": 703,
-      "parsed": false
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 13229
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?gdpr=0&us_privacy=1YNN&khaos=ML68YSLN-D-FEGF",
+      "url": "https://docs.google.com/spreadsheets/d/18YPFYiD3uv_ehRX03Jp2MtsJXQOkvjrg/export?format=csv&gid=1255775821",
       "ok": true,
       "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "content_type": "text/csv",
+      "bytes": 6967
     },
     {
-      "url": "https://token.rubiconproject.com/khaos.json?gdpr=0&khaos=ML68YSLN-D-FEGF",
+      "url": "https://docs.google.com/spreadsheets/d/18YPFYiD3uv_ehRX03Jp2MtsJXQOkvjrg/gviz/tq?tqx=out:json&gid=1255775821",
       "ok": true,
       "status": 200,
-      "content_type": "application/json; charset=utf-8",
-      "bytes": 7,
-      "parsed": false
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 35363
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ci0xpqxyX4XKKdVjeijssSxKARFxkBYmQeLjES1pcac/export?format=csv&gid=1780005197",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 13395
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ci0xpqxyX4XKKdVjeijssSxKARFxkBYmQeLjES1pcac/gviz/tq?tqx=out:json&gid=1780005197",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 79047
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1vGeTKW3MRDR5dXHM2IjM8ORz7HOyP5Le/export?format=csv&gid=1131271960",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 6846
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1vGeTKW3MRDR5dXHM2IjM8ORz7HOyP5Le/gviz/tq?tqx=out:json&gid=1131271960",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 35627
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1EKabXuEVK-kB6ke75u_PFdOJeR-jtJnX/export?format=csv&gid=1560238424",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 29631
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1EKabXuEVK-kB6ke75u_PFdOJeR-jtJnX/gviz/tq?tqx=out:json&gid=1560238424",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 84346
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1CsHWWKUzNy7uZRZzUKhNpC5vU7aa7qFH/export?format=csv&gid=303389226",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 4454
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1CsHWWKUzNy7uZRZzUKhNpC5vU7aa7qFH/gviz/tq?tqx=out:json&gid=303389226",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 26175
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1KdGpVQ0P7AVCDB5vsfoukqF6tS2ghVAo/export?format=csv&gid=0",
+      "ok": false,
+      "status": 400,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1KdGpVQ0P7AVCDB5vsfoukqF6tS2ghVAo/gviz/tq?tqx=out:json&gid=0",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 83152
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1FVfn-1oaLtOObkwACgt_Imsvf7jgVEdo/export?format=csv&gid=1864996370",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 6877
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1FVfn-1oaLtOObkwACgt_Imsvf7jgVEdo/gviz/tq?tqx=out:json&gid=1864996370",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 35184
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1oA8tuH8qNgNdAnh-nJ8X6RrS2Mtx39T3/export?format=csv&gid=1796520530",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 5121
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1oA8tuH8qNgNdAnh-nJ8X6RrS2Mtx39T3/gviz/tq?tqx=out:json&gid=1796520530",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 27355
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1avNPN-pqfUoYgdSHu8Icaa12kUyj7On8/export?format=csv&gid=2120637766",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 7195
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1avNPN-pqfUoYgdSHu8Icaa12kUyj7On8/gviz/tq?tqx=out:json&gid=2120637766",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 36169
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1hkyu4f7qVoaAfW-TLaSkgIi9uHzjd0mb/export?format=csv&gid=0",
+      "ok": false,
+      "status": 400,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1hkyu4f7qVoaAfW-TLaSkgIi9uHzjd0mb/gviz/tq?tqx=out:json&gid=0",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 39634
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1fm8fzVT9NX9ppO6q1JLj3GGI1jjasZPF/export?format=csv&gid=0",
+      "ok": false,
+      "status": 400,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1fm8fzVT9NX9ppO6q1JLj3GGI1jjasZPF/gviz/tq?tqx=out:json&gid=0",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 8406
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Bj9_tUbMG1yCnME1rc7ggQF7qt8mmxetIfD7bQL167w/export?format=csv&gid=0",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 3244
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Bj9_tUbMG1yCnME1rc7ggQF7qt8mmxetIfD7bQL167w/gviz/tq?tqx=out:json&gid=0",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 11110
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/18YPFYiD3uv_ehRX03Jp2MtsJXQOkvjrg/export?format=csv&gid=0",
+      "ok": false,
+      "status": 400,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/18YPFYiD3uv_ehRX03Jp2MtsJXQOkvjrg/gviz/tq?tqx=out:json&gid=0",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 35363
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ci0xpqxyX4XKKdVjeijssSxKARFxkBYmQeLjES1pcac/export?format=csv&gid=0",
+      "ok": false,
+      "status": 400,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1ci0xpqxyX4XKKdVjeijssSxKARFxkBYmQeLjES1pcac/gviz/tq?tqx=out:json&gid=0",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 79047
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1vGeTKW3MRDR5dXHM2IjM8ORz7HOyP5Le/export?format=csv&gid=0",
+      "ok": false,
+      "status": 400,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1vGeTKW3MRDR5dXHM2IjM8ORz7HOyP5Le/gviz/tq?tqx=out:json&gid=0",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 31833
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1EKabXuEVK-kB6ke75u_PFdOJeR-jtJnX/export?format=csv&gid=0",
+      "ok": false,
+      "status": 400,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1EKabXuEVK-kB6ke75u_PFdOJeR-jtJnX/gviz/tq?tqx=out:json&gid=0",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 84346
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1CsHWWKUzNy7uZRZzUKhNpC5vU7aa7qFH/export?format=csv&gid=0",
+      "ok": false,
+      "status": 400,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1CsHWWKUzNy7uZRZzUKhNpC5vU7aa7qFH/gviz/tq?tqx=out:json&gid=0",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 26175
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1FVfn-1oaLtOObkwACgt_Imsvf7jgVEdo/export?format=csv&gid=0",
+      "ok": false,
+      "status": 400,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1FVfn-1oaLtOObkwACgt_Imsvf7jgVEdo/gviz/tq?tqx=out:json&gid=0",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 35184
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1oA8tuH8qNgNdAnh-nJ8X6RrS2Mtx39T3/export?format=csv&gid=0",
+      "ok": false,
+      "status": 400,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1oA8tuH8qNgNdAnh-nJ8X6RrS2Mtx39T3/gviz/tq?tqx=out:json&gid=0",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 27355
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1avNPN-pqfUoYgdSHu8Icaa12kUyj7On8/export?format=csv&gid=0",
+      "ok": false,
+      "status": 400,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1avNPN-pqfUoYgdSHu8Icaa12kUyj7On8/gviz/tq?tqx=out:json&gid=0",
+      "ok": true,
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 35253
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/export?format=csv&gid=1846349715",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/gviz/tq?tqx=out:json&gid=1846349715",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1JAZFtSHjcSTWUqVmFho19E6rx9GrcxmK3GYqj3bTMfw/gviz/tq?tqx=out:json&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1nwSsVzVREQlKSZqO6MIj75K27PLioKVeMcqboygMQr8/export?format=csv&gid=499453699",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1nwSsVzVREQlKSZqO6MIj75K27PLioKVeMcqboygMQr8/gviz/tq?tqx=out:json&gid=499453699",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1nwSsVzVREQlKSZqO6MIj75K27PLioKVeMcqboygMQr8/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1nwSsVzVREQlKSZqO6MIj75K27PLioKVeMcqboygMQr8/gviz/tq?tqx=out:json&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Sy47Zop3JmvgTLaE0y7r1_t7EVuvAV-cMOl1uUqO9Bc/export?format=csv&gid=139516762",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Sy47Zop3JmvgTLaE0y7r1_t7EVuvAV-cMOl1uUqO9Bc/gviz/tq?tqx=out:json&gid=139516762",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Sy47Zop3JmvgTLaE0y7r1_t7EVuvAV-cMOl1uUqO9Bc/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Sy47Zop3JmvgTLaE0y7r1_t7EVuvAV-cMOl1uUqO9Bc/gviz/tq?tqx=out:json&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1_TSBNoTN4Tha7Bkiw98B7wKnxSs0a4knKq25hK-uIhE/export?format=csv&gid=182613114",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1_TSBNoTN4Tha7Bkiw98B7wKnxSs0a4knKq25hK-uIhE/gviz/tq?tqx=out:json&gid=182613114",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1_TSBNoTN4Tha7Bkiw98B7wKnxSs0a4knKq25hK-uIhE/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1_TSBNoTN4Tha7Bkiw98B7wKnxSs0a4knKq25hK-uIhE/gviz/tq?tqx=out:json&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/export?format=csv&gid=1265103047",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/gviz/tq?tqx=out:json&gid=1265103047",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1fjZWznU2r7tp_RnNKWmZWHO5S0HD7K-syAdjERlicJA/gviz/tq?tqx=out:json&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/export?format=csv&gid=56015953",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/gviz/tq?tqx=out:json&gid=56015953",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1iF6ANBrz29TH0Yav4EVWqWhtPm9slE9loIKYRByEpQs/gviz/tq?tqx=out:json&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/export?format=csv&gid=1684867980",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/gviz/tq?tqx=out:json&gid=1684867980",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xISAA7LRr_AZlEFov_4LmEO4chT0Yd89PqzWJ1EHQRM/gviz/tq?tqx=out:json&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/export?format=csv&gid=1845081843",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/gviz/tq?tqx=out:json&gid=1845081843",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1kmWLM5sSoZ9eC2tUbm_av9t-ijwQ3ExDg2uWcakwX84/gviz/tq?tqx=out:json&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/export?format=csv&gid=1846349715",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/gviz/tq?tqx=out:json&gid=1846349715",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/10PKwUXISYhAlOYkJ264n7Ne48xn32K3tZtAUu9b69Tg/gviz/tq?tqx=out:json&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/export?format=csv&gid=940693767",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/gviz/tq?tqx=out:json&gid=940693767",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1xvQx312vVL0CwDqOug1o--zdTf5Lf_32fQbPxINYKpg/gviz/tq?tqx=out:json&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1rDSn4SsKFbpbiSvaXolInJOrX_pic0RNvKewqhADbWU/export?format=csv&gid=45309568",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1rDSn4SsKFbpbiSvaXolInJOrX_pic0RNvKewqhADbWU/gviz/tq?tqx=out:json&gid=45309568",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1rDSn4SsKFbpbiSvaXolInJOrX_pic0RNvKewqhADbWU/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1rDSn4SsKFbpbiSvaXolInJOrX_pic0RNvKewqhADbWU/gviz/tq?tqx=out:json&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1l4CvLg8xAJ_bgVnykvOSB3lsYZy5DOWOFYsrTPF1b5s/export?format=csv&gid=638510786",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1l4CvLg8xAJ_bgVnykvOSB3lsYZy5DOWOFYsrTPF1b5s/gviz/tq?tqx=out:json&gid=638510786",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1l4CvLg8xAJ_bgVnykvOSB3lsYZy5DOWOFYsrTPF1b5s/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1l4CvLg8xAJ_bgVnykvOSB3lsYZy5DOWOFYsrTPF1b5s/gviz/tq?tqx=out:json&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1DuYW6yVQnUZfRrpgyqkWl53gWpbJuRjUByQkL6C6gfA/export?format=csv&gid=1845081843",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1DuYW6yVQnUZfRrpgyqkWl53gWpbJuRjUByQkL6C6gfA/gviz/tq?tqx=out:json&gid=1845081843",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1DuYW6yVQnUZfRrpgyqkWl53gWpbJuRjUByQkL6C6gfA/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1DuYW6yVQnUZfRrpgyqkWl53gWpbJuRjUByQkL6C6gfA/gviz/tq?tqx=out:json&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/18WEXIT0WjGcaFIjtWtXMJB68ZAHWU3363D3Ac1nh5Ek/export?format=csv&gid=1845081843",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/18WEXIT0WjGcaFIjtWtXMJB68ZAHWU3363D3Ac1nh5Ek/gviz/tq?tqx=out:json&gid=1845081843",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/18WEXIT0WjGcaFIjtWtXMJB68ZAHWU3363D3Ac1nh5Ek/export?format=csv&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/18WEXIT0WjGcaFIjtWtXMJB68ZAHWU3363D3Ac1nh5Ek/gviz/tq?tqx=out:json&gid=0",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1v7nqlhFaoTNfpdatFCHwCZI47kOMch9FwVLzUYL25zE/export?format=csv&gid=1684867980",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1v7nqlhFaoTNfpdatFCHwCZI47kOMch9FwVLzUYL25zE/gviz/tq?tqx=out:json&gid=1684867980",
+      "ok": false,
+      "status": 401,
+      "content_type": "text/html; charset=utf-8"
     }
   ],
-  "datasets": [],
-  "chosen": null
+  "candidates_top20": [
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/1AmAi5LGp2uCEUc79Uh9gBM89jrBfXAPoWvaHmPWRhZU/gviz/tq?tqx=out:json",
+      "format": "gviz",
+      "rows": 326,
+      "cols": 80,
+      "numeric_cols_count": 49,
+      "score": 71.16666666666667,
+      "final_score": 1105.5,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/1AmAi5LGp2uCEUc79Uh9gBM89jrBfXAPoWvaHmPWRhZU/gviz/tq?tqx=out:json&gid=0",
+      "format": "gviz",
+      "rows": 326,
+      "cols": 80,
+      "numeric_cols_count": 49,
+      "score": 71.16666666666667,
+      "final_score": 1105.5,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/1ci0xpqxyX4XKKdVjeijssSxKARFxkBYmQeLjES1pcac/gviz/tq?tqx=out:json",
+      "format": "gviz",
+      "rows": 68,
+      "cols": 39,
+      "numeric_cols_count": 30,
+      "score": 45.56666666666666,
+      "final_score": 656.9000000000001,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/1ci0xpqxyX4XKKdVjeijssSxKARFxkBYmQeLjES1pcac/gviz/tq?tqx=out:json&gid=1780005197",
+      "format": "gviz",
+      "rows": 68,
+      "cols": 39,
+      "numeric_cols_count": 30,
+      "score": 45.56666666666666,
+      "final_score": 656.9000000000001,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/1ci0xpqxyX4XKKdVjeijssSxKARFxkBYmQeLjES1pcac/gviz/tq?tqx=out:json&gid=0",
+      "format": "gviz",
+      "rows": 68,
+      "cols": 39,
+      "numeric_cols_count": 30,
+      "score": 45.56666666666666,
+      "final_score": 656.9000000000001,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/1AmAi5LGp2uCEUc79Uh9gBM89jrBfXAPoWvaHmPWRhZU/export?format=csv",
+      "format": "csv",
+      "rows": 328,
+      "cols": 80,
+      "numeric_cols_count": 19,
+      "score": 65.33333333333333,
+      "final_score": 500,
+      "content_type": "text/csv"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/1AmAi5LGp2uCEUc79Uh9gBM89jrBfXAPoWvaHmPWRhZU/export?format=csv&gid=0",
+      "format": "csv",
+      "rows": 328,
+      "cols": 80,
+      "numeric_cols_count": 19,
+      "score": 65.33333333333333,
+      "final_score": 500,
+      "content_type": "text/csv"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/1Bj9_tUbMG1yCnME1rc7ggQF7qt8mmxetIfD7bQL167w/gviz/tq?tqx=out:json&gid=1183487657",
+      "format": "gviz",
+      "rows": 34,
+      "cols": 21,
+      "numeric_cols_count": 20,
+      "score": 40.93333333333334,
+      "final_score": 446.6,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/11Pmwdv5G5pCF8yTyrQo6e2oIdwHB97rD/gviz/tq?tqx=out:json",
+      "format": "gviz",
+      "rows": 206,
+      "cols": 26,
+      "numeric_cols_count": 4,
+      "score": 49.766666666666666,
+      "final_score": 164.10000000000002,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/11Pmwdv5G5pCF8yTyrQo6e2oIdwHB97rD/gviz/tq?tqx=out:json&gid=1924132718",
+      "format": "gviz",
+      "rows": 206,
+      "cols": 26,
+      "numeric_cols_count": 4,
+      "score": 49.766666666666666,
+      "final_score": 164.10000000000002,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/11Pmwdv5G5pCF8yTyrQo6e2oIdwHB97rD/gviz/tq?tqx=out:json&gid=0",
+      "format": "gviz",
+      "rows": 206,
+      "cols": 26,
+      "numeric_cols_count": 4,
+      "score": 49.766666666666666,
+      "final_score": 164.10000000000002,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/1hkyu4f7qVoaAfW-TLaSkgIi9uHzjd0mb/gviz/tq?tqx=out:json",
+      "format": "gviz",
+      "rows": 145,
+      "cols": 26,
+      "numeric_cols_count": 4,
+      "score": 44.68333333333334,
+      "final_score": 148.85000000000002,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/1hkyu4f7qVoaAfW-TLaSkgIi9uHzjd0mb/gviz/tq?tqx=out:json&gid=1494178992",
+      "format": "gviz",
+      "rows": 145,
+      "cols": 26,
+      "numeric_cols_count": 4,
+      "score": 44.68333333333334,
+      "final_score": 148.85000000000002,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/1hkyu4f7qVoaAfW-TLaSkgIi9uHzjd0mb/gviz/tq?tqx=out:json&gid=0",
+      "format": "gviz",
+      "rows": 145,
+      "cols": 26,
+      "numeric_cols_count": 4,
+      "score": 44.68333333333334,
+      "final_score": 148.85000000000002,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/1vGeTKW3MRDR5dXHM2IjM8ORz7HOyP5Le/gviz/tq?tqx=out:json",
+      "format": "gviz",
+      "rows": 135,
+      "cols": 26,
+      "numeric_cols_count": 4,
+      "score": 43.85,
+      "final_score": 146.35,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/1vGeTKW3MRDR5dXHM2IjM8ORz7HOyP5Le/gviz/tq?tqx=out:json&gid=0",
+      "format": "gviz",
+      "rows": 135,
+      "cols": 26,
+      "numeric_cols_count": 4,
+      "score": 43.85,
+      "final_score": 146.35,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/1avNPN-pqfUoYgdSHu8Icaa12kUyj7On8/gviz/tq?tqx=out:json&gid=2120637766",
+      "format": "gviz",
+      "rows": 132,
+      "cols": 26,
+      "numeric_cols_count": 4,
+      "score": 43.6,
+      "final_score": 145.6,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/18YPFYiD3uv_ehRX03Jp2MtsJXQOkvjrg/gviz/tq?tqx=out:json",
+      "format": "gviz",
+      "rows": 131,
+      "cols": 26,
+      "numeric_cols_count": 4,
+      "score": 43.516666666666666,
+      "final_score": 145.35,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/18YPFYiD3uv_ehRX03Jp2MtsJXQOkvjrg/gviz/tq?tqx=out:json&gid=1255775821",
+      "format": "gviz",
+      "rows": 131,
+      "cols": 26,
+      "numeric_cols_count": 4,
+      "score": 43.516666666666666,
+      "final_score": 145.35,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "kind": "probe_parsed",
+      "url": "https://docs.google.com/spreadsheets/d/1vGeTKW3MRDR5dXHM2IjM8ORz7HOyP5Le/gviz/tq?tqx=out:json&gid=1131271960",
+      "format": "gviz",
+      "rows": 131,
+      "cols": 26,
+      "numeric_cols_count": 4,
+      "score": 43.516666666666666,
+      "final_score": 145.35,
+      "content_type": "application/javascript; charset=utf-8"
+    }
+  ],
+  "chosen_debug": {
+    "kind": "probe_parsed",
+    "url": "https://docs.google.com/spreadsheets/d/1AmAi5LGp2uCEUc79Uh9gBM89jrBfXAPoWvaHmPWRhZU/gviz/tq?tqx=out:json",
+    "format": "gviz",
+    "content_type": "application/javascript; charset=utf-8",
+    "rows": 326,
+    "cols": 80,
+    "numeric_result_cols": [
+      "Respondents ",
+      "Gender Women ",
+      "Men ",
+      "Age 18 to 34 ",
+      "35 to 49 ",
+      "50 to 64 ",
+      "65+ ",
+      "Ethnicity White ",
+      "POC ",
+      "Education Non- college ",
+      "College ",
+      "Ethnicity x Gender White Women ",
+      "POC Women ",
+      "Education x Gender Non-College Women ",
+      "College Women ",
+      "Ethnicity x Education White Non- College ",
+      "POC Non- College ",
+      "2020 Presidential Vote Biden voter ",
+      "Trump voter ",
+      "2020 Vote History 2020 Voter ",
+      "2020 Non- voter ",
+      "Party Identification Dems ",
+      "Pure Ind ",
+      "GOP ",
+      "Donald Trump, the Republican ",
+      "Kamala Harris, the Democrat ",
+      "Senate Ballot: Amy Klobuchar, the Democrat ",
+      "Royce White, the Republican ",
+      "Undecided ",
+      "Congressional Ballot: The Democratic candidate ",
+      "The Republican candidate ",
+      "MinnPost Regions Greater MN ",
+      "Metro Area ",
+      "Mpls/ St. Paul ",
+      "Region x Partisanship Twin Cities  Dems ",
+      "Metro Area Dems ",
+      "Greater MN Dems ",
+      "2024 Decision Always Known ",
+      "Decided Before July ",
+      "Decided in July "
+    ],
+    "sample_keys": [
+      "Dates Fielded: October 16 - 22, 2024 Questions ",
+      "Answer ",
+      "Respondents ",
+      "D",
+      "Gender Women ",
+      "Men ",
+      "G",
+      "Age 18 to 34 ",
+      "35 to 49 ",
+      "50 to 64 ",
+      "65+ ",
+      "L",
+      "Ethnicity White ",
+      "POC ",
+      "O",
+      "Education Non- college ",
+      "College ",
+      "R",
+      "Ethnicity x Gender White Women ",
+      "POC Women ",
+      "W",
+      "Education x Gender Non-College Women ",
+      "College Women ",
+      "AB",
+      "Ethnicity x Education White Non- College ",
+      "POC Non- College ",
+      "AG",
+      "2020 Presidential Vote Biden voter ",
+      "Trump voter ",
+      "AJ",
+      "2020 Vote History 2020 Voter ",
+      "2020 Non- voter ",
+      "AM",
+      "Party Identification Dems ",
+      "Pure Ind ",
+      "GOP ",
+      "AQ",
+      "Donald Trump, the Republican ",
+      "Kamala Harris, the Democrat ",
+      "AT",
+      "Senate Ballot: Amy Klobuchar, the Democrat ",
+      "Royce White, the Republican ",
+      "Undecided ",
+      "AX",
+      "Congressional Ballot: The Democratic candidate ",
+      "The Republican candidate ",
+      "BB",
+      "MinnPost Regions Greater MN ",
+      "Metro Area ",
+      "Mpls/ St. Paul ",
+      "BF",
+      "Region x Partisanship Twin Cities  Dems ",
+      "Metro Area Dems ",
+      "Greater MN Dems ",
+      "BM",
+      "2024 Decision Always Known ",
+      "Decided Before July ",
+      "Decided in July ",
+      "Decided in last month or sooner ",
+      "BR",
+      "2024 Decision - Decided vs Movers Always Knew ",
+      "Uncertain then Decided ",
+      "BU",
+      "Urbanicity rural ",
+      "suburban ",
+      "urban ",
+      "BY",
+      "MN Regions - Change Minn/St Paul ",
+      "MN North ",
+      "MN South "
+    ],
+    "sample_row": {
+      "Dates Fielded: October 16 - 22, 2024 Questions ": "Sample Size (weighted)",
+      "Answer ": "Modeled Margin of Error: 2.4%",
+      "Respondents ": "1734",
+      "D": null,
+      "Gender Women ": "887",
+      "Men ": "319",
+      "G": null,
+      "Age 18 to 34 ": "414",
+      "35 to 49 ": "424",
+      "50 to 64 ": "472",
+      "65+ ": "415",
+      "L": null,
+      "Ethnicity White ": "1422",
+      "POC ": "254",
+      "O": null,
+      "Education Non- college ": "989",
+      "College ": "105",
+      "R": null,
+      "Ethnicity x Gender White Women ": "759",
+      "POC Women ": "109",
+      "W": null,
+      "Education x Gender Non-College Women ": "479",
+      "College Women ": "402",
+      "AB": null,
+      "Ethnicity x Education White Non- College ": "804",
+      "POC Non- College ": "147",
+      "AG": null,
+      "2020 Presidential Vote Biden voter ": "800",
+      "Trump voter ": "696",
+      "AJ": null,
+      "2020 Vote History 2020 Voter ": "1533",
+      "2020 Non- voter ": "181",
+      "AM": null,
+      "Party Identification Dems ": "805",
+      "Pure Ind ": "172",
+      "GOP ": "457",
+      "AQ": null,
+      "Donald Trump, the Republican ": "778",
+      "Kamala Harris, the Democrat ": "824",
+      "AT": null,
+      "Senate Ballot: Amy Klobuchar, the Democrat ": "886",
+      "Royce White, the Republican ": "687",
+      "Undecided ": "104",
+      "AX": null,
+      "Congressional Ballot: The Democratic candidate ": "812",
+      "The Republican candidate ": "787",
+      "BB": null,
+      "MinnPost Regions Greater MN ": "750",
+      "Metro Area ": "411",
+      "Mpls/ St. Paul ": "573",
+      "BF": null,
+      "Region x Partisanship Twin Cities  Dems ": "390",
+      "Metro Area Dems ": "188",
+      "Greater MN Dems ": "226",
+      "BM": null,
+      "2024 Decision Always Known ": "863",
+      "Decided Before July ": "181",
+      "Decided in July ": "456",
+      "Decided in last month or sooner ": "183",
+      "BR": null,
+      "2024 Decision - Decided vs Movers Always Knew ": "863",
+      "Uncertain then Decided ": "820",
+      "BU": null,
+      "Urbanicity rural ": "667",
+      "suburban ": "325",
+      "urban ": "742",
+      "BY": null,
+      "MN Regions - Change Minn/St Paul ": "1038",
+      "MN North ": "411",
+      "MN South ": "286"
+    }
+  }
 }
