@@ -1,0 +1,79 @@
+{
+  "ok": false,
+  "fetched_at": "2026-02-03T18:54:21.945Z",
+  "reason": "no polls parsed from DOM tables",
+  "pages": [
+    {
+      "url": "https://www.racetothewh.com/allpolls",
+      "defaultYear": 2026,
+      "okLoad": true,
+      "tables": 0,
+      "pollTables": 0,
+      "pollTableHeaders": []
+    },
+    {
+      "url": "https://www.racetothewh.com/polls/genericballot",
+      "defaultYear": 2026,
+      "okLoad": true,
+      "tables": 0,
+      "pollTables": 0,
+      "pollTableHeaders": []
+    },
+    {
+      "url": "https://www.racetothewh.com/trump",
+      "defaultYear": 2026,
+      "okLoad": true,
+      "tables": 0,
+      "pollTables": 0,
+      "pollTableHeaders": []
+    },
+    {
+      "url": "https://www.racetothewh.com/senate/26polls",
+      "defaultYear": 2026,
+      "okLoad": true,
+      "tables": 0,
+      "pollTables": 0,
+      "pollTableHeaders": []
+    },
+    {
+      "url": "https://www.racetothewh.com/governor/26polls",
+      "defaultYear": 2026,
+      "okLoad": true,
+      "tables": 0,
+      "pollTables": 0,
+      "pollTableHeaders": []
+    },
+    {
+      "url": "https://www.racetothewh.com/house/26polls",
+      "defaultYear": 2026,
+      "okLoad": true,
+      "tables": 0,
+      "pollTables": 0,
+      "pollTableHeaders": []
+    },
+    {
+      "url": "https://www.racetothewh.com/president/2028/polls",
+      "defaultYear": 2028,
+      "okLoad": true,
+      "tables": 0,
+      "pollTables": 0,
+      "pollTableHeaders": []
+    },
+    {
+      "url": "https://www.racetothewh.com/president/2028/dem",
+      "defaultYear": 2028,
+      "okLoad": true,
+      "tables": 0,
+      "pollTables": 0,
+      "pollTableHeaders": []
+    },
+    {
+      "url": "https://www.racetothewh.com/president/2028/gop",
+      "defaultYear": 2028,
+      "okLoad": true,
+      "tables": 0,
+      "pollTables": 0,
+      "pollTableHeaders": []
+    }
+  ]
+}
