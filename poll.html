@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f7f1e8"> 
+<title>VoteHub — Polling Aggregator</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗳️</text></svg>">
+<script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..900&family=Space+Grotesk:wght@300..700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ═══ THEME: LIGHT ═══ */
+[data-theme="light"]{
+  --bg:#f7f1e8;--bg2:#efe4d6;--card:#ffffff;--cardGlass:rgba(255,255,255,.78);
+  --inset:rgba(17,24,39,.05);--glass:rgba(255,255,255,.7);
+  --t1:#17120f;--t2:#3e362f;--t3:#7a7267;--t4:#a59a8c;
+  --brd:rgba(15,23,42,.12);--brds:rgba(15,23,42,.22);--brdt:rgba(15,23,42,.06);
+  --dem:#1d4ed8;--dems:rgba(29,78,216,.12);--demm:rgba(29,78,216,.2);--demg:rgba(29,78,216,.35);
+  --rep:#dc2626;--reps:rgba(220,38,38,.12);--repm:rgba(220,38,38,.2);--repg:rgba(220,38,38,.35);
+  --app:#0f766e;--apps:rgba(15,118,110,.14);--appm:rgba(15,118,110,.22);
+  --dis:#dc2626;--diss:rgba(220,38,38,.12);
+  --acc:#0f766e;--warn:#b45309;--warns:rgba(245,158,11,.16);
+  --s1:0 1px 2px rgba(15,23,42,.06),0 12px 30px rgba(15,23,42,.08);
+  --s2:0 10px 28px rgba(15,23,42,.14);--s3:0 20px 50px rgba(15,23,42,.2);
+  --band-a:rgba(15,118,110,.12);--band-b:rgba(220,38,38,.12);
+  --band-c:rgba(29,78,216,.12);--band-d:rgba(220,38,38,.12);
+  --ring:rgba(15,118,110,.4);
+}
+/* ═══ THEME: DARK ═══ */
+[data-theme="dark"]{
+  --bg:#0a0b10;--bg2:#0f1117;--card:#141821;--cardGlass:rgba(20,24,33,.86);
+  --inset:rgba(255,255,255,.04);--glass:rgba(10,12,16,.75);
+  --t1:#eef2f6;--t2:#c7ccd4;--t3:#8791a1;--t4:#4b5563;
+  --brd:rgba(255,255,255,.08);--brds:rgba(255,255,255,.16);--brdt:rgba(255,255,255,.04);
+  --dem:#60a5fa;--dems:rgba(96,165,250,.16);--demm:rgba(96,165,250,.24);--demg:rgba(96,165,250,.35);
+  --rep:#f87171;--reps:rgba(248,113,113,.16);--repm:rgba(248,113,113,.24);--repg:rgba(248,113,113,.35);
+  --app:#34d399;--apps:rgba(52,211,153,.16);--appm:rgba(52,211,153,.24);
+  --dis:#f87171;--diss:rgba(248,113,113,.16);
+  --acc:#34d399;--warn:#f59e0b;--warns:rgba(245,158,11,.18);
+  --s1:0 1px 2px rgba(0,0,0,.32),0 12px 24px rgba(0,0,0,.4);
+  --s2:0 12px 30px rgba(0,0,0,.5);--s3:0 22px 60px rgba(0,0,0,.6);
+  --band-a:rgba(52,211,153,.14);--band-b:rgba(248,113,113,.14);
+  --band-c:rgba(96,165,250,.14);--band-d:rgba(248,113,113,.14);
+  --ring:rgba(52,211,153,.45);
+}
+:root{--rs:10px;--rm:16px;--rl:26px;--rf:9999px;--fd:'Fraunces',serif;--fb:'Space Grotesk',sans-serif;--fm:'IBM Plex Mono',monospace;--eo:cubic-bezier(.22,1,.36,1);--es:cubic-bezier(.2,.8,.2,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--fb);
+  background:
+    radial-gradient(900px 700px at -10% -20%, rgba(15,118,110,.18), transparent 60%),
+    radial-gradient(900px 700px at 110% -10%, rgba(249,115,22,.18), transparent 60%),
+    linear-gradient(180deg,var(--bg),var(--bg2));
+  color:var(--t1);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+  overflow-x:hidden;
+  transition:background .5s,color .4s;
+  position:relative;
+}
+[data-theme="dark"] body{
+  background:
+    radial-gradient(900px 700px at -10% -20%, rgba(96,165,250,.18), transparent 60%),
+    radial-gradient(900px 700px at 110% -10%, rgba(248,113,113,.18), transparent 60%),
+    linear-gradient(180deg,var(--bg),var(--bg2));
+}
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  background-image:radial-gradient(rgba(0,0,0,.05) 1px, transparent 1px);
+  background-size:3px 3px;
+  opacity:.12;
+  pointer-events:none;
+  z-index:0;
+  mix-blend-mode:multiply;
+}
+[data-theme="dark"] body::before{opacity:.18;mix-blend-mode:screen}
+body::after{
+  content:'';
+  position:fixed;
+  top:-280px;
+  left:50%;
+  transform:translateX(-50%);
+  width:900px;
+  height:900px;
+  background:radial-gradient(circle, rgba(255,255,255,.28), transparent 60%);
+  filter:blur(70px);
+  opacity:.5;
+  pointer-events:none;
+  z-index:0;
+}
+[data-theme="dark"] body::after{
+  background:radial-gradient(circle, rgba(96,165,250,.18), transparent 60%);
+  opacity:.35;
+}
+#bgCanvas{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.65;mix-blend-mode:multiply}
+[data-theme="dark"] #bgCanvas{opacity:.35;mix-blend-mode:screen}
+
+/* Skip Link */
+.skip{
+  position:fixed;top:10px;left:10px;z-index:500;
+  padding:.45rem .7rem;border-radius:var(--rf);
+  background:var(--card);border:1px solid var(--brd);
+  color:var(--t2);font-size:.72rem;font-weight:600;
+  transform:translateY(-130%);transition:transform .2s var(--eo);
+}
+.skip:focus{transform:translateY(0)}
+
+/* ═══ HEADER ═══ */
+.hdr{position:sticky;top:0;z-index:200;background:var(--glass);backdrop-filter:blur(22px) saturate(160%);-webkit-backdrop-filter:blur(22px) saturate(160%);border-bottom:1px solid var(--brd);transition:box-shadow .3s}
+.hdr.scrolled{box-shadow:var(--s1)}
+.hdr-in{max-width:1360px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;gap:1rem}
+.logo-g{display:flex;align-items:center;gap:.85rem}
+.logo-m{
+  width:36px;height:36px;border-radius:12px;
+  background:linear-gradient(135deg,var(--dem),var(--rep));
+  display:flex;align-items:center;justify-content:center;color:#fff;
+  font-weight:800;font-size:.7rem;font-family:var(--fm);letter-spacing:.08em;
+  box-shadow:0 6px 16px var(--demg);position:relative;overflow:hidden
+}
+.logo-m::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 40%,rgba(255,255,255,.25))}
+.logo-t h1{font-family:var(--fd);font-size:1.35rem;font-weight:700;letter-spacing:-.02em;line-height:1}
+.logo-t .tag{font-size:.55rem;color:var(--t3);font-weight:700;letter-spacing:.22em;text-transform:uppercase;margin-top:2px}
+.hdr-act{display:flex;align-items:center;gap:.45rem}
+.icbtn{
+  width:36px;height:36px;border-radius:var(--rf);
+  border:1px solid var(--brd);background:var(--card);color:var(--t2);
+  cursor:pointer;display:flex;align-items:center;justify-content:center;
+  font-size:1rem;transition:all .2s var(--eo);box-shadow:var(--s1)
+}
+.icbtn:hover{border-color:var(--acc);color:var(--acc);transform:translateY(-1px)}
+.ld{width:7px;height:7px;border-radius:50%;background:var(--acc);display:none;animation:pulse 1.2s ease infinite;box-shadow:0 0 0 0 var(--acc)}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.7)}}
+.fpill{
+  display:flex;align-items:center;gap:.45rem;cursor:pointer;user-select:none;
+  padding:5px 12px 5px 7px;border-radius:var(--rf);border:1px solid var(--brd);
+  background:var(--cardGlass);transition:all .2s var(--eo);
+  font-size:.73rem;font-weight:700;color:var(--t2);box-shadow:var(--s1)
+}
+.fpill:hover{border-color:var(--acc);color:var(--t1);transform:translateY(-1px)}
+.fpill input{display:none}
+.pdot{width:7px;height:7px;border-radius:50%;background:var(--t4);transition:all .25s;flex-shrink:0}
+.fpill input:checked~.pdot{background:var(--app);box-shadow:0 0 10px rgba(15,118,110,.5)}
+
+/* ═══ KBD TOOLTIP ═══ */
+.kbd-hint{
+  position:fixed;bottom:1.25rem;right:1.25rem;z-index:300;
+  background:var(--cardGlass);border:1px solid var(--brd);
+  border-radius:var(--rm);padding:.7rem .95rem;font-size:.68rem;color:var(--t3);
+  box-shadow:var(--s2);display:none;line-height:1.6;opacity:0;transition:opacity .2s
+}
+.kbd-hint.show{display:block;opacity:1}
+.kbd-hint kbd{
+  background:var(--inset);border:1px solid var(--brd);border-radius:6px;
+  padding:2px 6px;font-family:var(--fm);font-size:.62rem;font-weight:700;margin:0 2px
+}
+
+/* ═══ MAIN ═══ */
+main{max-width:1360px;margin:0 auto;padding:1.75rem 2rem 3.5rem;display:flex;flex-direction:column;gap:1.35rem;position:relative;z-index:1}
+
+/* ═══ ALERT ═══ */
+.alert{padding:.7rem 1rem;border-radius:var(--rm);font-size:.78rem;font-weight:600;display:none;animation:si .4s var(--eo);border:1px solid transparent}
+.alert.info{background:var(--dems);color:var(--dem);border-color:var(--demm)}
+.alert.warn{background:var(--warns);color:var(--warn);border-color:rgba(245,158,11,.25)}
+.alert.success{background:var(--apps);color:var(--app);border-color:var(--appm)}
+@keyframes si{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+
+/* ═══ RIBBON ═══ */
+.ribbon{
+  display:flex;gap:.7rem;flex-wrap:wrap;padding:.7rem 1rem;background:var(--cardGlass);
+  border:1px solid var(--brd);border-radius:var(--rm);font-size:.68rem;align-items:center;box-shadow:var(--s1)
+}
+.ribbon-item{display:flex;align-items:center;gap:.35rem;white-space:nowrap}
+.ribbon-sep{width:1px;height:14px;background:var(--brd);flex-shrink:0}
+.ribbon-label{color:var(--t3);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.55rem}
+.ribbon-val{font-family:var(--fm);font-weight:700;font-size:.72rem}
+
+/* ═══ HERO ═══ */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:1.2rem}
+.hc{
+  background:var(--cardGlass);
+  border:1px solid var(--brd);
+  border-radius:var(--rl);
+  padding:1.7rem 1.9rem 1.4rem;
+  box-shadow:var(--s2);
+  position:relative;overflow:hidden;
+  transition:transform .3s var(--eo),box-shadow .3s;
+  cursor:default
+}
+.hc:hover{transform:translateY(-2px);box-shadow:var(--s3)}
+.hc::before{content:'';position:absolute;top:0;left:0;right:0;height:4px}
+.hc.ta::before{background:linear-gradient(90deg,var(--app),var(--dis))}
+.hc.tg::before{background:linear-gradient(90deg,var(--dem),var(--rep))}
+.hc::after{
+  content:'';position:absolute;top:-60px;right:-60px;width:180px;height:180px;border-radius:50%;
+  opacity:.18;filter:blur(40px);pointer-events:none;transition:opacity .3s
+}
+.hc.ta::after{background:var(--app)}.hc.tg::after{background:var(--dem)}
+.hc:hover::after{opacity:.28}
+.hl{font-size:.55rem;text-transform:uppercase;letter-spacing:.22em;color:var(--t3);font-weight:700;margin-bottom:.9rem}
+.hr{display:flex;align-items:baseline;gap:.4rem;flex-wrap:wrap}
+.hn{font-family:var(--fm);font-size:3rem;font-weight:700;line-height:1;letter-spacing:-.04em}
+.hvs{font-size:1.4rem;color:var(--t4);font-weight:300;margin:0 .1rem}
+.hb{
+  font-family:var(--fm);font-size:.78rem;font-weight:700;
+  padding:3px 10px;border-radius:var(--rs);margin-left:auto;white-space:nowrap;
+  border:1px solid var(--brd);background:var(--inset)
+}
+.hm{margin-top:.9rem;display:flex;align-items:center;gap:.65rem;font-size:.68rem;color:var(--t3);flex-wrap:wrap}
+.mb{display:inline-flex;align-items:center;gap:2px;font-weight:700;font-size:.64rem;padding:2px 7px;border-radius:var(--rf);font-family:var(--fm)}
+.mb.up{color:var(--app);background:var(--apps)}.mb.down{color:var(--rep);background:var(--reps)}.mb.flat{color:var(--t3);background:var(--inset)}
+.hsp{position:absolute;bottom:0;left:0;right:0;height:46px;opacity:.15;pointer-events:none}
+
+/* ═══ SPLIT VIEW ═══ */
+.split{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:1.2rem;
+  align-items:start;
+}
+.split-col{
+  display:flex;
+  flex-direction:column;
+  gap:1.2rem;
+  min-width:0;
+}
+
+/* ═══ TIME SELECTOR ═══ */
+.ts{display:flex;gap:2px;background:var(--inset);padding:2px;border-radius:var(--rf);border:1px solid var(--brd);width:fit-content;box-shadow:inset 0 1px 0 rgba(255,255,255,.35)}
+.tb{
+  font-family:var(--fm);font-size:.64rem;font-weight:700;padding:5px 12px;border-radius:var(--rf);
+  border:none;background:transparent;color:var(--t3);cursor:pointer;transition:all .15s;letter-spacing:.02em
+}
+.tb:hover{color:var(--t1)}
+.tb.on{background:var(--card);color:var(--t1);box-shadow:0 1px 3px rgba(0,0,0,.06)}
+
+/* ═══ CARDS ═══ */
+.cd{
+  background:var(--cardGlass);border:1px solid var(--brd);border-radius:var(--rl);
+  padding:1.8rem;box-shadow:var(--s1);position:relative;transition:box-shadow .3s,background .4s
+}
+.cd::before{
+  content:'';position:absolute;inset:0;border-radius:var(--rl);
+  background:linear-gradient(180deg,rgba(255,255,255,.35),transparent 40%);
+  pointer-events:none;opacity:.35
+}
+[data-theme="dark"] .cd::before{opacity:.2}
+.cd:hover{box-shadow:var(--s2)}
+.ch{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:1.35rem;gap:1rem;flex-wrap:wrap}
+.ct{font-family:var(--fd);font-size:1.5rem;font-weight:700;line-height:1.15;letter-spacing:-.01em}
+.cs{font-size:.7rem;color:var(--t3);font-weight:500;margin-top:.2rem}
+.ca{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap}
+
+/* ═══ REVEAL ═══ */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .5s var(--eo),transform .5s var(--eo)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ═══ STATS ═══ */
+.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:.7rem;margin-bottom:1.35rem}
+.sc{
+  background:var(--inset);padding:.9rem 1rem;border-radius:var(--rm);
+  border:1px solid var(--brdt);display:flex;flex-direction:column;gap:.25rem;transition:border-color .15s
+}
+.sc:hover{border-color:var(--brds)}
+.sl{font-size:.54rem;color:var(--t3);text-transform:uppercase;letter-spacing:.12em;font-weight:700}
+.sv{font-family:var(--fm);font-size:1.4rem;font-weight:700;line-height:1.15;display:flex;align-items:baseline;gap:.4rem;letter-spacing:-.03em}
+.tt{font-size:.64rem;font-weight:700;padding:1px 6px;border-radius:var(--rf);display:inline-flex;align-items:center;font-family:var(--fm)}
+.tt.up{color:var(--app);background:var(--apps)}.tt.down{color:var(--rep);background:var(--reps)}.tt.flat{color:var(--t3);background:var(--inset);border:1px solid var(--brd)}
+
+/* ═══ CHARTS ═══ */
+.pw{
+  width:100%;height:480px;position:relative;border-radius:var(--rm);overflow:hidden;
+  background:linear-gradient(180deg,rgba(255,255,255,.5),rgba(255,255,255,.1));
+  border:1px solid var(--brdt)
+}
+[data-theme="dark"] .pw{background:linear-gradient(180deg,rgba(20,24,33,.7),rgba(20,24,33,.3))}
+.pw.sm-chart{height:210px;margin-top:.75rem}
+.pw.dc{height:220px;margin-top:.75rem;display:none}
+.cf{font-size:.66rem;color:var(--t4);margin-top:.6rem;font-style:italic}
+
+/* ═══ BUTTONS ═══ */
+.btn{
+  appearance:none;border:1px solid var(--brd);background:linear-gradient(180deg,var(--card),var(--inset));
+  color:var(--t2);padding:6px 12px;border-radius:var(--rf);font-weight:700;font-size:.68rem;font-family:var(--fb);
+  cursor:pointer;transition:all .15s var(--eo);white-space:nowrap;display:inline-flex;align-items:center;gap:.3rem;box-shadow:var(--s1)
+}
+.btn:hover{border-color:var(--acc);color:var(--acc);transform:translateY(-1px)}
+.btn:active{transform:scale(.98)}
+
+/* ═══ CFG ═══ */
+.cp{margin:0 0 1.35rem;padding:1rem;border:1px solid var(--brd);border-radius:var(--rm);background:var(--inset);animation:si .3s var(--eo)}
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;align-items:start}
+.ci{display:flex;flex-direction:column;gap:.3rem}
+.cl{font-size:.58rem;color:var(--t3);text-transform:uppercase;letter-spacing:.1em;font-weight:700}
+.cr{display:flex;gap:.45rem;align-items:center;flex-wrap:wrap}
+.cr input[type="number"]{width:4.4rem;padding:.3rem .5rem;border-radius:var(--rs);border:1px solid var(--brd);background:var(--card);color:var(--t1);font-weight:700;font-family:var(--fm);font-size:.78rem}
+.cr input[type="range"]{flex:1;min-width:100px;accent-color:var(--acc)}
+label.cc{display:flex;gap:.45rem;align-items:center;cursor:pointer;user-select:none;font-weight:700;font-size:.78rem}
+label.cc input{accent-color:var(--acc);width:.9rem;height:.9rem;margin:0}
+.sm{font-size:.7rem;color:var(--t3)}
+
+/* ═══ FEED ═══ */
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:1.15rem}
+.fs h3{font-family:var(--fd);font-size:1rem;font-weight:700;margin-bottom:.75rem;display:flex;align-items:center;gap:.4rem}
+.fs h3 .dt{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.fl{display:flex;flex-direction:column;gap:.35rem;max-height:260px;overflow-y:auto;padding-right:.2rem}
+.fi{display:grid;grid-template-columns:1fr auto auto;gap:.65rem;align-items:center;padding:.6rem .75rem;border-radius:var(--rs);background:var(--inset);border:1px solid var(--brdt);font-size:.74rem;transition:border-color .15s}
+.fi:hover{border-color:var(--brds)}
+.fp{font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fd{font-family:var(--fm);font-size:.64rem;color:var(--t3)}
+.fv{display:flex;gap:.45rem;font-family:var(--fm);font-weight:700;font-size:.74rem}
+
+/* ═══ POLL FREQ ═══ */
+.freq-bar-row{display:flex;gap:2px;align-items:flex-end;height:32px;margin-top:.5rem}
+.freq-bar{flex:1;border-radius:3px 3px 0 0;min-width:2px;background:var(--acc);opacity:.45;transition:opacity .15s,height .3s var(--eo)}
+.freq-bar:hover{opacity:.95}
+.freq-labels{display:flex;justify-content:space-between;font-size:.56rem;color:var(--t4);margin-top:3px;font-family:var(--fm)}
+
+/* ═══ POLLSTER TABLE ═══ */
+.pt-search{width:100%;max-width:280px;padding:.45rem .75rem;border-radius:var(--rf);border:1px solid var(--brd);background:var(--inset);color:var(--t1);font-size:.76rem;font-family:var(--fb);margin-bottom:.65rem;transition:border-color .15s}
+.pt-search:focus{outline:none;border-color:var(--acc)}
+.ptw{overflow-x:auto;margin-top:.5rem}
+.pt{width:100%;border-collapse:collapse;font-size:.74rem}
+.pt th{text-align:left;font-size:.56rem;text-transform:uppercase;letter-spacing:.1em;color:var(--t3);font-weight:700;padding:.45rem .65rem;border-bottom:2px solid var(--brds);white-space:nowrap;cursor:pointer;user-select:none;transition:color .15s}
+.pt th:hover{color:var(--t1)}
+.pt th.sorted::after{content:' ↓';font-size:.5rem}
+.pt th.sorted.asc::after{content:' ↑'}
+.pt td{padding:.5rem .65rem;border-bottom:1px solid var(--brdt);white-space:nowrap}
+.pt tr:hover td{background:var(--inset)}
+.pt .mn{font-family:var(--fm);font-weight:600;font-size:.72rem}
+.lb{display:inline-block;height:5px;border-radius:3px;min-width:3px;vertical-align:middle}
+.bc{font-family:var(--fm);font-size:.64rem;font-weight:700;background:var(--inset);border:1px solid var(--brd);padding:1px 7px;border-radius:var(--rf)}
+.mc{display:inline-flex;align-items:center;gap:3px;padding:2px 8px;border-radius:var(--rf);font-size:.58rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.mc.on{background:var(--apps);color:var(--app)}.mc.off{background:var(--dems);color:var(--dem)}
+
+/* ═══ HOUSE EFFECT ═══ */
+.house-chart{display:flex;flex-direction:column;gap:3px;margin-top:.75rem;max-height:320px;overflow-y:auto}
+.house-row{display:flex;align-items:center;gap:.5rem;font-size:.72rem;padding:2px 0}
+.house-name{width:100px;text-align:right;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex-shrink:0;font-size:.68rem}
+.house-bar-wrap{flex:1;height:14px;position:relative;display:flex;align-items:center}
+.house-center{position:absolute;left:50%;width:1px;height:100%;background:var(--brd);z-index:0}
+.house-bar{height:10px;border-radius:3px;position:absolute;top:2px;min-width:2px;z-index:1}
+.house-val{width:50px;font-family:var(--fm);font-weight:700;font-size:.66rem;flex-shrink:0}
+
+/* ═══ DEBUG ═══ */
+#debugCard{display:none}
+#debugOut{background:#0a0a0a;color:#4ade80;padding:.85rem;border-radius:var(--rs);overflow-x:auto;font-family:var(--fm);font-size:.7rem}
+
+/* ═══ FOOTER ═══ */
+.ft{text-align:center;padding:2rem;color:var(--t3);font-size:.7rem;border-top:1px solid var(--brd);background:var(--cardGlass);position:relative;z-index:1;transition:background .4s}
+.ft .br{font-family:var(--fd);font-size:1rem;font-weight:700;color:var(--t2);margin-bottom:.35rem}
+
+/* ═══ ACCESSIBILITY ═══ */
+:focus-visible{outline:3px solid var(--ring);outline-offset:2px}
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:1100px){.split{grid-template-columns:1fr}}
+@media(max-width:900px){.hero,.fg{grid-template-columns:1fr}.hdr-in{padding:0 1rem}main{padding:1.25rem}}
+@media(max-width:640px){
+  .hn{font-size:2.2rem}.hc{padding:1.2rem 1.3rem 1.05rem}.cd{padding:1.2rem}
+  .ct{font-size:1.25rem}.pw{height:320px}.pw.sm-chart{height:170px}
+  .sg{grid-template-columns:1fr 1fr}.logo-t .tag{display:none}.ts{overflow-x:auto}
+  .ribbon{font-size:.62rem}.kbd-hint{display:none!important}
+}
+::-webkit-scrollbar{width:4px;height:4px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--t4);border-radius:99px}
+::-webkit-scrollbar-thumb:hover{background:var(--t3)}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="bgCanvas"></canvas>
+
+<header class="hdr" id="siteHeader">
+  <div class="hdr-in">
+    <div class="logo-g">
+      <div class="logo-m">VH</div>
+      <div class="logo-t">
+        <h1>VoteHub</h1>
+        <div class="tag">Polling Aggregation</div>
+      </div>
+    </div>
+    <div class="hdr-act">
+      <div class="ld" id="loadingIndicator"></div>
+      <label class="fpill" title="Quality filter (F)"><input type="checkbox" id="toggleFilter" checked onchange="app.refreshViews()"><span class="pdot"></span><span id="filterLabelText">Filtered</span></label>
+      <button class="icbtn" id="themeToggle" onclick="app.toggleTheme()" title="Toggle theme (T)" aria-label="Toggle theme">☀</button>
+      <button class="icbtn" id="kbdToggle" onclick="app.toggleKbd()" title="Keyboard shortcuts (?)" aria-label="Keyboard shortcuts">?</button>
+    </div>
+  </div>
+</header>
+
+<div class="kbd-hint" id="kbdHint">
+  <b>Shortcuts</b><br>
+  <kbd>T</kbd> Theme &nbsp; <kbd>F</kbd> Filter &nbsp; <kbd>?</kbd> This panel<br>
+  <kbd>1</kbd>–<kbd>5</kbd> Time range (30d / 90d / 6m / 1y / All)
+</div>
+
+<main id="main">
+  <div id="globalStatus" class="alert info" role="status" aria-live="polite">Initializing…</div>
+
+  <!-- RIBBON -->
+  <div class="ribbon reveal" id="ribbon" style="display:none">
+    <div class="ribbon-item"><span class="ribbon-label">Updated</span><span class="ribbon-val" id="rbUpdated">—</span></div>
+    <div class="ribbon-sep"></div>
+    <div class="ribbon-item"><span class="ribbon-label">Approval</span><span class="ribbon-val" id="rbApproval" style="color:var(--app)">—</span></div>
+    <div class="ribbon-sep"></div>
+    <div class="ribbon-item"><span class="ribbon-label">Net</span><span class="ribbon-val" id="rbNet">—</span></div>
+    <div class="ribbon-sep"></div>
+    <div class="ribbon-item"><span class="ribbon-label">Ballot</span><span class="ribbon-val" id="rbBallot">—</span></div>
+    <div class="ribbon-sep"></div>
+    <div class="ribbon-item"><span class="ribbon-label">Margin</span><span class="ribbon-val" id="rbMargin">—</span></div>
+    <div class="ribbon-sep"></div>
+    <div class="ribbon-item"><span class="ribbon-label">Polls</span><span class="ribbon-val" id="rbPolls">—</span></div>
+    <div class="ribbon-sep"></div>
+    <div class="ribbon-item"><span class="ribbon-label">Sources</span><span class="ribbon-val" id="rbSources">—</span></div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero reveal" id="heroBanner" style="display:none;">
+    <div class="hc ta">
+      <div class="hl">Presidential Approval</div>
+      <div class="hr"><span class="hn" id="hlApprove" style="color:var(--app)">—</span><span class="hvs">–</span><span class="hn" id="hlDisapprove" style="color:var(--dis)">—</span><span class="hb" id="hlApprovalNet">—</span></div>
+      <div class="hm"><span id="hlApprovalTrend"></span><span id="hlApprovalPolls"></span><span id="hlApprovalWindow"></span></div>
+      <canvas class="hsp" id="sparkApproval"></canvas>
+    </div>
+    <div class="hc tg">
+      <div class="hl">Generic Congressional Ballot</div>
+      <div class="hr"><span class="hn" id="hlDem" style="color:var(--dem)">—</span><span class="hvs">–</span><span class="hn" id="hlRep" style="color:var(--rep)">—</span><span class="hb" id="hlGBNet">—</span></div>
+      <div class="hm"><span id="hlGBTrend"></span><span id="hlGBPolls"></span><span id="hlGBWindow"></span></div>
+      <canvas class="hsp" id="sparkGB"></canvas>
+    </div>
+  </div>
+
+  <!-- SPLIT: APPROVAL + GB -->
+  <div class="split">
+    <div class="split-col">
+      <!-- APPROVAL -->
+      <div class="cd reveal">
+        <div class="ch"><div><div class="ct">Presidential Approval</div><div class="cs">Rolling average with ±1σ confidence band · individual polls</div></div>
+          <div class="ca"><div class="ts" data-target="approval"><button class="tb" data-days="30">30d</button><button class="tb" data-days="90">90d</button><button class="tb" data-days="180">6m</button><button class="tb" data-days="365">1y</button><button class="tb on" data-days="0">All</button></div><button class="btn" onclick="app.toggleCustomize('approval')">⚙ Customize</button></div></div>
+        <div class="sg" id="approvalStats"><div class="sc"><div class="sl">Approve</div><div class="sv">—</div></div><div class="sc"><div class="sl">Disapprove</div><div class="sv">—</div></div><div class="sc"><div class="sl">Net</div><div class="sv" id="netApprovalVal">—</div></div><div class="sc"><div class="sl">Polls</div><div class="sv">—</div></div></div>
+        <div id="approvalCfgPanel" class="cp" style="display:none;"><div class="cg">
+          <div class="ci"><div class="cl">Window (days)</div><div class="cr"><input id="approvalMADaysRange" type="range" min="3" max="120" step="1" value="14"><input id="approvalMADays" type="number" min="3" max="365" step="1" value="14"></div></div>
+          <div class="ci"><div class="cl">Auto min polls</div><div class="cr"><label class="cc"><input type="checkbox" id="approvalAutoMin"><span>Enable</span></label><span class="sm">Min:</span><input id="approvalMinPolls" type="number" min="3" max="60" step="1" value="12"></div></div>
+          <div class="ci"><div class="cl">Compare</div><div class="cr" style="flex-direction:column;align-items:flex-start;gap:.35rem"><label class="cc"><input type="checkbox" id="approvalCompare"><span>Filtered + All</span></label><label class="cc"><input type="checkbox" id="approvalShowDiff"><span>Difference</span></label></div></div>
+        </div></div>
+        <div id="approvalChart" class="pw"></div>
+        <div id="approvalDiffChart" class="pw dc"></div>
+        <div class="cf">Hover dots for details. Band shows ±1 standard deviation of polls within window.</div>
+      </div>
+
+      <!-- NET APPROVAL TREND -->
+      <div class="cd reveal">
+        <div class="ch"><div><div class="ct">Net Approval Trend</div><div class="cs">Approve minus Disapprove over time</div></div></div>
+        <div id="netApprovalChart" class="pw sm-chart"></div>
+      </div>
+    </div>
+
+    <div class="split-col">
+      <!-- GB -->
+      <div class="cd reveal">
+        <div class="ch"><div><div class="ct">Generic Congressional Ballot</div><div class="cs">Rolling average with ±1σ confidence band · individual polls</div></div>
+          <div class="ca"><div class="ts" data-target="gb"><button class="tb" data-days="30">30d</button><button class="tb" data-days="90">90d</button><button class="tb" data-days="180">6m</button><button class="tb" data-days="365">1y</button><button class="tb on" data-days="0">All</button></div><button class="btn" onclick="app.toggleCustomize('gb')">⚙ Customize</button></div></div>
+        <div class="sg" id="gbStats"><div class="sc"><div class="sl">Democrat</div><div class="sv">—</div></div><div class="sc"><div class="sl">Republican</div><div class="sv">—</div></div><div class="sc"><div class="sl">Margin</div><div class="sv" id="gbMarginVal">—</div></div><div class="sc"><div class="sl">Polls</div><div class="sv">—</div></div></div>
+        <div id="gbCfgPanel" class="cp" style="display:none;"><div class="cg">
+          <div class="ci"><div class="cl">Window (days)</div><div class="cr"><input id="gbMADaysRange" type="range" min="3" max="180" step="1" value="30"><input id="gbMADays" type="number" min="3" max="365" step="1" value="30"></div></div>
+          <div class="ci"><div class="cl">Auto min polls</div><div class="cr"><label class="cc"><input type="checkbox" id="gbAutoMin"><span>Enable</span></label><span class="sm">Min:</span><input id="gbMinPolls" type="number" min="3" max="60" step="1" value="12"></div></div>
+          <div class="ci"><div class="cl">Compare</div><div class="cr" style="flex-direction:column;align-items:flex-start;gap:.35rem"><label class="cc"><input type="checkbox" id="gbCompare"><span>Filtered + All</span></label><label class="cc"><input type="checkbox" id="gbShowDiff"><span>Difference</span></label></div></div>
+        </div></div>
+        <div id="gbChart" class="pw"></div>
+        <div id="gbDiffChart" class="pw dc"></div>
+        <div class="cf">Hover dots for details. Band shows ±1 standard deviation of polls within window.</div>
+      </div>
+
+      <!-- MARGIN TREND -->
+      <div class="cd reveal">
+        <div class="ch"><div><div class="ct">Ballot Margin Trend</div><div class="cs">Democrat minus Republican over time</div></div></div>
+        <div id="gbMarginChart" class="pw sm-chart"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- POLL FREQUENCY -->
+  <div class="cd reveal">
+    <div class="ch"><div><div class="ct">Polling Frequency</div><div class="cs">Polls per week across all sources</div></div></div>
+    <div id="freqApproval"></div>
+    <div id="freqGB" style="margin-top:1rem"></div>
+  </div>
+
+  <!-- RECENT POLLS -->
+  <div class="cd reveal"><div class="ch"><div><div class="ct">Recent Polls</div><div class="cs">Latest individual results</div></div></div><div class="fg" id="feedGrid"></div></div>
+
+  <!-- POLLSTER ANALYTICS -->
+  <div class="cd reveal">
+    <div class="ch"><div><div class="ct">Pollster Analytics</div><div class="cs">Source breakdown · click headers to sort</div></div><span class="mc on" id="filterModeBadge"><span id="filterModeText">Strict Allowlist</span></span></div>
+    <input class="pt-search" id="pollsterSearch" type="text" placeholder="Search pollsters…" oninput="app.filterPollsterTable()">
+    <div class="ptw" id="pollsterTableWrap"></div>
+  </div>
+
+  <!-- HOUSE EFFECTS -->
+  <div class="cd reveal">
+    <div class="ch"><div><div class="ct">House Effects</div><div class="cs">How each pollster's generic ballot average deviates from the overall average</div></div></div>
+    <div id="houseChart"></div>
+  </div>
+
+  <div class="cd" id="debugCard"><div class="ch"><div class="ct">Debug</div></div><pre id="debugOut"></pre></div>
+</main>
+
+<footer class="ft"><div class="br">VoteHub</div><p>© <span id="year"></span> · Data aggregated daily from public polling sources.</p></footer>
+
+<script>
+const CONFIG={approvalWindow:14,gbWindow:30,debug:new URLSearchParams(location.search).has("debug")};
+const CUSTOM={approval:{maDays:14,autoMin:false,minPolls:12,compare:false,showDiff:false},gb:{maDays:30,autoMin:false,minPolls:12,compare:false,showDiff:false}};
+const TR={approval:0,gb:0};
+const YRANGES={approval:[35,65],gb:[30,55]};
+const REDUCE_MOTION=matchMedia('(prefers-reduced-motion: reduce)');
+document.getElementById("year").textContent=new Date().getFullYear();
+
+/* ═══ BG CANVAS ═══ */
+(function(){
+  const c=document.getElementById('bgCanvas'),x=c.getContext('2d');
+  let w,h,dots=[],reduce=REDUCE_MOTION.matches;
+  function rs(){w=c.width=innerWidth;h=c.height=innerHeight}
+  function mk(){dots=[];const n=Math.floor(w*h/22000);for(let i=0;i<n;i++)dots.push({x:Math.random()*w,y:Math.random()*h,r:Math.random()*1.2+.4,vx:(Math.random()-.5)*.1,vy:(Math.random()-.5)*.1,o:Math.random()*.2+.03})}
+  function dr(){x.clearRect(0,0,w,h);const dk=document.documentElement.getAttribute('data-theme')==='dark';const b=dk?'255,255,255':'0,0,0';dots.forEach(d=>{d.x+=d.vx;d.y+=d.vy;if(d.x<0)d.x=w;if(d.x>w)d.x=0;if(d.y<0)d.y=h;if(d.y>h)d.y=0;x.beginPath();x.arc(d.x,d.y,d.r,0,Math.PI*2);x.fillStyle=`rgba(${b},${d.o})`;x.fill()});if(!reduce)requestAnimationFrame(dr)}
+  rs();mk();dr();addEventListener('resize',()=>{rs();mk()});
+  const onReduce=e=>{reduce=e.matches;if(!reduce)requestAnimationFrame(dr)};
+  if(REDUCE_MOTION.addEventListener)REDUCE_MOTION.addEventListener('change',onReduce);else if(REDUCE_MOTION.addListener)REDUCE_MOTION.addListener(onReduce);
+})();
+
+/* ═══ SCROLL ═══ */
+const header=document.getElementById('siteHeader');
+addEventListener('scroll',()=>{header.classList.toggle('scrolled',scrollY>4)},{passive:true});
+
+/* ═══ REVEAL ON SCROLL ═══ */
+let revealObs=null;
+const revealEls=document.querySelectorAll('.reveal');
+if(REDUCE_MOTION.matches){revealEls.forEach(el=>el.classList.add('visible'))}
+else{
+  revealObs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revealObs.unobserve(e.target)}})},{threshold:0.05,rootMargin:'0px 0px -40px 0px'});
+  revealEls.forEach(el=>revealObs.observe(el));
+}
+
+/* ═══ STATE ═══ */
+const STATE={approvalData:[],gbData:[],isDemoMode:false,filterStrict:true,pollsterSortCol:1,pollsterSortAsc:false,pollsterData:[]};
+const AP=[{label:"YouGov",pattern:/yougov/},{label:"Verasight",pattern:/verasight/},{label:"Ipsos",pattern:/ipsos/},{label:"ARG",pattern:/americanresearchgroup|arg\b/},{label:"TIPP",pattern:/tipp/},{label:"Emerson",pattern:/emerson/},{label:"Gallup",pattern:/gallup/},{label:"Marist",pattern:/marist/},{label:"Quinnipiac",pattern:/quinnipiac/},{label:"AP-NORC",pattern:/apnorc|ap\-norc|norc/},{label:"Marquette",pattern:/marquette/},{label:"CNN/SSRS",pattern:/cnnssrs|cnn\/ssrs|ssrs/},{label:"AtlasIntel",pattern:/atlasintel|atlas/},{label:"Beacon/Shaw",pattern:/beaconresearch|shaw/},{label:"Hart/POS",pattern:/hartresearch|publicopinionstrategies/},{label:"Pew",pattern:/pewresearch|pew/},{label:"SurveyMonkey",pattern:/surveymonkey/},{label:"Leger",pattern:/leger/},{label:"UMass",pattern:/massachusetts|umass|departmentofpoliticalscience/},{label:"NYT/Siena",pattern:/siena|newyorktimes/},{label:"Fox News",pattern:/foxnews/},{label:"WSJ",pattern:/wallstreetjournal|wsj/}];
+
+const $=id=>document.getElementById(id);
+function log(m){if(CONFIG.debug){$('debugCard').style.display='block';$('debugOut').textContent+=m+'\n'}}
+function showStatus(m,t='info'){const e=$('globalStatus');e.textContent=m;e.className=`alert ${t}`;e.style.display='block';if(t==='success')setTimeout(()=>e.style.display='none',4000)}
+function norm(s){return String(s||"").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]+/g,"")}
+function isAllowed(p,strict=STATE.filterStrict){if(!strict)return true;const n=norm(p);return AP.some(x=>x.pattern.test(n))}
+function parseDate(s){return new Date(`${s}T00:00:00Z`)}
+function ds(d){return d.toISOString().slice(0,10)}
+
+/* ═══ MATH ═══ */
+function calcMA(pts,wd){if(!pts.length)return[];const s=pts.slice().sort((a,b)=>a.date-b.date),ms=864e5,t=s.map(p=>p.date.getTime()),pf=[0];for(let i=0;i<s.length;i++)pf.push(pf[pf.length-1]+s[i].value);const o=[];let idx=0,left=0;for(let d=t[0];d<=t[t.length-1];d+=ms){while(idx<t.length&&t[idx]<=d)idx++;const ws=d-(wd*ms);while(left<idx&&t[left]<=ws)left++;const c=idx-left;if(c>0)o.push({date:new Date(d),value:(pf[idx]-pf[left])/c,count:c,windowDays:wd})}return o}
+function calcMAMP(pts,mp){if(!pts.length)return[];const s=pts.slice().sort((a,b)=>a.date-b.date),ms=864e5,t=s.map(p=>p.date.getTime()),pf=[0];for(let i=0;i<s.length;i++)pf.push(pf[pf.length-1]+s[i].value);const o=[];let idx=0;for(let d=t[0];d<=t[t.length-1];d+=ms){while(idx<t.length&&t[idx]<=d)idx++;if(!idx)continue;let si=Math.max(0,idx-Math.max(1,mp));const st=t[si];while(si>0&&t[si-1]===st)si--;const c=idx-si,sum=pf[idx]-pf[si];const wd=Math.max(0,Math.round((d-st)/ms));o.push({date:new Date(d),value:sum/c,count:c,windowDays:wd})}return o}
+
+/* ±1σ confidence bands */
+function calcBand(pts,wd,maArr){if(!pts.length||!maArr.length)return{upper:[],lower:[]};const s=pts.slice().sort((a,b)=>a.date-b.date),ms=864e5,t=s.map(p=>p.date.getTime()),maMap=new Map(maArr.map(p=>[ds(p.date),p.value]));const upper=[],lower=[];let idx=0,left=0;for(let d=t[0];d<=t[t.length-1];d+=ms){while(idx<t.length&&t[idx]<=d)idx++;const ws=d-(wd*ms);while(left<idx&&t[left]<=ws)left++;const c=idx-left;const dKey=ds(new Date(d)),mean=maMap.get(dKey);if(c>2&&mean!==undefined){let ssq=0;for(let i=left;i<idx;i++){const diff=s[i].value-mean;ssq+=diff*diff}const sd=Math.sqrt(ssq/c);upper.push({date:new Date(d),value:mean+sd});lower.push({date:new Date(d),value:mean-sd})}else if(mean!==undefined){upper.push({date:new Date(d),value:mean+2});lower.push({date:new Date(d),value:mean-2})}}return{upper,lower}}
+function calcBandMP(pts,mp,maArr){if(!pts.length||!maArr.length)return{upper:[],lower:[]};const s=pts.slice().sort((a,b)=>a.date-b.date),t=s.map(p=>p.date.getTime()),ms=864e5,maMap=new Map(maArr.map(p=>[ds(p.date),p.value]));const upper=[],lower=[];let idx=0;for(let d=t[0];d<=t[t.length-1];d+=ms){while(idx<t.length&&t[idx]<=d)idx++;if(!idx)continue;let si=Math.max(0,idx-Math.max(1,mp));const st=t[si];while(si>0&&t[si-1]===st)si--;const c=idx-si,dKey=ds(new Date(d)),mean=maMap.get(dKey);if(c>2&&mean!==undefined){let ssq=0;for(let i=si;i<idx;i++){const diff=s[i].value-mean;ssq+=diff*diff}const sd=Math.sqrt(ssq/c);upper.push({date:new Date(d),value:mean+sd});lower.push({date:new Date(d),value:mean-sd})}else if(mean!==undefined){upper.push({date:new Date(d),value:mean+2});lower.push({date:new Date(d),value:mean-2})}}return{upper,lower}}
+
+function diffs(a,b){const m=new Map(b.map(p=>[ds(p.date),p]));return a.filter(p=>m.has(ds(p.date))).map(p=>{const q=m.get(ds(p.date));return{date:p.date,value:p.value-q.value}})}
+function getAns(poll,keys){if(!poll.answers)return null;for(const a of poll.answers){const c=norm(a.choice);if(c.includes('disapprove')&&keys.some(k=>norm(k).includes('approve')&&!norm(k).includes('dis')))continue;for(const k of keys)if(c.includes(norm(k)))return parseFloat(a.pct)}return null}
+function ti(s){if(s.length<2)return{d:0,c:'flat',a:'→'};const cur=s[s.length-1].value,past=s[Math.max(0,s.length-8)].value,d=cur-past;if(d>.5)return{d,c:'up',a:'↑'};if(d<-.5)return{d,c:'down',a:'↓'};return{d,c:'flat',a:'→'}}
+function ttH(s){const t=ti(s);return`<span class="tt ${t.c}">${t.a} ${Math.abs(t.d).toFixed(1)}</span>`}
+function mbH(s){const t=ti(s);return`<span class="mb ${t.c}">${t.a} ${Math.abs(t.d).toFixed(1)}</span>`}
+function ftr(d,days){if(!days)return d;const c=new Date(Date.now()-days*864e5);return d.filter(p=>p.date>=c)}
+
+function mockData(type){const d=[],ps=AP.map(p=>p.label).concat(["Unknown","Generic"]);const now=new Date();let v=type==='approval'?42:2;for(let i=365;i>=0;i--){const dt=new Date(now.getTime()-i*864e5);v+=(Math.random()-.5)*1.5;for(let j=0;j<Math.floor(Math.random()*2.5);j++){const vr=(Math.random()-.5)*6,pv=v+vr,p=ps[Math.floor(Math.random()*ps.length)];let e={date:dt,pollster:p,sample_size:500+Math.floor(Math.random()*1000)};if(type==='approval'){e.approve=Math.max(35,Math.min(65,pv+44));e.disapprove=Math.max(35,Math.min(65,100-e.approve-5))}else{e.dem=Math.max(30,Math.min(55,46+pv/2));e.rep=Math.max(30,Math.min(55,46-pv/2))}d.push(e)}}return d}
+
+/* ═══ SPARKLINE ═══ */
+function drawSpark(cid,s1,c1,s2,c2){const cv=$(cid);if(!cv||!s1.length)return;const ctx=cv.getContext('2d'),r=cv.parentElement.getBoundingClientRect(),dpr=devicePixelRatio||1;cv.width=r.width*dpr;cv.height=46*dpr;cv.style.width=r.width+'px';cv.style.height='46px';ctx.scale(dpr,dpr);const W=r.width,H=46,all=[...s1,...s2].map(p=>p.value),mn=Math.min(...all)-1,mx=Math.max(...all)+1,rn=mx-mn||1;function dl(s,c){if(!s.length)return;const st=W/(s.length-1||1);ctx.beginPath();s.forEach((p,i)=>{const x=i*st,y=H-((p.value-mn)/rn)*H;i===0?ctx.moveTo(x,y):ctx.lineTo(x,y)});ctx.strokeStyle=c;ctx.lineWidth=1.6;ctx.stroke()}ctx.clearRect(0,0,W,H);dl(s2,c2);dl(s1,c1)}
+
+/* ═══ PLOTLY ═══ */
+function gT(){const dk=document.documentElement.getAttribute('data-theme')==='dark';return{dk,g:dk?'rgba(255,255,255,.05)':'rgba(0,0,0,.05)',t:dk?'#aab3bf':'#80786d',sp:dk?'#3b4048':'#d6cabe',hb:dk?'#151922':'#ffffff',hbr:dk?'#2a2f38':'#e1d6ca',ht:dk?'#e9edf3':'#2a2520'}}
+
+function bandTraces(upper,lower,color,name,rangeDays){
+  const u=rangeDays?ftr(upper,rangeDays):upper,l=rangeDays?ftr(lower,rangeDays):lower;
+  if(!u.length)return[];
+  return[{x:u.map(p=>p.date),y:u.map(p=>p.value),mode:'lines',line:{width:0},showlegend:false,hoverinfo:'skip',type:'scatter'},
+    {x:l.map(p=>p.date).reverse().concat(u.map(p=>p.date)),y:l.map(p=>p.value).reverse().concat(u.map(p=>p.value)),fill:'toself',fillcolor:color,line:{width:0},showlegend:false,hoverinfo:'skip',type:'scatter',name:name+' ±1σ'}];
+}
+
+function rdc(id,dss,rk,bands){const tr=[],th=gT(),rd=TR[rk]||0,yr=YRANGES[rk];
+  if(bands)bands.forEach(b=>{tr.push(...bandTraces(b.upper,b.lower,b.color,b.name,rd))});
+  dss.forEach(d=>{const raw=rd?ftr(d.raw||[],rd):(d.raw||[]),ma=rd?ftr(d.ma||[],rd):(d.ma||[]);
+    if(raw.length)tr.push({x:raw.map(p=>p.date),y:raw.map(p=>p.value),mode:'markers',type:'scatter',name:d.name+' (Polls)',marker:{color:d.color,opacity:d.rawOpacity??.2,size:4.5,line:{width:0}},text:raw.map(p=>`<b>${p.pollster}</b><br>${ds(p.date)}<br>${d.name}: ${p.value.toFixed(1)}%<br>N=${p.sample_size}`),hovertemplate:'%{text}<extra></extra>',showlegend:false});
+    if(ma.length)tr.push({x:ma.map(p=>p.date),y:ma.map(p=>p.value),mode:'lines',name:d.name,line:{color:d.color,width:d.lineWidth||3,dash:d.lineDash||'solid',shape:'spline',smoothing:1.3},customdata:ma.map(p=>[p.count??null,p.windowDays??null]),hovertemplate:`<b>${d.name}</b><br>%{x|%b %d, %Y}<br>%{y:.1f}%<br>Polls: %{customdata[0]}<br>Window: %{customdata[1]}d<extra></extra>`})});
+  Plotly.react(id,tr,{autosize:true,margin:{t:10,r:12,l:40,b:36},paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',font:{family:'Space Grotesk',color:th.t,size:11},xaxis:{gridcolor:th.g,zerolinecolor:th.g,tickformat:'%b %Y',showspikes:true,spikemode:'across',spikethickness:1,spikecolor:th.sp,spikedash:'solid',spikesnap:'cursor',tickfont:{family:'Space Grotesk',size:10}},yaxis:{gridcolor:th.g,zeroline:false,tickfont:{family:'IBM Plex Mono',size:10},ticksuffix:'%',range:yr},showlegend:true,legend:{orientation:'h',y:1.06,x:0,font:{size:10}},hovermode:'closest',dragmode:'pan',hoverlabel:{bgcolor:th.hb,bordercolor:th.hbr,font:{family:'Space Grotesk',size:11,color:th.ht}}},{responsive:true,displayModeBar:false,scrollZoom:false})}
+
+function renderMarginChart(id,series,color1,color2,label){const th=gT();
+  Plotly.react(id,[
+    {x:series.map(p=>p.date),y:series.map(p=>p.value),mode:'lines',line:{color:series.length&&series[series.length-1].value>=0?color1:color2,width:2.5,shape:'spline',smoothing:1.2},fill:'tozeroy',fillcolor:series.length&&series[series.length-1].value>=0?getComputedStyle(document.documentElement).getPropertyValue(label==='approval'?'--band-a':'--band-c').trim():getComputedStyle(document.documentElement).getPropertyValue(label==='approval'?'--band-b':'--band-d').trim(),hovertemplate:`<b>${label==='approval'?'Net Approval':'Margin'}</b><br>%{x|%b %d, %Y}<br>%{y:+.1f}pp<extra></extra>`,name:label==='approval'?'Net Approval':'D-R Margin'}
+  ],{autosize:true,margin:{t:6,r:12,l:40,b:32},paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',font:{family:'Space Grotesk',color:th.t,size:11},xaxis:{gridcolor:th.g,zerolinecolor:th.g,tickformat:'%b %Y',showspikes:true,spikemode:'across',spikethickness:1,spikecolor:th.sp,tickfont:{family:'Space Grotesk',size:10}},yaxis:{gridcolor:th.g,zeroline:true,zerolinecolor:th.t,zerolinewidth:1,tickfont:{family:'IBM Plex Mono',size:10},ticksuffix:'pp'},showlegend:false,hovermode:'closest',dragmode:'pan',hoverlabel:{bgcolor:th.hb,bordercolor:th.hbr,font:{family:'Space Grotesk',size:11,color:th.ht}}},{responsive:true,displayModeBar:false,scrollZoom:false})}
+
+function rdfc(id,sl){const th=gT();Plotly.react(id,sl.map(s=>({x:(s.series||[]).map(p=>p.date),y:(s.series||[]).map(p=>p.value),mode:'lines',name:s.name,line:{color:s.color,width:2,shape:'spline',smoothing:1.2},hovertemplate:`<b>${s.name}</b><br>%{x|%b %d}<br>Δ: %{y:.2f}pp<extra></extra>`})),{autosize:true,margin:{t:6,r:12,l:40,b:32},paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',font:{family:'Space Grotesk',color:th.t,size:11},xaxis:{gridcolor:th.g,zerolinecolor:th.g,tickformat:'%b %Y',showspikes:true,spikemode:'across',spikethickness:1,spikecolor:th.sp},yaxis:{gridcolor:th.g,zeroline:true,zerolinecolor:th.g,tickfont:{family:'IBM Plex Mono',size:10}},showlegend:true,legend:{orientation:'h',y:1.1,x:0,font:{size:10}},hovermode:'closest',dragmode:'pan'},{responsive:true,displayModeBar:false,scrollZoom:false})}
+
+/* ═══ STAT UPDATE ═══ */
+function uS(id,cnt,s1,s2){const c=$(id);if(!c)return;const b1=c.children[0].children[1],b2=c.children[1].children[1],b3=c.children[2].children[1],b4=c.children[3].children[1];const l1=s1.length?s1[s1.length-1].value:null,l2=s2.length?s2[s2.length-1].value:null;if(l1!==null){b1.innerHTML=`${l1.toFixed(1)}% ${ttH(s1)}`;b1.style.color=id==='gbStats'?'var(--dem)':'var(--app)'}else b1.textContent='—';if(l2!==null){b2.innerHTML=`${l2.toFixed(1)}% ${ttH(s2)}`;b2.style.color='var(--rep)'}else b2.textContent='—';if(l1!==null&&l2!==null){const n=l1-l2,sg=n>0?'+':'';if(id==='gbStats'){const lb=n>0?'D':n<0?'R':'';b3.innerHTML=`<span style="color:${n>=0?'var(--dem)':'var(--rep)'}">${lb}${sg}${n.toFixed(1)}</span>`}else b3.innerHTML=`<span style="color:${n>=0?'var(--app)':'var(--rep)'}">${sg}${n.toFixed(1)}</span>`}else b3.textContent='—';b4.textContent=cnt.toLocaleString()}
+
+/* ═══ HERO ═══ */
+function uH(apP,gbP){const bn=$('heroBanner');const mv=(a,k)=>a.map(p=>({...p,value:p[k]})).filter(p=>p.value!=null);const mf=(w,r)=>{const c=CUSTOM[w];return c.autoMin?calcMAMP(r,c.minPolls):calcMA(r,c.maDays)};const st=getComputedStyle(document.documentElement);const aR=mv(apP,'approve'),dR=mv(apP,'disapprove'),aM=mf('approval',aR),dM=mf('approval',dR);const lA=aM.length?aM[aM.length-1].value:null,lD=dM.length?dM[dM.length-1].value:null;if(lA!==null)$('hlApprove').textContent=lA.toFixed(1)+'%';if(lD!==null)$('hlDisapprove').textContent=lD.toFixed(1)+'%';if(lA!==null&&lD!==null){const n=lA-lD,s=n>0?'+':'',el=$('hlApprovalNet');el.textContent=`Net ${s}${n.toFixed(1)}`;el.style.color=n>=0?'var(--app)':'var(--dis)';el.style.background=n>=0?'var(--apps)':'var(--diss)'}$('hlApprovalTrend').innerHTML=mbH(aM);$('hlApprovalPolls').textContent=`${apP.length.toLocaleString()} polls`;if(aM.length)$('hlApprovalWindow').textContent=`${aM[aM.length-1].windowDays||CUSTOM.approval.maDays}d window`;drawSpark('sparkApproval',aM.slice(-60),st.getPropertyValue('--app').trim(),dM.slice(-60),st.getPropertyValue('--dis').trim());
+  const deR=mv(gbP,'dem'),reR=mv(gbP,'rep'),deM=mf('gb',deR),reM=mf('gb',reR);const lDe=deM.length?deM[deM.length-1].value:null,lRe=reM.length?reM[reM.length-1].value:null;if(lDe!==null)$('hlDem').textContent=lDe.toFixed(1)+'%';if(lRe!==null)$('hlRep').textContent=lRe.toFixed(1)+'%';if(lDe!==null&&lRe!==null){const m=lDe-lRe,lb=m>0?'D':m<0?'R':'',s=m>0?'+':'',el=$('hlGBNet');el.textContent=`${lb}${s}${m.toFixed(1)}`;el.style.color=m>=0?'var(--dem)':'var(--rep)';el.style.background=m>=0?'var(--dems)':'var(--reps)'}$('hlGBTrend').innerHTML=mbH(deM);$('hlGBPolls').textContent=`${gbP.length.toLocaleString()} polls`;if(deM.length)$('hlGBWindow').textContent=`${deM[deM.length-1].windowDays||CUSTOM.gb.maDays}d window`;drawSpark('sparkGB',deM.slice(-60),st.getPropertyValue('--dem').trim(),reM.slice(-60),st.getPropertyValue('--rep').trim());bn.style.display='grid';
+  const rb=$('ribbon');rb.style.display='flex';
+  $('rbUpdated').textContent=STATE.updatedAt||'Live';
+  if(lA!==null)$('rbApproval').textContent=lA.toFixed(1)+'%';
+  if(lA!==null&&lD!==null){const n=lA-lD,s=n>0?'+':'';$('rbNet').textContent=s+n.toFixed(1);$('rbNet').style.color=n>=0?'var(--app)':'var(--dis)'}
+  if(lDe!==null&&lRe!==null){$('rbBallot').textContent=`D ${lDe.toFixed(1)} – R ${lRe.toFixed(1)}`;const m=lDe-lRe,lb=m>0?'D':m<0?'R':'',s=m>0?'+':'';$('rbMargin').textContent=lb+s+m.toFixed(1);$('rbMargin').style.color=m>=0?'var(--dem)':'var(--rep)'}
+  $('rbPolls').textContent=(apP.length+gbP.length).toLocaleString();
+  const sources=new Set([...apP,...gbP].map(p=>p.pollster));$('rbSources').textContent=sources.size}
+
+/* ═══ FEED ═══ */
+function uF(apP,gbP){const g=$('feedGrid');const rA=apP.slice().sort((a,b)=>b.date-a.date).slice(0,10);const rG=gbP.slice().sort((a,b)=>b.date-a.date).slice(0,10);let h='<div class="fs"><h3><span class="dt" style="background:var(--app)"></span> Approval</h3><div class="fl">';rA.forEach(p=>{const a=p.approve!=null?p.approve.toFixed(1):'—',d=p.disapprove!=null?p.disapprove.toFixed(1):'—';h+=`<div class="fi"><span class="fp">${p.pollster}</span><span class="fd">${ds(p.date)}</span><span class="fv"><span style="color:var(--app)">${a}</span><span style="color:var(--dis)">${d}</span></span></div>`});if(!rA.length)h+='<div class="sm" style="padding:.75rem">No data.</div>';h+='</div></div><div class="fs"><h3><span class="dt" style="background:var(--dem)"></span> Generic Ballot</h3><div class="fl">';rG.forEach(p=>{h+=`<div class="fi"><span class="fp">${p.pollster}</span><span class="fd">${ds(p.date)}</span><span class="fv"><span style="color:var(--dem)">${p.dem.toFixed(1)}</span><span style="color:var(--rep)">${p.rep.toFixed(1)}</span></span></div>`});if(!rG.length)h+='<div class="sm" style="padding:.75rem">No data.</div>';h+='</div></div>';g.innerHTML=h}
+
+/* ═══ POLL FREQUENCY ═══ */
+function uFreq(apP,gbP){
+  function makeFreq(data,el,label,color){
+    if(!data.length){el.innerHTML='';return}
+    const weeks={};data.forEach(p=>{const d=new Date(p.date);d.setUTCDate(d.getUTCDate()-d.getUTCDay());const k=ds(d);weeks[k]=(weeks[k]||0)+1});
+    const sorted=Object.entries(weeks).sort((a,b)=>a[0].localeCompare(b[0]));
+    const max=Math.max(...sorted.map(s=>s[1]),1);
+    let h=`<div style="font-size:.62rem;color:var(--t3);font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.35rem">${label}</div><div class="freq-bar-row">`;
+    sorted.forEach(([k,v])=>{const pct=(v/max)*100;h+=`<div class="freq-bar" style="height:${Math.max(4,pct)}%;background:${color}" title="${k}: ${v} polls"></div>`});
+    h+=`</div><div class="freq-labels"><span>${sorted[0]?sorted[0][0].slice(5):''}</span><span>${sorted.length?sorted[sorted.length-1][0].slice(5):''}</span></div>`;
+    el.innerHTML=h}
+  const cs=getComputedStyle(document.documentElement);
+  makeFreq(apP,$('freqApproval'),'Approval Polls',cs.getPropertyValue('--app').trim());
+  makeFreq(gbP,$('freqGB'),'Generic Ballot Polls',cs.getPropertyValue('--dem').trim());
+}
+
+/* ═══ POLLSTER TABLE ═══ */
+function uPT(gbP,apP){const w=$('pollsterTableWrap');const ps={};
+  gbP.forEach(p=>{const n=p.pollster||'Unknown';if(!ps[n])ps[n]={c:0,ds:0,rs:0,gc:0,ss:0,sc:0,tr:isAllowed(n,true)};ps[n].c++;ps[n].gc++;ps[n].ds+=p.dem;ps[n].rs+=p.rep;if(p.sample_size){ps[n].ss+=p.sample_size;ps[n].sc++}});
+  apP.forEach(p=>{const n=p.pollster||'Unknown';if(!ps[n])ps[n]={c:0,ds:0,rs:0,gc:0,ss:0,sc:0,tr:isAllowed(n,true)};ps[n].c++;if(p.sample_size){ps[n].ss+=p.sample_size;ps[n].sc++}});
+  STATE.pollsterData=Object.entries(ps).map(([n,s])=>({name:n,...s,avgN:s.sc?Math.round(s.ss/s.sc):0,lean:s.gc>0?(s.ds-s.rs)/s.gc:0}));
+  renderPT()}
+
+function renderPT(){
+  const w=$('pollsterTableWrap'),search=($('pollsterSearch').value||'').toLowerCase();
+  let data=STATE.pollsterData.filter(p=>p.name.toLowerCase().includes(search));
+  const col=STATE.pollsterSortCol,asc=STATE.pollsterSortAsc;
+  const keys=['name','c','avgN','lean','tr'];
+  data.sort((a,b)=>{let va=a[keys[col]],vb=b[keys[col]];if(typeof va==='string')return asc?va.localeCompare(vb):vb.localeCompare(va);return asc?va-vb:vb-va});
+  data=data.slice(0,30);
+  let h=`<table class="pt"><thead><tr>${['Pollster','Polls','Avg N','GB Lean','Status'].map((t,i)=>`<th class="${i===col?'sorted'+(asc?' asc':''):''}" onclick="app.sortPollsters(${i})">${t}</th>`).join('')}</tr></thead><tbody>`;
+  data.forEach(s=>{const avg=s.avgN?s.avgN.toLocaleString():'—';let lean='—';if(s.gc>0){const l=s.lean,lb=l>0?'D':l<0?'R':'',sg=l>0?'+':'',cl=l>=0?'var(--dem)':'var(--rep)',wd=Math.min(60,Math.abs(l)*4);lean=`<span class="lb" style="background:${cl};width:${wd}px;margin-right:5px"></span><span class="mn" style="color:${cl}">${lb}${sg}${l.toFixed(1)}</span>`}const badge=s.tr?'<span style="color:var(--app);font-size:.65rem">✓ Trusted</span>':'<span style="color:var(--t4);font-size:.65rem">—</span>';h+=`<tr><td style="font-weight:600">${s.name}</td><td><span class="bc">${s.c}</span></td><td class="mn">${avg}</td><td>${lean}</td><td>${badge}</td></tr>`});
+  h+='</tbody></table>';if(!data.length)h='<div class="sm" style="padding:.75rem">No matching pollsters.</div>';w.innerHTML=h}
+
+/* ═══ HOUSE EFFECTS ═══ */
+function uHouse(gbP){
+  const el=$('houseChart');if(!gbP.length){el.innerHTML='';return}
+  const ps={};gbP.forEach(p=>{const n=p.pollster;if(!ps[n])ps[n]={ds:0,rs:0,c:0};ps[n].ds+=p.dem;ps[n].rs+=p.rep;ps[n].c++});
+  const overall={d:0,r:0,c:0};gbP.forEach(p=>{overall.d+=p.dem;overall.r+=p.rep;overall.c++});
+  const oMargin=(overall.d-overall.r)/overall.c;
+  let entries=Object.entries(ps).filter(([,s])=>s.c>=3).map(([n,s])=>{const m=(s.ds-s.rs)/s.c;return{name:n,effect:m-oMargin,count:s.c}}).sort((a,b)=>b.effect-a.effect);
+  if(!entries.length){el.innerHTML='<div class="sm" style="padding:.75rem">Not enough data.</div>';return}
+  const maxE=Math.max(...entries.map(e=>Math.abs(e.effect)),2);
+  let h='';entries.forEach(e=>{const pct=(e.effect/maxE)*50;const left=pct>=0?50:50+pct;const width=Math.abs(pct);const cl=e.effect>=0?'var(--dem)':'var(--rep)';const lb=e.effect>0?'D':'R',sg=e.effect>0?'+':'';
+    h+=`<div class="house-row"><span class="house-name">${e.name}</span><div class="house-bar-wrap"><div class="house-center"></div><div class="house-bar" style="left:${left}%;width:${width}%;background:${cl}"></div></div><span class="house-val" style="color:${cl}">${lb}${sg}${e.effect.toFixed(1)}</span></div>`});
+  el.innerHTML=h}
+
+/* ═══ TIME SELECTORS ═══ */
+document.querySelectorAll('.ts').forEach(sel=>{sel.querySelectorAll('.tb').forEach(btn=>{btn.addEventListener('click',()=>{sel.querySelectorAll('.tb').forEach(b=>b.classList.remove('on'));btn.classList.add('on');TR[sel.dataset.target]=parseInt(btn.dataset.days)||0;app.refreshViews()})})});
+
+/* ═══ KEYBOARD SHORTCUTS ═══ */
+document.addEventListener('keydown',e=>{if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA')return;
+  if(e.key==='t'||e.key==='T')app.toggleTheme();
+  if(e.key==='f'||e.key==='F'){const f=$('toggleFilter');f.checked=!f.checked;app.refreshViews()}
+  if(e.key==='?')app.toggleKbd();
+  const timeMap={'1':30,'2':90,'3':180,'4':365,'5':0};
+  if(timeMap[e.key]!==undefined){document.querySelectorAll('.ts').forEach(sel=>{sel.querySelectorAll('.tb').forEach(b=>{b.classList.remove('on');if(parseInt(b.dataset.days)===timeMap[e.key])b.classList.add('on')});TR[sel.dataset.target]=timeMap[e.key]});app.refreshViews()}
+});
+
+/* ═══ APP ═══ */
+const app={
+  async init(){$('loadingIndicator').style.display='block';if(matchMedia('(prefers-color-scheme:dark)').matches){document.documentElement.setAttribute('data-theme','dark');$('themeToggle').textContent='☾'}
+    try{const cands=[new URL('polls.json',location.href).href,'./polls.json','polls.json','../polls.json'];let res=null,le=null;for(const u of cands){try{const r=await fetch(u,{cache:'no-store'});if(r&&r.ok){res=r;break}}catch(e){le=e}}if(!res)throw(le||new Error('No polls.json'));const j=await res.json();const gl=j.genericBallot||j.polls||[],al=j.approval||[];if(!gl.length&&!al.length)throw new Error("Empty");STATE.gbData=this.nGB(gl);STATE.approvalData=this.nAP(al);if(j.updatedAt||j.updated_at){STATE.updatedAt=new Date(j.updatedAt||j.updated_at).toLocaleDateString();showStatus(`Updated: ${STATE.updatedAt}`,"success")}else showStatus("Loaded.","success")}catch(e){console.warn("Demo",e);STATE.isDemoMode=true;showStatus("No polls.json — demo data.","warn");STATE.gbData=mockData('gb');STATE.approvalData=mockData('approval')}
+    $('loadingIndicator').style.display='none';this.initCC();this.refreshViews();
+    addEventListener('resize',()=>{['gbChart','approvalChart','gbDiffChart','approvalDiffChart','netApprovalChart','gbMarginChart'].forEach(id=>{try{if($(id))Plotly.Plots.resize(id)}catch(e){}})});
+    matchMedia('(prefers-color-scheme:dark)').addEventListener('change',e=>{document.documentElement.setAttribute('data-theme',e.matches?'dark':'light');$('themeToggle').textContent=e.matches?'☾':'☀';this.refreshViews()});
+    if(revealObs)document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));else document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
+  },
+  toggleTheme(){const c=document.documentElement.getAttribute('data-theme'),n=c==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);$('themeToggle').textContent=n==='dark'?'☾':'☀';this.refreshViews()},
+  toggleCustomize(w){const p=$(w+'CfgPanel');if(p)p.style.display=p.style.display==='none'?'block':'none'},
+  toggleKbd(){$('kbdHint').classList.toggle('show')},
+  sortPollsters(col){if(STATE.pollsterSortCol===col)STATE.pollsterSortAsc=!STATE.pollsterSortAsc;else{STATE.pollsterSortCol=col;STATE.pollsterSortAsc=false}renderPT()},
+  filterPollsterTable(){renderPT()},
+  initCC(){const setup=(w,def)=>{const d=$(w+'MADays'),dR=$(w+'MADaysRange'),au=$(w+'AutoMin'),mp=$(w+'MinPolls'),cm=$(w+'Compare'),sd=$(w+'ShowDiff');if(!d)return;CUSTOM[w].maDays=def.maDays;CUSTOM[w].autoMin=def.autoMin;CUSTOM[w].minPolls=def.minPolls;CUSTOM[w].compare=def.compare;CUSTOM[w].showDiff=def.showDiff;d.value=CUSTOM[w].maDays;dR.value=Math.min(parseInt(dR.max||'365'),CUSTOM[w].maDays);au.checked=CUSTOM[w].autoMin;mp.value=CUSTOM[w].minPolls;cm.checked=CUSTOM[w].compare;sd.checked=CUSTOM[w].showDiff;const sync=()=>{d.disabled=au.checked;dR.disabled=au.checked;mp.disabled=!au.checked;sd.disabled=!cm.checked;if(!cm.checked)sd.checked=false;CUSTOM[w].autoMin=au.checked;CUSTOM[w].minPolls=parseInt(mp.value||def.minPolls);CUSTOM[w].compare=cm.checked;CUSTOM[w].showDiff=sd.checked;CUSTOM[w].maDays=parseInt(d.value||def.maDays)};const go=()=>{d.value=Math.max(3,parseInt(d.value||def.maDays));dR.value=Math.min(parseInt(dR.max||'365'),parseInt(d.value));mp.value=Math.max(3,parseInt(mp.value||def.minPolls));sync();app.refreshViews()};dR.addEventListener('input',()=>{d.value=dR.value;go()});d.addEventListener('change',go);au.addEventListener('change',go);mp.addEventListener('change',go);cm.addEventListener('change',go);sd.addEventListener('change',go);sync()};setup('approval',{maDays:CONFIG.approvalWindow,autoMin:true,minPolls:24,compare:false,showDiff:false});setup('gb',{maDays:CONFIG.gbWindow,autoMin:true,minPolls:24,compare:false,showDiff:false})},
+  nGB(l){return l.map(p=>{const d=getAns(p,['Dem','Democrat']),r=getAns(p,['Rep','Republican']);if(d===null||r===null)return null;return{date:parseDate(p.end_date||p.start_date),dem:d,rep:r,pollster:p.pollster,sample_size:p.sample_size}}).filter(x=>x)},
+  nAP(l){return l.map(p=>{const a=getAns(p,['Approve','Strongly Approve','Yes']),d=getAns(p,['Disapprove','Strongly Disapprove','No']);if(a===null&&d===null)return null;return{date:parseDate(p.end_date||p.start_date),approve:a,disapprove:d,pollster:p.pollster,sample_size:p.sample_size}}).filter(x=>x)},
+  refreshViews(){
+    STATE.filterStrict=$('toggleFilter').checked;
+    const bd=$('filterModeBadge'),mt=$('filterModeText'),fl=$('filterLabelText');
+    if(STATE.filterStrict){mt.textContent="Strict Allowlist";bd.className="mc on";fl.textContent="Filtered"}else{mt.textContent="All Sources";bd.className="mc off";fl.textContent="All"}
+    const gbS=STATE.gbData.filter(p=>isAllowed(p.pollster,true)),gbA=STATE.gbData.slice(),apS=STATE.approvalData.filter(p=>isAllowed(p.pollster,true)),apA=STATE.approvalData.slice();
+    const gbP=STATE.filterStrict?gbS:gbA,apP=STATE.filterStrict?apS:apA;
+    const mv=(a,k)=>a.map(p=>({...p,value:p[k]})).filter(p=>p.value!=null);
+    const mf=(w,r)=>{const c=CUSTOM[w];return c.autoMin?calcMAMP(r,c.minPolls):calcMA(r,c.maDays)};
+    const bf=(w,r,ma)=>{const c=CUSTOM[w];return c.autoMin?calcBandMP(r,c.minPolls,ma):calcBand(r,c.maDays,ma)};
+    const cs=getComputedStyle(document.documentElement);
+    const dC=cs.getPropertyValue('--dem').trim(),rC=cs.getPropertyValue('--rep').trim(),aC=cs.getPropertyValue('--app').trim(),diC=cs.getPropertyValue('--dis').trim();
+    uH(apP,gbP);uF(apP,gbP);uPT(gbP,apP);uFreq(apP,gbP);uHouse(gbP);
+
+    /* Approval chart */
+    {const cfg=CUSTOM.approval,aR=mv(apP,'approve'),dR=mv(apP,'disapprove'),aM=mf('approval',aR),dM=mf('approval',dR);
+    const aBand=bf('approval',aR,aM),dBand=bf('approval',dR,dM);
+    uS('approvalStats',apP.length,aM,dM);
+    let d2=[{name:'Approve',raw:aR,ma:aM,color:aC,rawOpacity:.18},{name:'Disapprove',raw:dR,ma:dM,color:diC,rawOpacity:.18}];
+    let bands=[{upper:aBand.upper,lower:aBand.lower,color:cs.getPropertyValue('--band-a').trim(),name:'Approve'},{upper:dBand.upper,lower:dBand.lower,color:cs.getPropertyValue('--band-b').trim(),name:'Disapprove'}];
+    const df=$('approvalDiffChart');
+    if(cfg.compare){const aRF=mv(apS,'approve'),dRF=mv(apS,'disapprove'),aMF=mf('approval',aRF),dMF=mf('approval',dRF),aRA=mv(apA,'approve'),dRA=mv(apA,'disapprove'),aMA=mf('approval',aRA),dMA=mf('approval',dRA);d2=[{name:'Approve (F)',raw:aRF,ma:aMF,color:aC,rawOpacity:.18},{name:'Disapprove (F)',raw:dRF,ma:dMF,color:diC,rawOpacity:.18},{name:'Approve (All)',raw:aRA,ma:aMA,color:aC,lineDash:'dot',rawOpacity:.08,lineWidth:2},{name:'Disapprove (All)',raw:dRA,ma:dMA,color:diC,lineDash:'dot',rawOpacity:.08,lineWidth:2}];bands=[];if(cfg.showDiff){df.style.display='block';rdfc('approvalDiffChart',[{name:'Approve Δ',color:aC,series:diffs(aMF,aMA)},{name:'Disapprove Δ',color:diC,series:diffs(dMF,dMA)}])}else df.style.display='none'}else df.style.display='none';
+    rdc('approvalChart',d2,'approval',bands);
+    const netSeries=[];for(let i=0;i<aM.length;i++){const dk=ds(aM[i].date);const dv=dM.find(p=>ds(p.date)===dk);if(dv)netSeries.push({date:aM[i].date,value:aM[i].value-dv.value})}
+    renderMarginChart('netApprovalChart',netSeries,aC,diC,'approval');
+    }
+
+    /* GB chart */
+    {const cfg=CUSTOM.gb,dR=mv(gbP,'dem'),rR=mv(gbP,'rep'),dM=mf('gb',dR),rM=mf('gb',rR);
+    const dBand=bf('gb',dR,dM),rBand=bf('gb',rR,rM);
+    uS('gbStats',gbP.length,dM,rM);
+    let d2=[{name:'Democrats',raw:dR,ma:dM,color:dC,rawOpacity:.18},{name:'Republicans',raw:rR,ma:rM,color:rC,rawOpacity:.18}];
+    let bands=[{upper:dBand.upper,lower:dBand.lower,color:cs.getPropertyValue('--band-c').trim(),name:'Dem'},{upper:rBand.upper,lower:rBand.lower,color:cs.getPropertyValue('--band-d').trim(),name:'Rep'}];
+    const df=$('gbDiffChart');
+    if(cfg.compare){const dRF=mv(gbS,'dem'),rRF=mv(gbS,'rep'),dMF=mf('gb',dRF),rMF=mf('gb',rRF),dRA=mv(gbA,'dem'),rRA=mv(gbA,'rep'),dMA=mf('gb',dRA),rMA=mf('gb',rRA);d2=[{name:'Dem (F)',raw:dRF,ma:dMF,color:dC,rawOpacity:.18},{name:'Rep (F)',raw:rRF,ma:rMF,color:rC,rawOpacity:.18},{name:'Dem (All)',raw:dRA,ma:dMA,color:dC,lineDash:'dot',rawOpacity:.08,lineWidth:2},{name:'Rep (All)',raw:rRA,ma:rMA,color:rC,lineDash:'dot',rawOpacity:.08,lineWidth:2}];bands=[];if(cfg.showDiff){df.style.display='block';rdfc('gbDiffChart',[{name:'Dem Δ',color:dC,series:diffs(dMF,dMA)},{name:'Rep Δ',color:rC,series:diffs(rMF,rMA)}])}else df.style.display='none'}else df.style.display='none';
+    rdc('gbChart',d2,'gb',bands);
+    const marginSeries=[];for(let i=0;i<dM.length;i++){const dk=ds(dM[i].date);const rv=rM.find(p=>ds(p.date)===dk);if(rv)marginSeries.push({date:dM[i].date,value:dM[i].value-rv.value})}
+    renderMarginChart('gbMarginChart',marginSeries,dC,rC,'gb');
+    }
+  }
+};
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>app.init());else app.init();
+</script>
+</body>
+</html>
