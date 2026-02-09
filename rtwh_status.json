@@ -1,12 +1,12 @@
 {
   "ok": false,
-  "fetched_at": "2026-02-08T11:45:17.554Z",
+  "fetched_at": "2026-02-09T12:02:59.668Z",
   "reason": "no polls parsed from DOM tables",
   "pages": [
     {
       "url": "https://www.racetothewh.com/allpolls",
       "defaultYear": 2026,
-      "okLoad": false,
+      "okLoad": true,
       "tables": 0,
       "pollTables": 0,
       "pollTableHeaders": []
